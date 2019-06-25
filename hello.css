@@ -1,12 +1,8 @@
-/*
- * purple-color: #5f259f;
- * pink-color: #f04e99;
- */
 body {
   margin: 0;
   padding: 0;
   font: 1em/1.5em "Open Sans", sans-serif;
-  background-color: #5f259f;
+  background-color: #12511c;
   color: #fff;
 }
 
@@ -41,7 +37,8 @@ main {
 }
 
 h1 {
-  font-family: "Covered By Your Grace", cursive;
+  /*font-family: "Roboto", cursive;*/
+  font-family: 'Raleway', sans-serif;
   font-size: 4rem;
   text-align: center;
 }
@@ -65,7 +62,7 @@ main p {
   list-style: none;
   margin: 1rem auto 0;
   padding: 0;
-  width: 15rem;
+  width: 10rem;
   max-width: 80%;
 }
 
@@ -85,7 +82,7 @@ main p {
 }
 
 .social li a:hover {
-  color: #f04e99;
+  color: #e8c547;
 }
 
 .social li a::before {
@@ -97,13 +94,16 @@ main p {
   font: normal 2rem/1em "FontAwesome";
 }
 
-.social li a[rel="github"]::before { content: '\f09b'; }
 .social li a[rel="home"]::before { content: '\f015'; }
+.social li a[rel="github"]::before { content: '\f09b'; }
+.social li a[rel="linkedin"]::before { content: '\f08c'; }
 .social li a[rel="twitter"]::before { content: '\f099'; }
+.social li a[rel="youtube"]::before { content: '\f16a'; }
+
 
 footer {
   margin: 0;
-  padding: 1rem 0 4rem;
+  padding: 1rem 0 1rem;
   text-align: center;
 }
 
