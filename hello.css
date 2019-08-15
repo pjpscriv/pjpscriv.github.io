@@ -7,9 +7,15 @@ body {
 }
 
 a {
-  color: #00aeef;
+  color: black;
+  /*text-decoration: none;*/
+
+}
+
+a:hover {
+  color: #e8c547;
   text-decoration: none;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 header {
@@ -58,6 +64,7 @@ main p {
   max-width: 80%;
   margin: 0 auto 1rem;
 }
+
 
 .social {
   list-style: none;
