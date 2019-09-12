@@ -70,7 +70,7 @@ main p {
   list-style: none;
   margin: 1rem auto 0;
   padding: 0;
-  width: 10rem;
+  width: 11rem;
   max-width: 80%;
 }
 
@@ -107,6 +107,8 @@ main p {
 .social li a[rel="linkedin"]::before { content: '\f08c'; }
 .social li a[rel="twitter"]::before { content: '\f099'; }
 .social li a[rel="youtube"]::before { content: '\f16a'; }
+.social li a[rel="summeroftech"]::before { content: '\f007'; }
+
 
 
 footer {
