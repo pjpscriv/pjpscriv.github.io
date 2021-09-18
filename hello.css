@@ -104,11 +104,12 @@ main p {
 
 .social li a[rel="home"]::before { content: '\f015'; }
 .social li a[rel="github"]::before { content: '\f09b'; }
+.social li a[rel="gitlab"]::before { content: '\f296'; }
+.social li a[rel="stackoverflow"]::before { content: '\f16c'; }
 .social li a[rel="linkedin"]::before { content: '\f08c'; }
-.social li a[rel="twitter"]::before { content: '\f099'; }
+
 .social li a[rel="youtube"]::before { content: '\f16a'; }
 .social li a[rel="summeroftech"]::before { content: '\f007'; }
-
 
 
 footer {
