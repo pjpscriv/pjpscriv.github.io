@@ -2,71 +2,71 @@ body {
   margin: 0;
   padding: 0;
   font: 1em/1.5em "Open Sans", sans-serif;
-  background-color: #12511c;
   color: #fff;
+
+  border: solid #12511c 0px;
+  border-width: 4px 0;
 }
 
-a {
-  color: black;
-  /*text-decoration: none;*/
+.peter__container {
+  /* width: 30rem; */
+  padding: 2em;
 
-}
+  display: flex;
+  flex-direction: column;
 
-a:hover {
-  color: #e8c547;
-  text-decoration: none;
-  /*font-weight: bold;*/
-}
-
-header {
-  text-align: center;
-  padding: 2rem;
-}
-
-header p:nth-child(1) {
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 0;
-}
-
-header p:nth-child(2) {
-  margin: .5rem 0 0;
-  letter-spacing: .2em;
-  /*text-transform: uppercase;*/
-  letter-spacing: .2em;
-}
-
-main {
   background-color: white;
   color: black;
-  padding: 2rem 0 1.5rem;
+
+  margin-top: 4px;
+  min-height: 90%;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
 }
 
-h1 {
-  /*font-family: "Roboto", cursive;*/
-  font-family: 'Raleway', sans-serif;
-  font-size: 4rem;
-  text-align: center;
-  line-height: 0.8;
+.peter__summary {
+
 }
 
-main img {
+.peter__headshot {
   display: block;
   width: 12rem;
   max-width: 50%;
-  margin: 0 auto 1rem;
+  /* margin: 0 auto 1rem; */
   height: auto;
   border-radius: 50%;
 }
 
-main p {
-  width: 30rem;
-  max-width: 80%;
-  margin: 0 auto 1rem;
+.peter__name {
+  /*font-family: "Roboto", cursive;*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 4rem;
+  /* text-align: center; */
+  line-height: 0.8;
+  margin-bottom: 0.1em;
+}
+
+.peter__job-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  /* text-align: center; */
+  margin-bottom: 1rem;
+  color: #999;
+  font-style: italic;
 }
 
 
-.social {
+.peter__links {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  gap: 1em;
+
   list-style: none;
   margin: 1rem auto 0;
   padding: 0;
@@ -74,26 +74,29 @@ main p {
   max-width: 80%;
 }
 
-.social li {
+.peter__links li {
   margin: 0;
   padding: 0;
+  width: 2em;
+  height: 2em;
 }
 
-.social li a {
+.peter__links li a {
   display: block;
   position: relative;
-  padding-left: 3rem;
-  line-height: 2rem;
+  /* padding-left: 1rem; */
+  width: 32px;
+  /* line-height: 2rem */
   vertical-align: middle;
   color: #999;
   transition: color 0.2s ease;
 }
 
-.social li a:hover {
+.peter__links li a:hover {
   color: #e8c547;
 }
 
-.social li a::before {
+.peter__links li a::before {
   position: absolute;
   left: 0;
   top: 0;
@@ -102,24 +105,34 @@ main p {
   font: normal 2rem/1em "FontAwesome";
 }
 
-.social li a[rel="home"]::before { content: '\f015'; }
-.social li a[rel="github"]::before { content: '\f09b'; }
-.social li a[rel="gitlab"]::before { content: '\f296'; }
-.social li a[rel="stackoverflow"]::before { content: '\f16c'; }
-.social li a[rel="linkedin"]::before { content: '\f08c'; }
 
-.social li a[rel="youtube"]::before { content: '\f16a'; }
-.social li a[rel="summeroftech"]::before { content: '\f007'; }
+a[rel="home"]::before { content: '\f015'; }
+a[rel="github"]::before { content: '\f09b'; }
+a[rel="gitlab"]::before { content: '\f296'; }
+a[rel="stackoverflow"]::before { content: '\f16c'; }
+a[rel="linkedin"]::before { content: '\f08c'; }
+a[rel="goodreads"]::before { content: '\f3a8'; }
+a[rel="bluesky"]::before { content: '\e671'; }
 
 
-footer {
-  margin: 0;
-  padding: 1rem 0 1rem;
-  text-align: center;
+
+a {
+  color: black;
 }
 
-footer img {
-  height: 4rem;
-  width: auto;
-  margin: 0 1rem;
+a:hover {
+  color: #e8c547;
+  text-decoration: none;
 }
+
+
+
+
+
+
+.peter__main p {
+  width: 30rem;
+  max-width: 80%;
+  margin: 0 auto 1rem;
+}
+
