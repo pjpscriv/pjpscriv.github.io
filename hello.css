@@ -66,17 +66,21 @@ body {
   justify-content: left;
   flex-direction: row;
   gap: 1em;
+  flex-wrap: wrap;
 
   list-style: none;
-  margin: 1rem auto 0;
+  /* margin: 1rem auto 0; */
   padding: 0;
-  width: 11rem;
-  max-width: 80%;
 }
 
 .peter__links li {
   margin: 0;
   padding: 0;
+  width: 2em;
+  height: 2em;
+}
+
+.peter__links svg {
   width: 2em;
   height: 2em;
 }
@@ -90,10 +94,19 @@ body {
   vertical-align: middle;
   color: #999;
   transition: color 0.2s ease;
+
+  path {
+    transition: fill 0.2s ease;
+    fill: #999;
+  }
 }
 
 .peter__links li a:hover {
   color: #e8c547;
+
+  path {
+    fill: #e8c547;
+  }
 }
 
 .peter__links li a::before {
