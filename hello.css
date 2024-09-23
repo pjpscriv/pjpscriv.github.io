@@ -33,6 +33,13 @@ body {
 
 }
 
+.peter__canvas {
+  height: 20vw;
+  width: 20vw;
+  background-color: #e8c547;
+  cursor: pointer;
+}
+
 .peter__headshot {
   display: block;
   width: 12rem;
