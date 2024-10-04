@@ -118,7 +118,13 @@ a:not(.fa-icon):hover {
   align-items: center;
   height: 4rem;
   gap: 1em;
-  padding-left: 1em;
+  padding: 0 1em;
+  container-type: size;
+  position: relative;
+  background-color: var(--bg-color);
+  /* z-index: 10; */
+  transition: background-color 0.2s ease;
+  container-type: size;
 }
 
 .navbar__logo {
@@ -128,6 +134,16 @@ a:not(.fa-icon):hover {
 
 .navbar__spacer {
   flex-grow: 1;
+}
+
+.navbar__actions {
+  display: flex;
+  gap: 1em;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 1em;
 }
 
 .navbar .fa-icon {
@@ -149,7 +165,7 @@ a:not(.fa-icon):hover {
 }
 
 #menu-toggle {
-  font-size: 0;
+  display: none;
 }
 
 #menu-toggle::before {
@@ -165,18 +181,51 @@ a:not(.fa-icon):hover {
 }
 
 @media screen and (max-width: 576px) {
-  .navbar {
-    padding-right: 1em;
-  }
-
   #menu-toggle {
-    font-size: 1em;
+    display: block;
   }
 
-  a.navbar__link,
-  #dark-mode-toggle {
-    font-size: 0;
-    padding: 0;
+  .navbar__links {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    /* z-index: -1; */
+    top: 4rem;
+    right: 0;
+    background-color: var(--bg-color);
+    /* box-shadow: 0 0 10px var(--ornament-color); */
+    padding: 0 1em;
+    gap: 1em;
+    flex-direction: column;
+    width: calc(100% - 2em);
+    align-items: center;
+    transition: height 0.3s ease, padding 0.3s ease, background-color 0.2s ease;
+  }
+
+  .navbar__link {
+    opacity: 0;
+    transition: opacity 0.9s ease, color 0.2s ease background-size 0.2s ease;
+  }
+
+  .navbar__links--open {
+    display: flex;
+    height: auto;
+    /* z-index: -1; */
+
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: var(--bg-color);
+    padding: 1em;
+    gap: 1em;
+    flex-direction: column;
+    border-bottom: 2px solid var(--ornament-color);
+  }
+
+  .navbar__links--open .navbar__link {
+    opacity: 1;
+    /* z-index: 10; */
   }
 }
 

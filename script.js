@@ -1,3 +1,7 @@
+const log = m => console.log(m);
+const $ = q => document.querySelector(q);
+const $$ = q => document.querySelectorAll(q);
+
 const DARK_MODE_CLASS = 'dark-mode'
 
 // Get user's preferred color scheme - Run ASAP to prevent flicker
@@ -7,9 +11,7 @@ if (userPrefersDark) {
 }
 
 function addDarkModeToggle() {
-    // Get container
     const container = document.body
-
     const switcher = document.getElementById('dark-mode-toggle')
     switcher.addEventListener('click', () => {
         if (container.classList.contains(DARK_MODE_CLASS)) {
@@ -21,21 +23,34 @@ function addDarkModeToggle() {
 }
 
 function addSectionScrolls() {
-    const links = document.querySelectorAll('.navbar__link')
-
+    const links = $$('.navbar__link')
     links.forEach(el => {
         el.addEventListener('click', (e) => {
             e.preventDefault()
             const targetSelector = el.getAttribute('href');
-            const target = document.querySelector(targetSelector);
+            const target = $(targetSelector);
             target.scrollIntoView({ behavior: 'smooth' });
+
+            const openNavbar = $('.navbar__links--open')
+            if (openNavbar) {
+                openNavbar.classList.remove('navbar__links--open')
+            }
         })
+    })
+}
+
+function toggleNavbarLinks() {
+    const menuToggle = $('#menu-toggle')
+    menuToggle.addEventListener('click', () => {
+        const navbar = $('.navbar__links')
+        navbar.classList.toggle('navbar__links--open')
     })
 }
 
 function main() {
     addDarkModeToggle();
     addSectionScrolls();
+    toggleNavbarLinks();
 }
 
 window.onload = main()
