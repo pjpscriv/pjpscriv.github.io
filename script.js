@@ -3,13 +3,18 @@ const $ = q => document.querySelector(q);
 const $$ = q => document.querySelectorAll(q);
 
 const DARK_MODE_CLASS = 'dark-mode'
+const GRADIENT_CLASSES = ['', 'blue-grad', 'green-yellow-grad', 'lime-grad', 'green-grad'];
+// TODO: Add more gradient classes
 
-// Get user's preferred color scheme - Run ASAP to prevent flicker
+/***************** First Load *****************/
 const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
 if (userPrefersDark) {
     document.body.classList.add(DARK_MODE_CLASS)
 }
+const randomGradient = GRADIENT_CLASSES[Math.floor(Math.random() * GRADIENT_CLASSES.length)]
+document.body.classList.add(randomGradient)
 
+/***************** Click functionality *****************/
 function addDarkModeToggle() {
     const container = document.body
     const switcher = document.getElementById('dark-mode-toggle')
