@@ -1,5 +1,5 @@
 {
-    "rootPath": "./",
+    "rootPath": "../",
     "nav": {
         "about": "Sobre Mim",
         "experience": "Experiência",
