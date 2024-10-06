@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Peter Scriven</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css"
-    href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./res/styles.css">
 </head>
-
 <body class="">
-  <div class="peter__container" id="container">
+  <div class="container">
 
+    <!-- Navbar -->
     <div class="navbar">
       <img class="navbar__logo" src="img/pixel-peter.png">
       <div class="navbar__spacer"></div>
@@ -22,14 +20,21 @@
         <div class="navbar__links">
           <a class="navbar__link" href="#about">About Me</a>
           <a class="navbar__link" href="#experience">Experience</a>
-          <!-- <a class="navbar__link" href="#projects">Projects</a> -->
-          <!-- <a class="navbar__link" href="#contact">Contact</a> -->
+          <a class="navbar__link" href="#projects">Projects</a>
         </div>
+        <div class="navbar__languages">
+          <a class="navbar__language" href="./">English</a>
+          <a class="navbar__language" href="./fr/">Français</a>
+          <a class="navbar__language" href="./es/">Español</a>
+          <a class="navbar__language" href="./ma/">Te Reo Māori</a>
+        </div>
+        <a class="fa-icon" id="language-toggle"></a>
         <a class="fa-icon" id="dark-mode-toggle"></a>
       </div>
       <a class="fa-icon" id="menu-toggle"></a>
     </div>
 
+    <!-- Intro -->
     <div class="intro">
       <!-- <canvas class="peter__canvas" id="canvas"></canvas> -->
       <img class="intro__headshot" src="img/peter-centered.jpg">
@@ -38,11 +43,11 @@
         <h1 class="intro__name">Peter Scriven</h1>
         <p class="intro__title">Software Engineer</p>
         <ul class="intro__links">
-          <li><a class="fa-icon" rel="github" href="http://github.com/pjpscriv"></a></li>
-          <li><a class="fa-icon" rel="gitlab" href="http://gitlab.com/pjpscriv"></a></li>
-          <li><a class="fa-icon" rel="linkedin" href="https://linkedin.com/in/peter-scriven"></a></li>
-          <li><a class="fa-icon" rel="stackoverflow" href="https://stackoverflow.com/users/13762264/pjpscriv"></a></li>
-          <li><a class="fa-icon" href="https://observablehq.com/user/@pjpscriv">
+          <li><a class="fa-icon" rel="github" href="http://github.com/pjpscriv" target="_blank"></a></li>
+          <li><a class="fa-icon" rel="gitlab" href="http://gitlab.com/pjpscriv" target="_blank"></a></li>
+          <li><a class="fa-icon" rel="linkedin" href="https://linkedin.com/in/peter-scriven" target="_blank"></a></li>
+          <li><a class="fa-icon" rel="stackoverflow" href="https://stackoverflow.com/users/13762264/pjpscriv" target="_blank"></a></li>
+          <li><a class="fa-icon" href="https://observablehq.com/user/@pjpscriv" target="_blank">
               <svg role="img" viewBox="0 0 25 28" width="28" height="32" fill="url(#gradient-o)">
                 <path
                   d="M12.5 22.6667C11.3458 22.6667 10.3458 22.4153 9.5 21.9127C8.65721 21.412 7.98339 20.7027 7.55521 19.8654C7.09997 18.9942 6.76672 18.0729 6.56354 17.1239C6.34796 16.0947 6.24294 15.0483 6.25 14C6.25 13.1699 6.30417 12.3764 6.41354 11.6176C6.52188 10.8598 6.72292 10.0894 7.01563 9.30748C7.30833 8.52555 7.68542 7.84763 8.14479 7.27274C8.62304 6.68378 9.24141 6.20438 9.95208 5.87163C10.6979 5.51244 11.5458 5.33333 12.5 5.33333C13.6542 5.33333 14.6542 5.58467 15.5 6.08733C16.3428 6.588 17.0166 7.29733 17.4448 8.13459C17.8969 8.99644 18.2271 9.9103 18.4365 10.8761C18.6448 11.841 18.75 12.883 18.75 14C18.75 14.8301 18.6958 15.6236 18.5865 16.3824C18.4699 17.1702 18.2639 17.9446 17.9719 18.6925C17.6698 19.4744 17.2948 20.1524 16.8427 20.7273C16.3906 21.3021 15.7927 21.7692 15.0479 22.1284C14.3031 22.4876 13.4542 22.6667 12.5 22.6667ZM14.7063 16.2945C15.304 15.6944 15.6365 14.864 15.625 14C15.625 13.1073 15.326 12.3425 14.7292 11.7055C14.1313 11.0685 13.3885 10.75 12.5 10.75C11.6115 10.75 10.8688 11.0685 10.2708 11.7055C9.68532 12.3123 9.36198 13.1405 9.375 14C9.375 14.8927 9.67396 15.6575 10.2708 16.2945C10.8688 16.9315 11.6115 17.25 12.5 17.25C13.3885 17.25 14.124 16.9315 14.7063 16.2945ZM12.5 27C19.4031 27 25 21.1792 25 14C25 6.82075 19.4031 1 12.5 1C5.59687 1 0 6.82075 0 14C0 21.1792 5.59687 27 12.5 27Z">
@@ -55,7 +60,7 @@
                 </defs>
               </svg>
             </a></li>
-          <li><a class="fa-icon" href="https://glitch.com/@pjpscriv">
+          <li><a class="fa-icon" href="https://glitch.com/@pjpscriv" target="_blank">
               <svg width="615" height="479" viewBox="0 0 615 479" fill="url(#gradient-glitch)" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_2)">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -82,86 +87,210 @@
                 </defs>
               </svg>
             </a></li>
-          <li><a class="fa-icon" rel="bluesky" href="https://bsky.app/profile/pjpscriv.com"></a></li>
-          <li><a class="fa-icon" rel="goodreads" href="https://www.goodreads.com/user/show/121071458-peter"></a></li>
+          <li><a class="fa-icon" rel="bluesky" href="https://bsky.app/profile/pjpscriv.com" target="_blank"></a></li>
+          <li><a class="fa-icon" rel="goodreads" href="https://www.goodreads.com/user/show/121071458-peter" target="_blank"></a></li>
         </ul>
       </div>
     </div>
 
+    <!-- About Me -->
     <div class="section" id="about">
       <h2 class="section__title">About Me</h2>
-      <p>I'm an experienced Software Engineer from Aotearoa New Zealand working as a Senior Full Stack Developer at <a href="https://trademe.co.nz">Trade Me</a>, New Zealand's <a
-        href="https://www.similarweb.com/website/trademe.co.nz/" target="_blank">5th most visited website</a>.</p>
-      <p>I'm a passionate, friendly, and excited about building interesting systems that solve important problems. I'm currently seeking a role in Canada. 🍁</p>
-      
-        <p>In my spare time I play guitar and ski. I like <a
-          href="https://lists.pocketcasts.com/0ccf2f68-afbc-4357-baf2-9e2583550885">podcasts</a>, <a
-          href="https://en.wikipedia.org/wiki/List_of_Studio_Ghibli_works#Feature_films">Studio Ghibli movies</a> and
-        making <a href="http://pjpscriv.github.io/animal-spin/">silly things in code</a> for fun. I've helped make <a href="https://ingridandtheministers.bandcamp.com/album/kill-the-sights">an album</a>, <a
-          href="https://tldrify.com/vev">a theatre show</a>, and <a
-          href="https://www.aucklandfringe.co.nz/programme-2019/how-to-write-an-album">an album during a theatre
-          show</a>.</p>
+      <p>
+        I'm an experienced Software Engineer from Aotearoa New Zealand working as a Senior Full 
+        Stack Developer at <a href="https://trademe.co.nz" target="_blank">Trade Me</a>, New Zealand's 
+        <a href="https://www.similarweb.com/website/trademe.co.nz/" target="_blank">5th most 
+          visited website</a>.
+      </p>
+      <p>
+        I'm a passionate, friendly, and excited about building interesting systems that 
+        solve important problems. I'm currently seeking a role in Canada. 🍁
+      </p>
+      <p>
+        In my spare time I play guitar and ski. I like 
+        <a href="https://lists.pocketcasts.com/0ccf2f68-afbc-4357-baf2-9e2583550885" target="_blank">podcasts</a>, 
+        <a href="https://en.wikipedia.org/wiki/List_of_Studio_Ghibli_works#Feature_films" target="_blank">Studio Ghibli movies</a> and making 
+        <a href="http://pjpscriv.com/animal-spin/" target="_blank">silly things in code</a> for fun. I've helped make 
+        <a href="https://ingridandtheministers.bandcamp.com/album/kill-the-sights" target="_blank">an album</a>, 
+        <a href="https://tldrify.com/vev" target="_blank">a theatre show</a>, and 
+        <a href="https://www.aucklandfringe.co.nz/programme-2019/how-to-write-an-album" target="_blank">an album during a theatre show</a>.
+      </p>
     </div>
 
+    <!-- Experience -->
     <div class="section" id="experience">
       <h2 class="section__title">Experience</h2>
-      <h3 class="experience__type-title">Work</h3>
-      <div class="experience">
-        <h4>Senior Full Stack Developer • <a href="https://trademe.co.nz">Trade Me</a></h3>
-        <p class="experience__period">2019 - Present</p>
-        <p class="experience__description">Trade Me is New Zealand's largest online marketplace, and <a
-            href="https://www.similarweb.com/website/trademe.co.nz/" target="_blank">5th most visited website</a>. I currently work in
-          the Marketplace team, building features for high-volume sellers.</p>
-        <div class="experience__skill-pills">
-          <span class="peter__skill-pill">Angular</span>
-          <span class="peter__skill-pill">TypeScript</span>
-          <span class="peter__skill-pill">SCSS</span>
-          <span class="peter__skill-pill">.NET</span>
-          <span class="peter__skill-pill">C#</span>
-          <span class="peter__skill-pill">ElasticSearch</span>
-          <span class="peter__skill-pill">Google Cloud</span>
-          <span class="peter__skill-pill">GitLab</span>
+      <!-- Work Experience -->
+      <h3 class="section__sub-title">Work</h3>
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4>Senior Full Stack Developer • <a href="https://trademe.co.nz">Trade Me</a></h4>
+          <p class="section__item-period">2019 - Present</p>
+        </div>
+          <p class="section__item-description">
+            Trade Me is New Zealand's largest online marketplace, and 
+            <a href="https://www.similarweb.com/website/trademe.co.nz/" target="_blank">5th most visited website</a>. 
+            I currently work in the Marketplace team, building features for high-volume sellers.
+          </p>
+          <div class="section__item-pills">
+            <span class="skill-pill">Angular</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">SCSS</span>
+            <span class="skill-pill">.NET</span>
+            <span class="skill-pill">C#</span>
+            <span class="skill-pill">ElasticSearch</span>
+            <span class="skill-pill">Google Cloud</span>
+            <span class="skill-pill">GitLab</span>
+          </div>
+      </div>
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4>Data Analyst • <a href="https://www.ccsdisabilityaction.org.nz/">CCS Disability Action</a></h4>
+          <p class="section__item-period">2018 - 2019</p>
+        </div>
+          <p class="section__item-description"></p>
+          <div class="section__item-pills">
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">MongoDB</span>
+          </div>
+      </div>
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4>Developer Intern • <a href="https://www.snapper.co.nz/">Snapper</a></h4>
+          <p class="section__item-period">2016 - 2017</p>
+        </div>
+          <p class="section__item-description"></p>
+          <div class="section__item-pills">
+            <span class="skill-pill">Android</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">AWS</span>
+          </div>
+      </div>
+      <!-- Education Experience -->
+      <h3 class="section__sub-title">Education</h2>
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4>BSc in Computer Science • <a href="https://www.wgtn.ac.nz/">Victoria University of Wellington</a></h4>
+          <p class="section__item-period">2016 - 2019</p>
         </div>
       </div>
-      <div class="experience">
-        <h4>Data Analyst • <a href="https://www.ccsdisabilityaction.org.nz/">CCS Disability Action</a></h3>
-        <p class="experience__period">2018 - 2019</p>
-        <p class="experience__description"></p>
-        <div class="experience__skill-pills">
-          <span class="peter__skill-pill">Node.js</span>
-          <span class="peter__skill-pill">JavaScript</span>
-          <span class="peter__skill-pill">MongoDB</span>
-        </div>
-      </div>
-      <div class="experience">
-        <h4>Developer Intern • <a href="https://www.snapper.co.nz/">Snapper</a></h3>
-        <p class="experience__period">2016 - 2017</p>
-        <div class="experience__skill-pills">
-          <span class="peter__skill-pill">Android</span>
-          <span class="peter__skill-pill">Java</span>
-          <span class="peter__skill-pill">AWS</span>
-        </div>
-      </div>
-
-      <h3 class="experience__type-title">Education</h2>
-
-        <div class="experience">
-          <h4>BSc in Computer Science • <a href="https://www.wgtn.ac.nz/">Victoria University of Wellington</a></h3>
-          <p class="experience__period">2016 - 2019</p>
-        </div>
     </div>
 
-    <!-- <div class="section" id="projects">
+    <!-- Projects -->
+    <div class="section" id="projects">
       <h2 class="section__title">Projects</h2>
-    </div> -->
+      
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4><a href="http://dotmatch.lol/" target="_blank">Dot Match</a></h4>
+          <p class="section__item-period">2024</p>
+        </div>
+        <div class="section__item-content">
+          <a href="http://dotmatch.lol/" target="_blank">
+            <img src="https://via.placeholder.com/400x300" alt="Dot Match" class="section__item-image">
+          </a>
+          <div>
+            <p class="section__item-description">
+              A match-three game where you align dots of the same colour to score points. Built with HTML 
+              Canvas and TypeScript, using a simple NoSQL database to store high scores and feature requests.
+              Hosted on Google Cloud.
+            </p>
+            <div class="section__item-pills">
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Flask</span>
+              <span class="skill-pill">Cloud Run</span>
+              <span class="skill-pill">Firestore</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- <div class="section" id="contact">
-      <h2 class="section__title">Contact</h2>
-    </div> -->
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4><a href="https://pjpscriv.com/wet-bulb-calculator/" target="_blank">Wet Bulb Calculator</a></h4>
+          <p class="section__item-period">2023</p>
+        </div>
+        <div class="section__item-content">
+          <a href="https://pjpscriv.com/wet-bulb-calculator/" target="_blank">
+            <img src="https://via.placeholder.com/400x300" alt="Wet Bulb Calculator" class="section__item-image">
+          </a>
+          <div>
+            <p class="section__item-description">
+              A single-component web app that takes temperature and humidity values and returns a "wet bulb temperature" - the temperature the body can reach 
+              with evaporative cooling. Built with Angular, using Chroma.js to create gradients.
+            </p>
+            <div class="section__item-pills">
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">Chroma.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4><a href="https://pjpscriv.com/day/" target="_blank">Day Visualizer</a></h4>
+          <p class="section__item-period">2023</p>
+          </div>
+        <div class="section__item-content">
+          <a href="https://pjpscriv.com/day/" target="_blank">
+            <img src="https://via.placeholder.com/400x300" alt="Day Visualizer" class="section__item-image">
+          </a>
+          <div>
+            <p class="section__item-description">
+              A simple web app that shows how much of the day is nighttime and how much is daytime. 
+              Allows users to change the time and location to see how day length changes depending 
+              on where and when in the world you are. Built with Angular, using Google Maps API to 
+              for location logic.
+            </p>
+            <div class="section__item-pills">
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">Google Maps API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4><a href="https://pjpscriv.com/ng-fb-message/" target="_blank">Message Map</a></h4>
+          <p class="section__item-period">2021 - 22</p>
+        </div>
+        <div class="section__item-content">
+          <a href="https://pjpscriv.com/ng-fb-message/" target="_blank">
+            <img src="https://via.placeholder.com/400x300" alt="Message Map" class="section__item-image">
+          </a>
+          <div>
+            <p class="section__item-description">
+              A tool to explore your Facebook Messenger data. View all your messages in their totality, then
+              zoom all the way in to specific messages. See summaries for, and filter by 
+              chat, sender, and a few other criteria. A fork of the 
+              <a href="https://github.com/adurivault/FBMessage" target="_blank">original project</a> by a
+              pair of French students. Refactored into Angular, using NgRx (Redux) for state management, and D3.js
+              for data visualization. 
+            </p>
+            <div class="section__item-pills">
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">NgRx</span>
+              <span class="skill-pill">D3.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© <span id="copyright-year">1995</span> Peter Scriven</p>
+      <p>See this website's source <a href="https://github.com/pjpscriv/pjpscriv.github.io/" target="_blank">on GitHub</a></p>
+      <p>💻🌱</p>
+    </div>
 
   </div>
-  <!-- <script src="./dots_script.js"></script> -->
-  <script src="./script.js"></script>
+  <script src="./res/script.js"></script>
+  <!-- <script src="./res/dots_script.js"></script> -->
 </body>
-
 </html>

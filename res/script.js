@@ -11,8 +11,12 @@ const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matche
 if (userPrefersDark) {
     document.body.classList.add(DARK_MODE_CLASS)
 }
-const randomGradient = GRADIENT_CLASSES[Math.floor(Math.random() * GRADIENT_CLASSES.length)]
-document.body.classList.add(randomGradient)
+const randomGradient = GRADIENT_CLASSES[Math.floor(Math.random() * (GRADIENT_CLASSES.length))]
+if(!!randomGradient) {
+    document.body.classList.add(randomGradient)
+}
+const copyrightYearEl = $('#copyright-year')
+copyrightYearEl.innerText = new Date().getFullYear()
 
 /***************** Click functionality *****************/
 function addDarkModeToggle() {
@@ -52,10 +56,19 @@ function toggleNavbarLinks() {
     })
 }
 
+function toggleNavbarLanguages() {
+    const languageToggle = $('#language-toggle')
+    languageToggle.addEventListener('click', () => {
+        const languages = $('.navbar__languages')
+        languages.classList.toggle('navbar__languages--open')
+    })
+}
+
 function main() {
     addDarkModeToggle();
     addSectionScrolls();
     toggleNavbarLinks();
+    toggleNavbarLanguages();
 }
 
 window.onload = main()
