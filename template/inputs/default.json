@@ -9,7 +9,8 @@
         "en": "English",
         "fr": "French",
         "es": "Spanish",
-        "ma": "Māori"
+        "ma": "Māori",
+        "pt": "Portuguese"
     },
     "intro": {
         "greeting": "Hi 👋 I'm",

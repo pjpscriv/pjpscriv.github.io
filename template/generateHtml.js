@@ -12,7 +12,8 @@ const languageFiles = [
     'default.json',
     'fr.json',
     'es.json',
-    'ma.json'
+    'ma.json',
+    'pt.json'
 ];
 
 // Function to convert Markdown links to HTML <a> tags with target="_blank"
