@@ -75,7 +75,7 @@
         "p4": {
             "title": "Message Map",
             "period": "2021 - 22",
-            "content": "A tool to explore your Facebook Messenger data. View all your messages in their totality, then zoom all the way in to specific messages. See summaries for, and filter by chat, sender, and a few other criteria. A fork of the [original project](https://github.com/adurivault/FBMessage) by a pair of French students. Refactored into Angular, using NgRx (Redux) for state management, and D3.js for data visualization."
+            "content": "A tool to explore your Facebook Messenger data. View all your messages in their totality, then zoom all the way in to specific messages. See summaries for, and filter by chat, sender, and a few other criteria. A fork of the [original project](https://github.com/adurivault/FBMessage) by a pair of French students. Refactored into Angular, using Material UI component library, NgRx (Redux) for state management, and D3.js for data visualization."
         }    
     },
     "footer": {
