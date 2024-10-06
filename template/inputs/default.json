@@ -1,5 +1,5 @@
 {
-    "resPrefix": "./res/",
+    "rootPath": "./",
     "nav": {
         "about": "About Me",
         "experience": "Experience",
