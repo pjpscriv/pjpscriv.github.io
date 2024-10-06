@@ -1,4 +1,5 @@
 {
+    "resPrefix": "../res/",
     "nav": {
         "about": "Mōku",
         "experience": "Ngā Wheako",

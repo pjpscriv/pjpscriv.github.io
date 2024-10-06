@@ -1,4 +1,5 @@
 {
+    "resPrefix": "../res/",
     "nav": {
         "about": "À propos de moi",
         "experience": "Expérience",
