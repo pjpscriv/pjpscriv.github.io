@@ -1,6 +1,6 @@
 # Personal Webpage
 
-This is the code for my personal website. Initially created  during the 2019 Summer of Tech git tutorial. 
+This is the code for my personal website. Initially created during the 2019 [Summer of Tech](https://www.summeroftech.co.nz/) git tutorial. 
 
 ## Development
 
