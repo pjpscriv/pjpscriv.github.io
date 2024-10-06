@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Peter Scriven</title>
+  <title>{{intro.name}}</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap">
@@ -108,14 +108,10 @@
       <h3 class="section__sub-title">Work</h3>
       <div class="section__item">
         <div class="section__item-head">
-          <h4>Senior Full Stack Developer • <a href="https://trademe.co.nz" target="_blank">Trade Me</a></h4>
-          <p class="section__item-period">2019 - Present</p>
+          <h4>{{experience.work.w1.title}} • {{experience.work.w1.employer}}</h4>
+          <p class="section__item-period">{{experience.work.w1.period}}</p>
         </div>
-          <p class="section__item-description">
-            Trade Me is New Zealand's largest online marketplace, and 
-            <a href="https://www.similarweb.com/website/trademe.co.nz/" target="_blank">5th most visited website</a>. 
-            I currently work in the Marketplace team, building features for high-volume sellers.
-          </p>
+          <p class="section__item-description">{{experience.work.w1.content}}</p>
           <div class="section__item-pills">
             <span class="skill-pill">Angular</span>
             <span class="skill-pill">TypeScript</span>
@@ -129,10 +125,10 @@
       </div>
       <div class="section__item">
         <div class="section__item-head">
-          <h4>Data Analyst • <a href="https://www.ccsdisabilityaction.org.nz/" target="_blank">CCS Disability Action</a></h4>
-          <p class="section__item-period">2018 - 2019</p>
+          <h4>{{experience.work.w2.title}} • {{experience.work.w2.employer}}</h4>
+          <p class="section__item-period">{{experience.work.w2.period}}</p>
         </div>
-          <p class="section__item-description"></p>
+          <p class="section__item-description">{{experience.work.w2.content}}</p>
           <div class="section__item-pills">
             <span class="skill-pill">Node.js</span>
             <span class="skill-pill">JavaScript</span>
@@ -141,10 +137,10 @@
       </div>
       <div class="section__item">
         <div class="section__item-head">
-          <h4>Developer Intern • <a href="https://www.snapper.co.nz/" target="_blank">Snapper</a></h4>
-          <p class="section__item-period">2016 - 2017</p>
+          <h4>{{experience.work.w3.title}} • {{experience.work.w3.employer}}</h4>
+          <p class="section__item-period">{{experience.work.w3.period}}</p>
         </div>
-          <p class="section__item-description"></p>
+          <p class="section__item-description">{{experience.work.w3.content}}</p>
           <div class="section__item-pills">
             <span class="skill-pill">Android</span>
             <span class="skill-pill">Java</span>
@@ -155,31 +151,27 @@
       <h3 class="section__sub-title">{{experience.education.title}}</h2>
       <div class="section__item">
         <div class="section__item-head">
-          <h4>{{experience.education.education1.title}} • {{experience.education.education1.institution}}</h4>
-          <p class="section__item-period">{{experience.education.education1.period}}</p>
+          <h4>{{experience.education.e1.title}} • {{experience.education.e1.institution}}</h4>
+          <p class="section__item-period">{{experience.education.e1.period}}</p>
         </div>
       </div>
     </div>
 
     <!-- Projects -->
     <div class="section" id="projects">
-      <h2 class="section__title">Projects</h2>
+      <h2 class="section__title">{{projects.title}}</h2>
       
       <div class="section__item">
         <div class="section__item-head">
-          <h4><a href="http://dotmatch.lol/" target="_blank">Dot Match</a></h4>
-          <p class="section__item-period">2024</p>
+          <h4><a href="http://dotmatch.lol/" target="_blank">{{projects.p1.title}}</a></h4>
+          <p class="section__item-period">{{projects.p1.period}}</p>
         </div>
         <div class="section__item-content">
           <a href="http://dotmatch.lol/" target="_blank">
             <img src="./img/dotmatch.png" alt="Dot Match" class="section__item-image">
           </a>
           <div>
-            <p class="section__item-description">
-              A match-three game where you align dots of the same colour to score points. Built with HTML 
-              Canvas and TypeScript, using a simple NoSQL database to store high scores and feature requests.
-              Hosted on Google Cloud.
-            </p>
+            <p class="section__item-description">{{projects.p1.content}}</p>
             <div class="section__item-pills">
               <span class="skill-pill">TypeScript</span>
               <span class="skill-pill">Python</span>
@@ -193,8 +185,8 @@
 
       <div class="section__item">
         <div class="section__item-head">
-          <h4><a href="https://pjpscriv.com/wet-bulb-calculator/" target="_blank">Wet Bulb Calculator</a></h4>
-          <p class="section__item-period">2023</p>
+          <h4><a href="https://pjpscriv.com/wet-bulb-calculator/" target="_blank">{{projects.p2.title}}</a></h4>
+          <p class="section__item-period">{{projects.p2.period}}</p>
         </div>
         <div class="section__item-content">
           <a href="https://pjpscriv.com/wet-bulb-calculator/" target="_blank">
@@ -202,10 +194,7 @@
             <img src="./img/wet-bulb-dark.png" alt="Wet Bulb Calculator" class="section__item-image section__item-image--dark">
           </a>
           <div>
-            <p class="section__item-description">
-              A single-component web app that takes temperature and humidity values and returns a "wet bulb temperature"
-               - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients.
-            </p>
+            <p class="section__item-description">{{projects.p2.content}}</p>
             <div class="section__item-pills">
               <span class="skill-pill">Angular</span>
               <span class="skill-pill">Chroma.js</span>
@@ -216,20 +205,15 @@
 
       <div class="section__item">
         <div class="section__item-head">
-          <h4><a href="https://pjpscriv.com/day/" target="_blank">Day Visualizer</a></h4>
-          <p class="section__item-period">2023</p>
+          <h4><a href="https://pjpscriv.com/day/" target="_blank">{{projects.p3.title}}</a></h4>
+          <p class="section__item-period">{{projects.p3.period}}</p>
           </div>
         <div class="section__item-content">
           <a href="https://pjpscriv.com/day/" target="_blank">
             <img src="./img/day.png" alt="Day Visualizer" class="section__item-image">
           </a>
           <div>
-            <p class="section__item-description">
-              A simple web app that shows how much of the day is nighttime and how much is daytime. 
-              Allows users to change the time and location to see how day length changes depending 
-              on where and when in the world you are. Built with Angular, using Google Maps API to 
-              for location logic.
-            </p>
+            <p class="section__item-description">{{projects.p3.content}}</p>
             <div class="section__item-pills">
               <span class="skill-pill">Angular</span>
               <span class="skill-pill">Google Maps API</span>
@@ -240,8 +224,8 @@
 
       <div class="section__item">
         <div class="section__item-head">
-          <h4><a href="https://pjpscriv.com/ng-fb-message/" target="_blank">Message Map</a></h4>
-          <p class="section__item-period">2021 - 22</p>
+          <h4><a href="https://pjpscriv.com/ng-fb-message/" target="_blank">{{projects.p4.title}}</a></h4>
+          <p class="section__item-period">{{projects.p4.period}}</p>
         </div>
         <div class="section__item-content">
           <a href="https://pjpscriv.com/ng-fb-message/" target="_blank">
@@ -249,14 +233,7 @@
             <img src="./img/message-map-dark.png" alt="Message Map" class="section__item-image section__item-image--dark">
           </a>
           <div>
-            <p class="section__item-description">
-              A tool to explore your Facebook Messenger data. View all your messages in their totality, then
-              zoom all the way in to specific messages. See summaries for, and filter by 
-              chat, sender, and a few other criteria. A fork of the 
-              <a href="https://github.com/adurivault/FBMessage" target="_blank">original project</a> by a
-              pair of French students. Refactored into Angular, using NgRx (Redux) for state management, and D3.js
-              for data visualization. 
-            </p>
+            <p class="section__item-description">{{projects.p4.content}}</p>
             <div class="section__item-pills">
               <span class="skill-pill">Angular</span>
               <span class="skill-pill">NgRx</span>
@@ -271,7 +248,7 @@
     <!-- Footer -->
     <div class="footer">
       <p>© <span id="copyright-year">1995</span> Peter Scriven</p>
-      <p>See this website's source <a href="https://github.com/pjpscriv/pjpscriv.github.io/" target="_blank">on GitHub</a></p>
+      <p>{{footer.content}}</p>
       <p>💻🌱</p>
     </div>
 

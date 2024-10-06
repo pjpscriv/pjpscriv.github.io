@@ -6,14 +6,14 @@
     },
     "i18n": {
         "en": "English",
-        "fr": "Français",
-        "es": "Español",
+        "fr": "French",
+        "es": "Spanish",
         "ma": "Māori"
     },
     "intro": {
         "greeting": "Hi 👋 I'm",
         "name": "Peter Scriven",
-        "title": "Software Engineer",
+        "title": "Software Engineer"
     },
     "about": {
         "title": "About Me",
@@ -25,65 +25,59 @@
         "title": "Experience",
         "work": {
             "title": "Work",
-            "work1": {
+            "w1": {
                 "title": "Senior Full Stack Developer",
+                "employer": "[Trade Me](https://trademe.co.nz)",
                 "period": "2019 - Present",
                 "content": "Trade Me is New Zealand's largest online marketplace, and [5th most visited website](https://www.similarweb.com/website/trademe.co.nz/). I currently work in the Marketplace team, building features for high-volume sellers."
             },
-            "work2":{
+            "w2":{
                 "title": "Data Analyst",
+                "employer": "[CCS Disability Action](https://www.ccsdisabilityaction.org.nz)",
                 "period": "2018 - 2019",
                 "content": ""
             },
-            "work3":{
+            "w3":{
                 "title": "Developer Intern",
+                "employer": "[Snapper](https://www.snapper.co.nz/)",
                 "period": "2016 - 2017",
                 "content": ""
             }
         },
         "education": {
             "title": "Education",
-            "education1": {
+            "e1": {
                 "title": "BSc in Computer Science",
                 "institution": "[Victoria University of Wellington](https://www.wgtn.ac.nz/)",
                 "period": "2016 - 2019",
                 "content": "I studied Computer Science and Mathematics at the University of Auckland. I graduated with a Bachelor of Science in 2017."
             }
-        },
-        "projects": {
-            
-                l{
-                    "title": "Dot Match",
-                    "period": "2024",
-                    "content": "A match-three game where you align dots of the same colour to score points. Built with HTML Canvas and TypeScript, using a simple NoSQL database to store high scores and feature requests. Hosted on Google Cloud.",
-                    "link": "http://dotmatch.lol/",
-                    "skills": ["TypeScript", "Python", "Flask", "Cloud Run", "Firestore"]
-                },
-                {
-                    "title": "Wet Bulb Calculator",
-                    "period": "2023",
-                    "content": "A single-component web app that takes temperature and humidity values and returns a 'wet bulb temperature' - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients.",
-                    "link": "https://pjpscriv.com/wet-bulb-calculator/",
-                    "skills": ["Angular", "Chroma.js"]
-                },
-                {
-                    "title": "Day Visualizer",
-                    "period": "2023",
-                    "content": "A simple web app that shows how much of the day is nighttime and how much is daytime. Allows users to change the time and location to see how day length changes depending on where and when in the world you are. Built with Angular, using Google Maps API for location logic.",
-                    "link": "https://pjpscriv.com/day/",
-                    "skills": ["Angular", "Google Maps API"]
-                },
-                {
-                    "title": "Message Map",
-                    "period": "2021 - 22",
-                    "content": "A tool to explore your Facebook Messenger data. View all your messages in their totality, then zoom all the way in to specific messages. See summaries for, and filter by chat, sender, and a few other criteria. A fork of the [original project](https://github.com/adurivault/FBMessage) by a pair of French students. Refactored into Angular, using NgRx (Redux) for state management, and D3.js for data visualization.",
-                    "link": "https://pjpscriv.com/ng-fb-message/",
-                    "skills": ["Angular", "NgRx", "D3.js"]
-                }
-            
-            
         }
-        
-
+    },
+    "projects": {
+        "title": "Projects",
+        "p1": {
+            "title": "Dot Match",
+            "period": "2024",
+            "content": "A match-three game where you align dots of the same colour to score points. Built with HTML Canvas and TypeScript, using a simple NoSQL database to store high scores and feature requests. Hosted on Google Cloud."
+        },
+        "p2": {
+            "title": "Wet Bulb Calculator",
+            "period": "2023",
+            "content": "A single-component web app that takes temperature and humidity values and returns a 'wet bulb temperature' - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients."
+        },
+        "p3": {
+            "title": "Day Visualizer",
+            "period": "2023",
+            "content": "A simple web app that shows how much of the day is nighttime and how much is daytime. Allows users to change the time and location to see how day length changes depending on where and when in the world you are. Built with Angular, using Google Maps API for location logic."
+        },
+        "p4": {
+            "title": "Message Map",
+            "period": "2021 - 22",
+            "content": "A tool to explore your Facebook Messenger data. View all your messages in their totality, then zoom all the way in to specific messages. See summaries for, and filter by chat, sender, and a few other criteria. A fork of the [original project](https://github.com/adurivault/FBMessage) by a pair of French students. Refactored into Angular, using NgRx (Redux) for state management, and D3.js for data visualization."
+        }    
+    },
+    "footer": {
+        "content": "See this website's source [here](https://github.com/pjpscriv/pjpscriv.github.io/)"
     }
 }

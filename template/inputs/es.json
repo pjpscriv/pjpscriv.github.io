@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "projects": "Proyectos"
+    },
+    "i18n": {
+        "en": "Inglés",
+        "fr": "Francés",
+        "es": "Español",
+        "ma": "Maorí"
+    },
+    "intro": {
+        "greeting": "Hola 👋 Soy",
+        "name": "Peter Scriven",
+        "title": "Ingeniero de Software"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "content1": "Soy un ingeniero de software experimentado de Aotearoa Nueva Zelanda que trabaja como desarrollador full stack senior en [Trade Me](https://trademe.co.nz), el [5º sitio web más visitado](https://www.similarweb.com/website/trademe.co.nz/) de Nueva Zelanda.",
+        "content2": "Soy apasionado, amigable y estoy emocionado por construir sistemas interesantes que resuelvan problemas importantes. Actualmente estoy buscando un puesto en Canadá. 🍁",
+        "content3": "En mi tiempo libre toco la guitarra y esquío. Me gustan los [podcasts](https://lists.pocketcasts.com/2d425db2-b2c1-4999-be5a-63840ff200d5), las [películas de Studio Ghibli](https://en.wikipedia.org/wiki/List_of_Studio_Ghibli_works#Feature_films) y hacer [cosas tontas en código](http://pjpscriv.com/animal-spin/) por diversión. He ayudado a hacer [un álbum](https://ingridandtheministers.bandcamp.com/album/kill-the-sights), [una obra de teatro](https://tldrify.com/vev) y [un álbum durante una obra de teatro](https://www.aucklandfringe.co.nz/programme-2019/how-to-write-an-album)."
+    },
+    "experience": {
+        "title": "Experiencia",
+        "work": {
+            "title": "Trabajo",
+            "w1": {
+                "title": "Desarrollador Full Stack Senior",
+                "employer": "[Trade Me](https://trademe.co.nz)",
+                "period": "2019 - Presente",
+                "content": "Trade Me es el mercado en línea más grande de Nueva Zelanda y el [5º sitio web más visitado](https://www.similarweb.com/website/trademe.co.nz/). Actualmente trabajo en el equipo de Marketplace, desarrollando funciones para vendedores de alto volumen."
+            },
+            "w2": {
+                "title": "Analista de Datos",
+                "employer": "[CCS Disability Action](https://www.ccsdisabilityaction.org.nz)",
+                "period": "2018 - 2019",
+                "content": ""
+            },
+            "w3": {
+                "title": "Desarrollador Interno",
+                "employer": "[Snapper](https://www.snapper.co.nz/)",
+                "period": "2016 - 2017",
+                "content": ""
+            }
+        },
+        "education": {
+            "title": "Educación",
+            "e1": {
+                "title": "Licenciatura en Ciencias de la Computación",
+                "institution": "[Universidad Victoria de Wellington](https://www.wgtn.ac.nz/)",
+                "period": "2016 - 2019",
+                "content": "Estudié Ciencias de la Computación y Matemáticas en la Universidad de Auckland. Me gradué con una Licenciatura en Ciencias en 2017."
+            }
+        }
+    },
+    "projects": {
+        "title": "Proyectos",
+        "p1": {
+            "title": "Dot Match",
+            "period": "2024",
+            "content": "Un juego de combinación de tres en el que alineas puntos del mismo color para ganar puntos. Desarrollado con HTML Canvas y TypeScript, utilizando una base de datos NoSQL simple para almacenar puntuaciones altas y solicitudes de funciones. Alojado en Google Cloud."
+        },
+        "p2": {
+            "title": "Calculadora de Bulbo Húmedo",
+            "period": "2023",
+            "content": "Una aplicación web de un solo componente que toma valores de temperatura y humedad y devuelve una 'temperatura de bulbo húmedo', la temperatura a la que el cuerpo puede llegar con enfriamiento por evaporación. Desarrollada con Angular, utilizando Chroma.js para crear gradientes."
+        },
+        "p3": {
+            "title": "Visualizador de Días",
+            "period": "2023",
+            "content": "Una aplicación web simple que muestra cuánto del día es de noche y cuánto es de día. Permite a los usuarios cambiar la hora y la ubicación para ver cómo cambia la duración del día dependiendo de dónde y cuándo te encuentres en el mundo. Desarrollada con Angular, utilizando la API de Google Maps para la lógica de localización."
+        },
+        "p4": {
+            "title": "Mapa de Mensajes",
+            "period": "2021 - 22",
+            "content": "Una herramienta para explorar tus datos de Facebook Messenger. Ve todos tus mensajes en su totalidad, luego haz zoom hasta mensajes específicos. Ve resúmenes y filtra por chat, remitente y otros criterios. Un fork del [proyecto original](https://github.com/adurivault/FBMessage) de un par de estudiantes franceses. Refactorizado en Angular, utilizando NgRx (Redux) para la gestión del estado, y D3.js para la visualización de datos."
+        }
+    },
+    "footer": {
+        "content": "Consulta el código fuente de este sitio web [aquí](https://github.com/pjpscriv/pjpscriv.github.io/)"
+    }
+}

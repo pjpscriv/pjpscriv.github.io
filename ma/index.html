@@ -1,1 +1,259 @@
-Test Māori page
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peter Scriven</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./res/styles.css">
+</head>
+<body class="">
+  <div class="container">
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <img class="navbar__logo" src="img/pixel-peter.png">
+      <div class="navbar__spacer"></div>
+      <div class="navbar__actions">
+        <div class="navbar__links">
+          <a class="navbar__link" href="#about">Mōku</a>
+          <a class="navbar__link" href="#experience">Ngā Wheako</a>
+          <a class="navbar__link" href="#projects">Ngā Kaupapa</a>
+        </div>
+        <div class="navbar__languages">
+          <a class="navbar__language" href="./">Ingarihi</a>
+          <a class="navbar__language" href="./fr/">Wīwī</a>
+          <a class="navbar__language" href="./es/">Pāniora</a>
+          <a class="navbar__language" href="./ma/">Māori</a>
+        </div>
+        <a class="fa-icon" id="language-toggle"></a>
+        <a class="fa-icon" id="dark-mode-toggle"></a>
+      </div>
+      <a class="fa-icon" id="menu-toggle"></a>
+    </div>
+
+    <!-- Intro -->
+    <div class="intro">
+      <!-- <canvas class="peter__canvas" id="canvas"></canvas> -->
+      <img class="intro__headshot" src="img/peter-headshot.jpg">
+      <div class="intro__text">
+        <p class="intro__greeting">Kia ora 👋 Ko ahau</p>
+        <h1 class="intro__name">Peter Scriven</h1>
+        <p class="intro__title">Kaihangarau Pūmanawa Rorohiko</p>
+        <ul class="intro__links">
+          <li><a class="fa-icon" rel="github" href="http://github.com/pjpscriv" target="_blank"></a></li>
+          <li><a class="fa-icon" rel="gitlab" href="http://gitlab.com/pjpscriv" target="_blank"></a></li>
+          <li><a class="fa-icon" rel="linkedin" href="https://linkedin.com/in/peter-scriven" target="_blank"></a></li>
+          <li><a class="fa-icon" rel="stackoverflow" href="https://stackoverflow.com/users/13762264/pjpscriv" target="_blank"></a></li>
+          <li><a class="fa-icon" href="https://observablehq.com/user/@pjpscriv" target="_blank">
+              <svg role="img" viewBox="0 0 25 28" width="28" height="32" fill="url(#gradient-o)">
+                <path
+                  d="M12.5 22.6667C11.3458 22.6667 10.3458 22.4153 9.5 21.9127C8.65721 21.412 7.98339 20.7027 7.55521 19.8654C7.09997 18.9942 6.76672 18.0729 6.56354 17.1239C6.34796 16.0947 6.24294 15.0483 6.25 14C6.25 13.1699 6.30417 12.3764 6.41354 11.6176C6.52188 10.8598 6.72292 10.0894 7.01563 9.30748C7.30833 8.52555 7.68542 7.84763 8.14479 7.27274C8.62304 6.68378 9.24141 6.20438 9.95208 5.87163C10.6979 5.51244 11.5458 5.33333 12.5 5.33333C13.6542 5.33333 14.6542 5.58467 15.5 6.08733C16.3428 6.588 17.0166 7.29733 17.4448 8.13459C17.8969 8.99644 18.2271 9.9103 18.4365 10.8761C18.6448 11.841 18.75 12.883 18.75 14C18.75 14.8301 18.6958 15.6236 18.5865 16.3824C18.4699 17.1702 18.2639 17.9446 17.9719 18.6925C17.6698 19.4744 17.2948 20.1524 16.8427 20.7273C16.3906 21.3021 15.7927 21.7692 15.0479 22.1284C14.3031 22.4876 13.4542 22.6667 12.5 22.6667ZM14.7063 16.2945C15.304 15.6944 15.6365 14.864 15.625 14C15.625 13.1073 15.326 12.3425 14.7292 11.7055C14.1313 11.0685 13.3885 10.75 12.5 10.75C11.6115 10.75 10.8688 11.0685 10.2708 11.7055C9.68532 12.3123 9.36198 13.1405 9.375 14C9.375 14.8927 9.67396 15.6575 10.2708 16.2945C10.8688 16.9315 11.6115 17.25 12.5 17.25C13.3885 17.25 14.124 16.9315 14.7063 16.2945ZM12.5 27C19.4031 27 25 21.1792 25 14C25 6.82075 19.4031 1 12.5 1C5.59687 1 0 6.82075 0 14C0 21.1792 5.59687 27 12.5 27Z">
+                </path>
+                <defs>
+                  <linearGradient id="gradient-o">
+                    <stop offset="0%" class="gradient-start" stop-color="var(--text-color-secondary"/>
+                    <stop offset="100%" class="gradient-end" stop-color="var(--text-color-secondary"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a></li>
+          <li><a class="fa-icon" href="https://glitch.com/@pjpscriv" target="_blank">
+              <svg width="615" height="479" viewBox="0 0 615 479" fill="url(#gradient-glitch)" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_2)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M292.33 348.55L605.79 348.93C606.687 352.176 607.24 355.508 607.44 358.87C607.703 364.149 606.942 369.43 605.2 374.42C604.24 376.872 603.419 379.376 602.74 381.92C600.674 390.574 601.334 399.656 604.63 407.92C605.614 410.98 607.122 414.354 608.582 417.617C611.024 423.079 613.329 428.233 612.81 431.1C612.31 434.72 611.42 435.72 604.19 434.72C594.41 433.38 578.34 427.72 560.28 421.23C542.22 414.74 533.99 411.91 523.28 408.74C516.07 406.61 510.89 405.8 507.44 405.8C505.604 405.8 488.327 411.586 477.417 415.24C475.668 415.825 474.082 416.356 472.75 416.8C455.97 422.38 420.88 432.21 399.43 436.3C373.47 441.26 341.8 447.23 312.8 447.78C298.84 448.05 292.689 447.801 283.252 447.419C282.536 447.39 281.8 447.36 281.04 447.33C285.04 455.44 286.29 464.62 285.92 474.56C279.804 476.257 273.083 476.795 266.098 477.355C264.232 477.504 262.347 477.655 260.45 477.83C247.096 479.107 233.628 478.481 220.45 475.97C204.605 473.082 200.754 470.593 194.268 466.403C193.5 465.907 192.696 465.387 191.83 464.84C184.96 460.33 178.08 452.71 172.47 445.26C164.71 434.5 163.47 429.6 163.47 429.6C157.075 430.965 150.608 431.967 144.1 432.6C131.786 433.947 119.376 434.181 107.02 433.3C99.47 432.705 87.5683 428.401 81.0994 426.062C79.9599 425.65 78.9889 425.299 78.24 425.04C64.5834 419.962 51.3093 413.91 38.52 406.93C25.25 399.35 12.03 390.56 5.03 380.93C18.07 378.39 37.12 371.07 38.53 366.93H192.352C191.165 369.587 190.295 371.288 190.135 371.602C190.122 371.627 190.114 371.643 190.11 371.65C189.366 373.057 189.212 374.702 189.68 376.223C190.149 377.744 191.203 379.016 192.61 379.76C194.017 380.504 195.662 380.658 197.183 380.19C198.704 379.721 199.976 378.667 200.72 377.26C202.446 373.897 204.003 370.449 205.384 366.93H224.579C220.473 382.342 216.21 395.02 216.13 395.25C215.552 397.004 215.69 398.916 216.514 400.568C217.339 402.221 218.783 403.48 220.533 404.073C222.282 404.665 224.195 404.542 225.854 403.73C227.513 402.919 228.784 401.485 229.39 399.74C229.74 398.741 234.652 384.113 239.06 366.93H292.33V348.55Z"fill-opacity="0.5" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M243 242.33V224.71H461.72V228.13C433.72 237.25 392.26 245.85 381.62 247.51C384.791 248.986 386.793 250.367 388.36 251.447C389.66 252.343 390.66 253.033 391.78 253.4C400.342 254.433 408.831 255.996 417.2 258.08C433.67 261.87 447.31 265.46 458.53 269.42C470.19 273.78 476.36 275.79 483.23 277.77C491.255 279.957 499.385 281.736 507.59 283.1C513.138 283.92 523.804 280.709 529.334 279.045L529.336 279.044C530.553 278.678 531.52 278.387 532.13 278.23C535.51 277.36 579.28 260.35 579.28 260.35C579.28 260.35 598.28 253.24 605.8 251.35C612.71 249.44 612.89 251.75 612.89 251.75C613.518 253.752 614.012 255.793 614.37 257.86C615.067 264.369 615.128 270.93 614.55 277.45C613.804 282.474 612.803 287.458 611.55 292.38C610.419 296.445 608.895 300.39 607 304.16C605.6 306.61 603.44 310.43 602.7 312.09C601.555 314.375 600.818 316.842 600.52 319.38C600.176 322.815 600.341 326.283 601.01 329.67C601.61 332.57 603.55 339.84 603.55 339.84L605.84 348.93L292.38 348.55V366.93H38.53C38.669 366.507 38.6932 366.055 38.6 365.62C38.34 364.5 37.06 362.85 32.16 359.9C26.0728 355.935 7.32014 349.085 0.823099 346.712L0.159978 346.47C0.152313 346.288 0.142271 346.083 0.131182 345.858C-0.19044 339.318 -1.39222 314.879 29 288.15C38.4128 280.107 48.3188 272.659 58.66 265.85C58.66 265.85 85.66 248.19 107.12 241.14L243 242.33ZM232 328.54C231.966 328.745 231.943 328.952 231.93 329.16C231.12 340.09 227.93 354.39 224.57 366.89H239.05C242.17 354.75 245.05 341.32 245.87 330.47C247.65 318.38 240.26 295.66 235.36 282.39C277.24 283.987 319.008 287.782 360.49 293.76C431.55 304.04 517.29 346.64 518.14 347.07C518.962 347.482 519.857 347.727 520.774 347.793C521.691 347.859 522.612 347.743 523.485 347.453C524.357 347.163 525.164 346.704 525.859 346.102C526.554 345.5 527.123 344.767 527.535 343.945C527.947 343.123 528.192 342.228 528.258 341.311C528.324 340.394 528.208 339.473 527.918 338.6C527.628 337.728 527.169 336.921 526.567 336.226C525.965 335.531 525.232 334.962 524.41 334.55C520.83 332.75 435.83 290.55 362.49 279.9C316.966 273.267 271.089 269.33 225.1 268.11C223.943 268.098 222.8 268.373 221.775 268.911C220.75 269.448 219.874 270.232 219.226 271.191C218.578 272.15 218.178 273.255 218.062 274.406C217.946 275.558 218.117 276.721 218.56 277.79C224.61 292.35 233.59 319 232 328.54ZM200.69 330C201.87 343.32 195.81 359.16 192.37 366.92H205.37C209.2 357.28 213.81 342.45 212.62 328.92C210.936 310.785 204.824 293.34 194.82 278.12C193.892 276.826 192.487 275.953 190.916 275.694C189.344 275.436 187.734 275.812 186.44 276.74C185.146 277.668 184.273 279.073 184.014 280.644C183.756 282.216 184.132 283.826 185.06 285.12C193.768 298.623 199.126 314.009 200.69 330ZM106.715 346C122.574 346 135.43 332.792 135.43 316.5C135.43 300.208 122.574 287 106.715 287C90.8561 287 78 300.208 78 316.5C78 332.792 90.8561 346 106.715 346Z"/>
+                  <path
+                    d="M100.31 294.59C88.11 294.59 78.61 305.79 78.31 317.29C78.31 331.29 88.21 339.99 100.31 339.99C112.41 339.99 122.31 329.89 122.31 317.29C122.31 304.69 112.51 294.59 100.31 294.59ZM89.91 332.39C88.4386 332.43 86.9887 332.03 85.7457 331.241C84.5028 330.453 83.5233 329.311 82.9324 327.963C82.3415 326.615 82.1661 325.121 82.4287 323.673C82.6912 322.224 83.3797 320.887 84.4062 319.832C85.4327 318.777 86.7505 318.052 88.1912 317.75C89.6318 317.448 91.1298 317.583 92.4937 318.136C93.8576 318.69 95.0253 319.638 95.8476 320.859C96.6699 322.08 97.1095 323.518 97.11 324.99C97.1259 325.949 96.9519 326.902 96.5982 327.794C96.2444 328.686 95.7179 329.499 95.0488 330.187C94.3796 330.875 93.5812 331.424 92.6993 331.802C91.8174 332.18 90.8695 332.38 89.91 332.39Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M603 188.56C602.037 191.868 601.599 195.306 601.7 198.75C601.707 204.055 602.547 209.326 604.19 214.37C605.279 217.762 606.996 221.592 608.622 225.221C610.936 230.385 613.068 235.142 612.95 237.65C612.95 241 612.45 243.81 604.06 242.56C594.3 241.12 578.61 235.57 560.53 229.12C557.789 228.142 555.267 227.239 552.924 226.401C539.816 221.709 532.306 219.021 523.22 216.34C516.01 214.21 511.6 213.45 508.14 213.45C506.423 213.474 490.945 218.692 479.959 222.395C477.319 223.285 474.938 224.088 473.07 224.71C469.92 225.75 465.02 227.21 461.72 228.13V224.71H243V242.33L107.18 241.18C98.6743 240.199 86.9427 236.018 80.4243 233.694C79.8308 233.483 79.2806 233.287 78.78 233.11C65.1118 228.014 51.819 221.962 39 215C25.69 207.39 11.94 198.18 5.14001 188.84C18.18 186.26 39.36 178.41 38.68 173.5H192.24C191.05 176.187 190.171 177.906 190.013 178.214C190.001 178.238 189.993 178.253 189.99 178.26C189.31 179.659 189.199 181.268 189.682 182.747C190.165 184.226 191.204 185.459 192.579 186.187C193.954 186.915 195.558 187.08 197.053 186.648C198.547 186.215 199.816 185.219 200.59 183.87C202.323 180.494 203.885 177.033 205.27 173.5H224.46C220.35 188.93 216.08 201.63 216 201.86C215.705 202.731 215.585 203.652 215.646 204.57C215.707 205.488 215.948 206.385 216.356 207.209C216.764 208.034 217.33 208.77 218.022 209.376C218.714 209.982 219.519 210.445 220.39 210.74C221.261 211.035 222.182 211.155 223.1 211.094C224.018 211.033 224.915 210.792 225.739 210.384C226.564 209.976 227.3 209.41 227.906 208.718C228.512 208.026 228.975 207.221 229.27 206.35C229.61 205.35 234.53 190.7 238.95 173.5H375.88V155.6L605.76 155.99C606.469 159.12 606.993 162.289 607.33 165.48C607.77 170.863 607.127 176.279 605.44 181.41C605.255 181.939 605.083 182.428 604.922 182.886C604.06 185.344 603.523 186.874 603 188.56Z"fill-opacity="0.5" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M614.37 65.91C614.55 69.17 615.05 82.47 614.55 85.49C613.898 90.1063 612.962 94.6783 611.75 99.18C610.45 103.28 608.47 109.18 606.95 111.86C606.592 112.486 606.177 113.199 605.745 113.941L605.74 113.949L605.739 113.951C604.481 116.111 603.08 118.516 602.53 119.75C601.433 122.185 600.738 124.782 600.47 127.44C600.126 130.875 600.291 134.343 600.96 137.73C601.56 140.63 603.5 147.9 603.5 147.9L605.76 155.99L375.88 155.6V173.5H239C242.12 161.36 245 147.93 245.81 137.08C247.59 124.99 240.2 102.27 235.31 89C277.187 90.5967 318.951 94.3919 360.43 100.37C431.5 110.65 517.23 153.25 518.09 153.68C518.914 154.111 519.816 154.373 520.742 154.451C521.668 154.529 522.601 154.422 523.486 154.136C524.37 153.85 525.189 153.39 525.894 152.784C526.599 152.178 527.177 151.438 527.592 150.606C528.008 149.775 528.254 148.869 528.316 147.941C528.378 147.013 528.254 146.082 527.952 145.203C527.65 144.324 527.176 143.513 526.558 142.819C525.939 142.125 525.189 141.561 524.35 141.16C520.77 139.36 435.77 97.16 362.44 86.51C286.44 75.51 225.65 74.73 225.05 74.73C223.893 74.7169 222.751 74.9908 221.725 75.5272C220.7 76.0636 219.824 76.8459 219.175 77.8039C218.526 78.7619 218.125 79.8659 218.007 81.017C217.889 82.1681 218.059 83.3304 218.5 84.4C224.48 99 233.46 125.62 231.9 135.15C231.9 135.275 231.879 135.397 231.857 135.519L231.857 135.52C231.843 135.602 231.828 135.685 231.82 135.77C231.02 146.7 227.82 161 224.46 173.5H205.24C209.08 163.86 213.68 149.03 212.49 135.5C210.806 117.365 204.694 99.9202 194.69 84.7C194.23 84.0591 193.649 83.5151 192.979 83.0989C192.309 82.6827 191.564 82.4026 190.786 82.2744C190.008 82.1463 189.212 82.1727 188.444 82.3521C187.676 82.5315 186.951 82.8604 186.31 83.32C185.669 83.7796 185.125 84.361 184.709 85.0309C184.293 85.7007 184.013 86.446 183.884 87.2242C183.756 88.0023 183.783 88.7981 183.962 89.5661C184.141 90.334 184.47 91.0591 184.93 91.7C193.643 105.201 199.005 120.588 200.57 136.58C201.74 149.9 195.69 165.74 192.24 173.5H38.68C38.68 173.5 38.98 171.5 32.88 167.7C27.38 164.7 9.47999 157.1 0.379989 154.3C-0.500011 149.73 -2.44001 123.85 29 96.21C38.4164 88.1592 48.3292 80.7078 58.68 73.9C58.68 73.9 84.76 55.39 112.78 47.1C119.534 45.1942 126.419 43.7904 133.38 42.9C153.25 41.28 185.1 40.5 188.22 40.61C194.469 32.2919 201.271 24.404 208.58 17C220.45 5.31 227.18 0.8 234.28 0C244.08 0.58 296.54 12.84 311.35 17.25C312.072 17.4538 312.855 17.6734 313.692 17.9081C322.714 20.4386 338.014 24.7297 350.35 29.9C364.25 35.24 367.63 39.78 367.63 39.78C370.233 43.7138 373.058 47.4966 376.09 51.11C379.37 54.39 388.79 60.05 391.41 61.11C392.794 61.4603 394.512 61.6952 396.811 62.0095C401.075 62.5924 407.336 63.4484 417.16 65.82C432.96 69.58 447.16 73.6 458.46 77.12C463.17 78.6899 466.972 80.0654 470.291 81.266C475.217 83.0479 479.078 84.4446 483.26 85.52C490.26 87.32 501.46 90.02 507.66 90.92C512.629 91.6414 522.372 88.6366 527.784 86.9674C529.124 86.5541 530.199 86.2227 530.87 86.05C534.25 85.18 579.28 68.4 579.28 68.4C579.28 68.4 603.58 59.71 605.78 59C613.15 56.6 614.37 56.43 614.37 65.91ZM106.715 155C122.574 155 135.43 141.792 135.43 125.5C135.43 109.208 122.574 96 106.715 96C90.8561 96 78 109.208 78 125.5C78 141.792 90.8561 155 106.715 155Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M78 126.7C78.3 115.2 87.8 104 100 104C112.2 104 122 114.1 122 126.7C122 139.3 112.1 149.4 100 149.4C87.9 149.4 78 140.7 78 126.7ZM89.6 141.81C89.48 141.81 89.3607 141.807 89.2422 141.801C87.8945 141.772 86.5778 141.376 85.4357 140.651C84.1928 139.863 83.2133 138.721 82.6224 137.373C82.0315 136.025 81.8561 134.531 82.1187 133.083C82.3812 131.634 83.0697 130.297 84.0962 129.242C85.1227 128.187 86.4405 127.462 87.8812 127.16C88.5061 127.029 89.1419 126.98 89.7728 127.012C93.6659 127.106 96.7943 130.376 96.8 134.399C96.8 134.399 96.8 134.4 96.8 134.4C96.8172 135.36 96.6442 136.314 96.2911 137.207C95.938 138.1 95.4116 138.915 94.7424 139.604C94.473 139.881 94.1825 140.136 93.8741 140.366C92.6787 141.273 91.2003 141.81 89.6 141.81Z"/>
+                </g>
+                <defs>
+                  <linearGradient id="gradient-glitch">
+                    <stop offset="0%" class="gradient-start" stop-color="var(--text-color-secondary"/>
+                    <stop offset="100%" class="gradient-end" stop-color="var(--text-color-secondary"/>
+                  </linearGradient>
+                  <clipPath id="clip0_1_2">
+                    <rect width="614.9" height="478.5" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a></li>
+          <li><a class="fa-icon" rel="bluesky" href="https://bsky.app/profile/pjpscriv.com" target="_blank"></a></li>
+          <li><a class="fa-icon" rel="goodreads" href="https://www.goodreads.com/user/show/121071458-peter" target="_blank"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div class="section" id="about">
+      <h2 class="section__title">Mōku</h2>
+      <p>He Kaihangarau Pūmanawa Rorohiko mātanga ahau nō Aotearoa e mahi ana hei Kaitātari Full Stack Matua ki <a href="https://trademe.co.nz" target="_blank" rel="noopener noreferrer">Trade Me</a>, te <a href="https://www.similarweb.com/website/trademe.co.nz/" target="_blank" rel="noopener noreferrer">5 o ngā pae tukutuku tino toro</a> o Aotearoa.</p>
+      <p>He tangata ngākau nui, ngākau māhaki, me te hiahia ki te waihanga i ngā pūnaha mīharo hei whakatika i ngā raru hira. Kei te kimi mahi au i te whenua o Kanata. 🍁</p>
+      <p>I ōku wā whakatā ka whakatangi au i te kita, ka retireti hukarere hoki. He pai ki ahau ngā <a href="https://lists.pocketcasts.com/2d425db2-b2c1-4999-be5a-63840ff200d5" target="_blank" rel="noopener noreferrer">pāpāho ipurangi</a>, ngā <a href="https://en.wikipedia.org/wiki/List_of_Studio_Ghibli_works#Feature_films" target="_blank" rel="noopener noreferrer">kiriata a Studio Ghibli</a>, me te hanga i <a href="http://pjpscriv.com/animal-spin/" target="_blank" rel="noopener noreferrer">ngā mea rorirori i roto i te waehere</a> mō te ngahau. Kua āwhina au ki te hanga i tētahi <a href="https://ingridandtheministers.bandcamp.com/album/kill-the-sights" target="_blank" rel="noopener noreferrer">pukaemi</a>, tētahi <a href="https://tldrify.com/vev" target="_blank" rel="noopener noreferrer">whakaaturanga whare tapere</a>, me tētahi <a href="https://www.aucklandfringe.co.nz/programme-2019/how-to-write-an-album" target="_blank" rel="noopener noreferrer">pukaemi i roto i te whakaaturanga whare tapere</a>.</p>
+    </div>
+
+    <!-- Experience -->
+    <div class="section" id="experience">
+      <h2 class="section__title">Experience</h2>
+      <!-- Work Experience -->
+      <h3 class="section__sub-title">Work</h3>
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4>Kaitātari Full Stack Matua • <a href="https://trademe.co.nz" target="_blank" rel="noopener noreferrer">Trade Me</a></h4>
+          <p class="section__item-period">2019 - Ināianei</p>
+        </div>
+          <p class="section__item-description">Ko Trade Me te mākete tuihono nui rawa atu i Aotearoa, ā, ko ia te <a href="https://www.similarweb.com/website/trademe.co.nz/" target="_blank" rel="noopener noreferrer">5 o ngā pae tukutuku tino toro</a>. Kei te mahi au i te rōpū Marketplace, e hanga ana i ngā āhuatanga mō ngā kaihoko nui.</p>
+          <div class="section__item-pills">
+            <span class="skill-pill">Angular</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">SCSS</span>
+            <span class="skill-pill">.NET</span>
+            <span class="skill-pill">C#</span>
+            <span class="skill-pill">ElasticSearch</span>
+            <span class="skill-pill">Google Cloud</span>
+            <span class="skill-pill">GitLab</span>
+          </div>
+      </div>
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4>Kaitātari Raraunga • <a href="https://www.ccsdisabilityaction.org.nz" target="_blank" rel="noopener noreferrer">CCS Disability Action</a></h4>
+          <p class="section__item-period">2018 - 2019</p>
+        </div>
+          <p class="section__item-description"></p>
+          <div class="section__item-pills">
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">MongoDB</span>
+          </div>
+      </div>
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4>Kaitātari Tauira • <a href="https://www.snapper.co.nz/" target="_blank" rel="noopener noreferrer">Snapper</a></h4>
+          <p class="section__item-period">2016 - 2017</p>
+        </div>
+          <p class="section__item-description"></p>
+          <div class="section__item-pills">
+            <span class="skill-pill">Android</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">AWS</span>
+          </div>
+      </div>
+      <!-- Education Experience -->
+      <h3 class="section__sub-title">Ngā Mātauranga</h2>
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4>Tohu Paetahi Pūtaiao i te Pūtaiao Rorohiko • <a href="https://www.wgtn.ac.nz/" target="_blank" rel="noopener noreferrer">Te Whare Wānanga o Wikitoria o Te Whanga-nui-a-Tara</a></h4>
+          <p class="section__item-period">2016 - 2019</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section" id="projects">
+      <h2 class="section__title">Ngā Kaupapa</h2>
+      
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4><a href="http://dotmatch.lol/" target="_blank">Dot Match</a></h4>
+          <p class="section__item-period">2024</p>
+        </div>
+        <div class="section__item-content">
+          <a href="http://dotmatch.lol/" target="_blank">
+            <img src="./img/dotmatch.png" alt="Dot Match" class="section__item-image">
+          </a>
+          <div>
+            <p class="section__item-description">He kēmu tōmua-toru e whakanoho ana koe i ngā ira o te tae kotahi kia whiwhi piro. I hangaia ki te HTML Canvas me te TypeScript, mā te whakamahi i tētahi pātengi raraunga NoSQL māmā hei tiaki i ngā taumata tiketike me ngā tono āhuatanga. I runga i Google Cloud.</p>
+            <div class="section__item-pills">
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Flask</span>
+              <span class="skill-pill">Cloud Run</span>
+              <span class="skill-pill">Firestore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4><a href="https://pjpscriv.com/wet-bulb-calculator/" target="_blank">Pūkaha Pōtaka Mākū</a></h4>
+          <p class="section__item-period">2023</p>
+        </div>
+        <div class="section__item-content">
+          <a href="https://pjpscriv.com/wet-bulb-calculator/" target="_blank">
+            <img src="./img/wet-bulb-light.png" alt="Wet Bulb Calculator" class="section__item-image section__item-image--light">
+            <img src="./img/wet-bulb-dark.png" alt="Wet Bulb Calculator" class="section__item-image section__item-image--dark">
+          </a>
+          <div>
+            <p class="section__item-description">He taupānga tukutuku āhuatanga kotahi e tango ana i ngā uara pāmahana me te haumākū, ā, ka whakahoki mai i tētahi 'pōtaka mākū' - te pāmahana ka taea e te tinana te tae atu mā te mātao mā ngā werawera. I hangaia ki te Angular, mā te whakamahi i Chroma.js ki te waihanga i ngā pākū.</p>
+            <div class="section__item-pills">
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">Chroma.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4><a href="https://pjpscriv.com/day/" target="_blank">Kaiwhakaatu Rā</a></h4>
+          <p class="section__item-period">2023</p>
+          </div>
+        <div class="section__item-content">
+          <a href="https://pjpscriv.com/day/" target="_blank">
+            <img src="./img/day.png" alt="Day Visualizer" class="section__item-image">
+          </a>
+          <div>
+            <p class="section__item-description">He taupānga tukutuku māmā e whakaatu ana i te roa o te pō me te roa o te rā i te wā kotahi. Ka taea e ngā kaiwhakamahi te huri i te wā me te wāhi kia kite ai rātou i te rereketanga o te roa o te rā, i runga i te wāhi me te wā kei hea koe i te ao. I hangaia ki te Angular, mā te whakamahi i te API Google Maps mō ngā kaupapa wāhi.</p>
+            <div class="section__item-pills">
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">Google Maps API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__item">
+        <div class="section__item-head">
+          <h4><a href="https://pjpscriv.com/ng-fb-message/" target="_blank">Mahere Karere</a></h4>
+          <p class="section__item-period">2021 - 22</p>
+        </div>
+        <div class="section__item-content">
+          <a href="https://pjpscriv.com/ng-fb-message/" target="_blank">
+            <img src="./img/message-map-light.png" alt="Message Map" class="section__item-image section__item-image--light">
+            <img src="./img/message-map-dark.png" alt="Message Map" class="section__item-image section__item-image--dark">
+          </a>
+          <div>
+            <p class="section__item-description">He taputapu hei torotoro i ō raraunga Facebook Messenger. Tirohia ngā karere katoa i roto i tō rōpū, kātahi ka ruku hohonu ki ngā karere motuhake. Tirohia ngā whakarāpopototanga, me te tātari mā te rōpū kōrerorero, te kaituku, me ētahi atu paearu. He kōpaki mai i te <a href="https://github.com/adurivault/FBMessage" target="_blank" rel="noopener noreferrer">kaupapa taketake</a> nā ētahi tauira Wīwī. I whakahouhia ki roto i Angular, mā te whakamahi i NgRx (Redux) mō te whakahaere kāwanatanga, ā, D3.js mō te whakaatu raraunga.</p>
+            <div class="section__item-pills">
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">NgRx</span>
+              <span class="skill-pill">D3.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© <span id="copyright-year">1995</span> Peter Scriven</p>
+      <p>Tirohia te wāhi taketake o tēnei pae tukutuku <a href="https://github.com/pjpscriv/pjpscriv.github.io/" target="_blank" rel="noopener noreferrer">i konei</a></p>
+      <p>💻🌱</p>
+    </div>
+
+  </div>
+  <script src="./res/script.js"></script>
+  <!-- <script src="./res/dots_script.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "about": "Mōku",
+        "experience": "Ngā Wheako",
+        "projects": "Ngā Kaupapa"
+    },
+    "i18n": {
+        "en": "Ingarihi",
+        "fr": "Wīwī",
+        "es": "Pāniora",
+        "ma": "Māori"
+    },
+    "intro": {
+        "greeting": "Kia ora 👋 Ko ahau",
+        "name": "Peter Scriven",
+        "title": "Kaihangarau Pūmanawa Rorohiko"
+    },
+    "about": {
+        "title": "Mōku",
+        "content1": "He Kaihangarau Pūmanawa Rorohiko mātanga ahau nō Aotearoa e mahi ana hei Kaitātari Full Stack Matua ki [Trade Me](https://trademe.co.nz), te [5 o ngā pae tukutuku tino toro](https://www.similarweb.com/website/trademe.co.nz/) o Aotearoa.",
+        "content2": "He tangata ngākau nui, ngākau māhaki, me te hiahia ki te waihanga i ngā pūnaha mīharo hei whakatika i ngā raru hira. Kei te kimi mahi au i te whenua o Kanata. 🍁",
+        "content3": "I ōku wā whakatā ka whakatangi au i te kita, ka retireti hukarere hoki. He pai ki ahau ngā [pāpāho ipurangi](https://lists.pocketcasts.com/2d425db2-b2c1-4999-be5a-63840ff200d5), ngā [kiriata a Studio Ghibli](https://en.wikipedia.org/wiki/List_of_Studio_Ghibli_works#Feature_films), me te hanga i [ngā mea rorirori i roto i te waehere](http://pjpscriv.com/animal-spin/) mō te ngahau. Kua āwhina au ki te hanga i tētahi [pukaemi](https://ingridandtheministers.bandcamp.com/album/kill-the-sights), tētahi [whakaaturanga whare tapere](https://tldrify.com/vev), me tētahi [pukaemi i roto i te whakaaturanga whare tapere](https://www.aucklandfringe.co.nz/programme-2019/how-to-write-an-album)."
+    },
+    "experience": {
+        "title": "Ngā Wheako",
+        "work": {
+            "title": "Mahi",
+            "w1": {
+                "title": "Kaitātari Full Stack Matua",
+                "employer": "[Trade Me](https://trademe.co.nz)",
+                "period": "2019 - Ināianei",
+                "content": "Ko Trade Me te mākete tuihono nui rawa atu i Aotearoa, ā, ko ia te [5 o ngā pae tukutuku tino toro](https://www.similarweb.com/website/trademe.co.nz/). Kei te mahi au i te rōpū Marketplace, e hanga ana i ngā āhuatanga mō ngā kaihoko nui."
+            },
+            "w2": {
+                "title": "Kaitātari Raraunga",
+                "employer": "[CCS Disability Action](https://www.ccsdisabilityaction.org.nz)",
+                "period": "2018 - 2019",
+                "content": ""
+            },
+            "w3": {
+                "title": "Kaitātari Tauira",
+                "employer": "[Snapper](https://www.snapper.co.nz/)",
+                "period": "2016 - 2017",
+                "content": ""
+            }
+        },
+        "education": {
+            "title": "Ngā Mātauranga",
+            "e1": {
+                "title": "Tohu Paetahi Pūtaiao i te Pūtaiao Rorohiko",
+                "institution": "[Te Whare Wānanga o Wikitoria o Te Whanga-nui-a-Tara](https://www.wgtn.ac.nz/)",
+                "period": "2016 - 2019",
+                "content": "I ako au i te Pūtaiao Rorohiko me te Pāngarau ki Te Whare Wānanga o Tāmaki-makau-rau. I whakawhiwhia e au te Tohu Paetahi Pūtaiao i te tau 2017."
+            }
+        }
+    },
+    "projects": {
+        "title": "Ngā Kaupapa",
+        "p1": {
+            "title": "Dot Match",
+            "period": "2024",
+            "content": "He kēmu tōmua-toru e whakanoho ana koe i ngā ira o te tae kotahi kia whiwhi piro. I hangaia ki te HTML Canvas me te TypeScript, mā te whakamahi i tētahi pātengi raraunga NoSQL māmā hei tiaki i ngā taumata tiketike me ngā tono āhuatanga. I runga i Google Cloud."
+        },
+        "p2": {
+            "title": "Pūkaha Pōtaka Mākū",
+            "period": "2023",
+            "content": "He taupānga tukutuku āhuatanga kotahi e tango ana i ngā uara pāmahana me te haumākū, ā, ka whakahoki mai i tētahi 'pōtaka mākū' - te pāmahana ka taea e te tinana te tae atu mā te mātao mā ngā werawera. I hangaia ki te Angular, mā te whakamahi i Chroma.js ki te waihanga i ngā pākū."
+        },
+        "p3": {
+            "title": "Kaiwhakaatu Rā",
+            "period": "2023",
+            "content": "He taupānga tukutuku māmā e whakaatu ana i te roa o te pō me te roa o te rā i te wā kotahi. Ka taea e ngā kaiwhakamahi te huri i te wā me te wāhi kia kite ai rātou i te rereketanga o te roa o te rā, i runga i te wāhi me te wā kei hea koe i te ao. I hangaia ki te Angular, mā te whakamahi i te API Google Maps mō ngā kaupapa wāhi."
+        },
+        "p4": {
+            "title": "Mahere Karere",
+            "period": "2021 - 22",
+            "content": "He taputapu hei torotoro i ō raraunga Facebook Messenger. Tirohia ngā karere katoa i roto i tō rōpū, kātahi ka ruku hohonu ki ngā karere motuhake. Tirohia ngā whakarāpopototanga, me te tātari mā te rōpū kōrerorero, te kaituku, me ētahi atu paearu. He kōpaki mai i te [kaupapa taketake](https://github.com/adurivault/FBMessage) nā ētahi tauira Wīwī. I whakahouhia ki roto i Angular, mā te whakamahi i NgRx (Redux) mō te whakahaere kāwanatanga, ā, D3.js mō te whakaatu raraunga."
+        }
+    },
+    "footer": {
+        "content": "Tirohia te wāhi taketake o tēnei pae tukutuku [i konei](https://github.com/pjpscriv/pjpscriv.github.io/)"
+    }
+}
