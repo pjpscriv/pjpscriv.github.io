@@ -487,6 +487,19 @@ a[rel="bluesky"]::before { width: 1.2em; }
   }
 }
 
+.section__item-image--dark {
+  display: none;
+}
+
+.dark-mode {
+  .section__item-image--dark {
+    display: block;
+  }
+  .section__item-image--light {
+    display: none;
+  }
+}
+
 
 .section__item-description {
   font-size: 0.85em;
