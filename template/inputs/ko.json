@@ -1,0 +1,85 @@
+{
+    "rootPath": "../",
+    "nav": {
+        "about": "소개",
+        "experience": "경력",
+        "projects": "프로젝트"
+    },
+    "i18n": {
+        "en": "영어",
+        "fr": "프랑스어",
+        "es": "스페인어",
+        "ma": "마오리어",
+        "pt": "포르투갈어"
+    },
+    "intro": {
+        "greeting": "안녕하세요 👋 저는",
+        "name": "피터 스크리븐입니다",
+        "title": "소프트웨어 엔지니어"
+    },
+    "about": {
+        "title": "소개",
+        "content1": "저는 뉴질랜드 아오테아로아 출신의 경험 많은 소프트웨어 엔지니어로, 뉴질랜드에서 [가장 많이 방문된 웹사이트 5위](https://www.similarweb.com/website/trademe.co.nz/)인 [Trade Me](https://trademe.co.nz)에서 시니어 풀스택 개발자로 일하고 있습니다.",
+        "content2": "저는 열정적이고 친근하며, 중요한 문제를 해결하는 흥미로운 시스템을 구축하는 것에 관심이 있습니다. 현재 캐나다에서 역할을 찾고 있습니다. 🍁",
+        "content3": "여가 시간에는 기타를 치고 스키를 즐깁니다. 저는 [팟캐스트](https://lists.pocketcasts.com/2d425db2-b2c1-4999-be5a-63840ff200d5), [스튜디오 지브리 영화](https://en.wikipedia.org/wiki/List_of_Studio_Ghibli_works#Feature_films)를 좋아하고 [재미있는 코딩](http://pjpscriv.com/animal-spin/)을 즐깁니다. 또한 [앨범](https://ingridandtheministers.bandcamp.com/album/kill-the-sights), [연극](https://tldrify.com/vev), 그리고 [연극 중에 앨범](https://www.aucklandfringe.co.nz/programme-2019/how-to-write-an-album)을 만드는 것을 도왔습니다."
+    },
+    "experience": {
+        "title": "경력",
+        "work": {
+            "title": "직무",
+            "w1": {
+                "title": "시니어 풀스택 개발자",
+                "employer": "[Trade Me](https://trademe.co.nz)",
+                "period": "2019 - 현재",
+                "content": "Trade Me는 뉴질랜드 최대의 온라인 마켓플레이스이며, [5번째로 많이 방문된 웹사이트](https://www.similarweb.com/website/trademe.co.nz/)입니다. 저는 고용량 판매자를 위한 기능을 구축하는 마켓플레이스 팀에서 일하고 있습니다."
+            },
+            "w2": {
+                "title": "데이터 분석가",
+                "employer": "[CCS 장애인 행동](https://www.ccsdisabilityaction.org.nz)",
+                "period": "2018 - 2019",
+                "content": ""
+            },
+            "w3": {
+                "title": "개발자 인턴",
+                "employer": "[Snapper](https://www.snapper.co.nz/)",
+                "period": "2016 - 2017",
+                "content": ""
+            }
+        },
+        "education": {
+            "title": "학력",
+            "e1": {
+                "title": "컴퓨터 과학 학사",
+                "institution": "[웰링턴 빅토리아 대학교](https://www.wgtn.ac.nz/)",
+                "period": "2016 - 2019",
+                "content": "저는 오클랜드 대학교에서 컴퓨터 과학과 수학을 공부했습니다. 2017년에 과학 학사 학위를 받았습니다."
+            }
+        }
+    },
+    "projects": {
+        "title": "프로젝트",
+        "p1": {
+            "title": "Dot Match",
+            "period": "2024",
+            "content": "같은 색상의 점을 맞춰서 점수를 얻는 매치-3 게임입니다. HTML Canvas와 TypeScript로 구축되었으며, 고득점 및 기능 요청을 저장하기 위한 간단한 NoSQL 데이터베이스를 사용했습니다. Google Cloud에 호스팅되었습니다."
+        },
+        "p2": {
+            "title": "습구 온도 계산기",
+            "period": "2023",
+            "content": "온도와 습도 값을 입력하면 '습구 온도'를 반환하는 단일 구성요소 웹 애플리케이션입니다. Angular로 구축되었으며, Chroma.js를 사용하여 그라데이션을 생성합니다."
+        },
+        "p3": {
+            "title": "낮 시각화 도구",
+            "period": "2023",
+            "content": "하루 중 낮과 밤의 시간을 시각적으로 보여주는 간단한 웹 애플리케이션입니다. 사용자는 시간을 변경하고 위치를 변경하여 세계 어느 곳에서나 일조 시간이 어떻게 달라지는지 확인할 수 있습니다. Angular로 구축되었으며, Google Maps API를 사용하여 위치 로직을 처리합니다."
+        },
+        "p4": {
+            "title": "메시지 맵",
+            "period": "2021 - 22",
+            "content": "Facebook Messenger 데이터를 탐색할 수 있는 도구입니다. 모든 메시지를 전체적으로 보고, 특정 메시지로 확대할 수 있습니다. 대화, 발신자 및 몇 가지 다른 기준에 따라 요약을 보고 필터링할 수 있습니다. 프랑스 학생들이 만든 [원래 프로젝트](https://github.com/adurivault/FBMessage)의 포크입니다. Angular로 리팩토링되었으며, 상태 관리를 위해 NgRx (Redux)를 사용하고, 데이터 시각화를 위해 D3.js를 사용했습니다."
+        }
+    },
+    "footer": {
+        "content": "이 웹사이트의 소스를 [여기](https://github.com/pjpscriv/pjpscriv.github.io/)에서 확인하세요."
+    }
+}
