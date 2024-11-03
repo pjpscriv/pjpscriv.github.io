@@ -173,6 +173,8 @@ a:not(.fa-icon):hover {
 
 #dark-mode-toggle::before {
   content: '\f185'; /* fa-sun */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
 }
 
 .dark-mode #dark-mode-toggle::before {
