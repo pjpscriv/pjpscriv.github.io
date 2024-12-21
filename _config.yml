@@ -1,1 +1,6 @@
 permalink: /:basename/
+
+collections:
+  pages:
+    output: true
+    permalink: /:basename/
