@@ -1,6 +1,8 @@
-permalink: /:basename/
+# permalink: /:basename/
 
-collections:
-  pages:
-    output: true
-    permalink: /:basename/
+include: [pages]
+
+# collections:
+#   pages:
+#     output: true
+#     permalink: /:basename/

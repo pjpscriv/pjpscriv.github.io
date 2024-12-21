@@ -64,9 +64,9 @@ languageFiles.forEach((file) => {
   });
 
   // Write the final HTML file
-  let outputFileName = '../index.html';
+  let outputFileName = '../pages/index.html';
   if (file !== 'default.json') {
-      outputFileName = '../' + file.replace('.json', '/index.html');
+      outputFileName = '../pages/' + file.replace('.json', '.html');
   }
   fs.writeFileSync(outputFileName, htmlContent, 'utf8');
   console.log(`${outputFileName} generated.`);
