@@ -2,7 +2,8 @@
 
 include: [pages]
 
-# collections:
-#   pages:
-#     output: true
-#     permalink: /:basename/
+collections:
+  pages:
+    output: true
+    permalink: /:basename/
+
