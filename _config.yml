@@ -1,9 +1,5 @@
-# permalink: /:basename/
-
-include: [pages]
-
+permalink: pretty
 collections:
   pages:
     output: true
-    permalink: /:basename/
-
+    permalink: /:name/
