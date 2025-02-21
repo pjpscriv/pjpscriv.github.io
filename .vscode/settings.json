@@ -1,0 +1,10 @@
+{
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": ".*\\\\_template\\\\.*",
+          "cmd": "node .\\_template\\generateHtml.js"
+        }
+      ]
+    }
+  }

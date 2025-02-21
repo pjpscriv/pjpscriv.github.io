@@ -2,10 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 // Load template HTML
-const template = fs.readFileSync('template.html', 'utf8');
+const template = fs.readFileSync('_template/template.html', 'utf8');
 
 // Languages directory
-const languagesDir = './inputs';
+const languagesDir = './_template/inputs';
 
 // List of JSON files
 const languageFiles = [
@@ -64,9 +64,9 @@ languageFiles.forEach((file) => {
   });
 
   // Write the final HTML file
-  let outputFileName = '../pages/index.html';
+  let outputFileName = './pages/index.html';
   if (file !== 'default.json') {
-      outputFileName = '../pages/' + file.replace('.json', '.html');
+      outputFileName = './pages/' + file.replace('.json', '.html');
   }
   fs.writeFileSync(outputFileName, htmlContent, 'utf8');
   console.log(`${outputFileName} generated.`);
