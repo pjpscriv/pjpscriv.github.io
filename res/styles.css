@@ -383,6 +383,7 @@ a[rel="stackoverflow"]::before { content: '\f16c'; }
 a[rel="linkedin"]::before { content: '\f08c'; }
 a[rel="goodreads"]::before { content: '\f3a8'; }
 a[rel="bluesky"]::before { content: '\e671'; }
+a.mastodon::before { content: '\f4f6'; }
 
 /* Bluesky icon bugfix */
 a[rel="bluesky"] { width: 40px; }
