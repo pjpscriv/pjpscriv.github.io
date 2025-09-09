@@ -10,4 +10,4 @@ The site is structured using Hugo's content, layout, and data directories. Most 
 
 The website is deployed using GitHub Pages via the default deploy action.
 
-_Originally created during the 2019 [Summer of Tech](https://www.summeroftech.co.nz/) git tutorial._
+_Originally created during the 2019 [Summer of Tech](https://www.summeroftech.co.nz/) git tutorial, using the [fluxfederation/hello-summer](https://github.com/fluxfederation/hello-summer) template._
