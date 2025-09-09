@@ -1,0 +1,25 @@
+{{ $lang := .Page.Language.Lang }}
+{{ $projects := index .Site.Data $lang "projects" }}
+
+{{ range $projects }}
+  <div class="section__item">
+    <div class="section__item-head">
+      <h4><a href="{{ .link }}" target="_blank">{{ .title }}</a></h4>
+      <p class="section__item-period">{{ .period }}</p>
+    </div>
+    <div class="section__item-content">
+      <a href="{{ .link }}" target="_blank">
+        <img src="{{ .img_light }}" alt="{{ .title }}" class="section__item-image section__item-image--light">
+        <img src="{{ .img_dark  }}" alt="{{ .title }}" class="section__item-image section__item-image--dark">
+      </a>
+      <div>
+        <p class="section__item-description">{{ .content | markdownify }}</p>
+        <div class="section__item-pills">
+          {{ range .skills }}
+            <span class="skill-pill">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

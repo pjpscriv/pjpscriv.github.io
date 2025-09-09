@@ -1,0 +1,36 @@
+- title: "Dot Match"
+  content: "A match-three game where you align dots of the same colour to score points. Built with HTML Canvas and TypeScript, using a simple NoSQL database to store high scores and feature requests. Hosted on Google Cloud."
+  period: "2024"
+  link: "https://dotmatch.lol"
+  img_light: "/img/projects/dotmatch.jpg"
+  img_dark: "/img/projects/dotmatch.jpg"
+  skills: [ "TypeScript", "Python", "Flask", "Cloud Run", "Firestore" ]
+  featured: true
+
+- title: "Wet Bulb Calculator"
+  content: "A single-component web app that takes temperature and humidity values and returns a 'wet bulb temperature' - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients."
+  period: "2023"
+  link: "https://pjpscriv.com/wet-bulb-calculator"
+  img_light: "/img/projects/wet-bulb-light.jpg"
+  img_dark: "/img/projects/wet-bulb-dark.jpg"
+  skills: [ "Angular", "Chroma.js" ]
+  featured: true
+
+- title: "Day Visualizer"
+  content: "A simple web app that shows how much of the day is nighttime and how much is daytime. Allows users to change the time and location to see how day length changes depending on where and when in the world you are. Built with Angular, using Google Maps API for location logic."
+  period: "2023"
+  link: "https://pjpscriv.com/day"
+  img_light: "/img/projects/day.jpg"
+  img_dark: "/img/projects/day.jpg"
+  skills: [ "Angular", "Google Maps API" ]
+  featured: true
+
+- title: "Message Map"
+  content: "A tool to explore your Facebook Messenger data. View all your messages in their totality, then zoom all the way in to specific messages. See summaries for, and filter by chat, sender, and a few other criteria. A fork of the [original project](https://github.com/adurivault/FBMessage) by a pair of French students. Refactored into Angular, using Material UI component library, NgRx (Redux) for state management, and D3.js for data visualization."
+  period: "2021 - 22"
+  link: "https://pjpscriv.com/message-map"
+  img_light: "/img/projects/message-map-light.jpg"
+  img_dark: "/img/projects/message-map-dark.jpg"
+  skills: [ "Angular", "Angular Material", "NgRx", "D3" ]
+  featured: true
+

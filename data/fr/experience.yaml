@@ -1,0 +1,31 @@
+- title: "Développeur Full Stack Senior"
+  org: "Trade Me"
+  content: "Trade Me est le plus grand marché en ligne de Nouvelle-Zélande et le [5e site web le plus visité](https://www.similarweb.com/website/trademe.co.nz/). Je travaille actuellement dans l'équipe Marketplace, développant des fonctionnalités pour les vendeurs à grand volume."
+  link: "https://trademe.co.nz"
+  period: "2019 - 2025"
+  skills: [ "Angular", "TypeScript", "SCSS", ".NET", "C#", "ElasticSearch", "Google Cloud", "GitLab" ]
+  type: "work"
+
+- title: "Analyste de données"
+  content: ""
+  org: "CCS Disability Action"
+  link: "https://www.ccsdisabilityaction.org.nz"
+  period: "2018 - 2019"
+  skills: [ "Node.js", "JavaScript", "MongoDB" ]
+  type: "work"
+
+- title: "Stagiaire développeur"
+  content: ""
+  org: "Snapper"
+  link: "https://www.snapper.co.nz"
+  period: "2016 - 2017"
+  skills: [ "Android", "Java", "AWS" ]
+  type: "work"
+
+- title: "Licence en informatique"
+  org: "Université Victoria de Wellington"
+  content: ""
+  link: "https://www.wgtn.ac.nz"
+  period: "2016 - 2019"
+  skills: []
+  type: "education"

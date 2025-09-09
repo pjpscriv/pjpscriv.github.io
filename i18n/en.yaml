@@ -1,0 +1,9 @@
+nav:
+  about: "About"
+  projects: "Projects"
+  experience: "Experience"
+  blog: "Blog"
+
+footer:
+  powered_by: "Powered by"
+  view_on: "View on"

@@ -1,0 +1,20 @@
+{{ $githubBase := "https://github.com/pjpscriv/pjpscriv.github.io" }}
+{{ $githubUrl := $githubBase }}
+
+{{ if .File }}
+  {{/* Page has a source file */}}
+  {{ $filePath := .File.Path }}
+  {{ $githubUrl = printf "%s/blob/main/content/%s" $githubBase $filePath }}
+{{ else if .Section }}
+  {{/* List page for a section */}}
+  {{ $githubUrl = printf "%s/tree/main/content/%s" $githubBase .Section }}
+{{ else if eq .RelPermalink "/" }}
+  {{/* Homepage */}}
+  {{ $githubUrl = printf "%s/blob/main/layouts/index.html" $githubBase }}
+{{ end }}
+
+<footer>
+  <p>© <span id="copyright-year">{{ now.Year }}</span> {{ .Site.Title }} • 💻🌱</p>
+  <p>{{ i18n "footer.powered_by" }} <a href="https://gohugo.io" target="_blank">Hugo</a> • {{ i18n "footer.view_on" }} <a href="{{ $githubUrl }}" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+  {{/*  <p>{{ $githubUrl  }}</p>  */}}
+</footer>

@@ -1,0 +1,22 @@
+{{ $greeting := .Get "greeting" | default "Hi 👋 I'm" }}
+{{ $name := .Get "name" | default .Site.Title }}
+{{ $title := .Get "title" | default "Software Engineer" }}
+
+<div class="intro">
+  <!-- <canvas class="peter__canvas" id="canvas"></canvas> -->
+  <img class="intro__headshot" src="/img/peter-headshot.jpg">
+  <div class="intro__text">
+    <p class="intro__greeting">{{ $greeting }}</p>
+    <h1 class="intro__name">{{ $name }}</h1>
+    <p class="intro__title">{{ $title }}</p>
+    <ul class="intro__links">
+      {{ range .Site.Data.social }}
+        <li>
+          <a class="fa-icon" href="{{ .url }}" target="_blank" {{ if eq .title "Mastodon" }}rel="me"{{ end }}>
+            {{ .svg | safeHTML }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>

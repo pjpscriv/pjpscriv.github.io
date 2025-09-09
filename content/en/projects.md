@@ -1,0 +1,5 @@
+---
+title: "Projects"
+---
+
+{{< list-projects >}}

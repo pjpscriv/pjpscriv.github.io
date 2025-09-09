@@ -1,0 +1,15 @@
+baseURL = 'https://pjpscriv.com/'
+languageCode = 'en-us'
+title = 'Peter Scriven'
+
+defaultContentLanguage = "en"
+[languages]
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    weight = 1
+  
+  [languages.fr]
+    languageName = "Français"
+    contentDir = "content/fr"
+    weight = 2
