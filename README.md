@@ -1,13 +1,13 @@
-# Personal Webpage
+# Personal Website
 
-This is the code for my personal website.
+This repository contains the source code for my personal website, built with [Hugo](https://gohugo.io/), a fast and flexible static site generator.
 
 ## Development
 
-The majority of this website is written using vanilla HTML/CSS/JavaScript.
+The site is structured using Hugo's content, layout, and data directories. Most pages and components are managed through Hugo's templating system, with some custom HTML/CSS/JavaScript for additional features.
 
 ## Deployment
 
-This website is deployed using the GitHub pages default deploy action.
+The website is deployed using GitHub Pages via the default deploy action.
 
-_Initially created during the 2019 [Summer of Tech](https://www.summeroftech.co.nz/) git tutorial._
+_Originally created during the 2019 [Summer of Tech](https://www.summeroftech.co.nz/) git tutorial._
