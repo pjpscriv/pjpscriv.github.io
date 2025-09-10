@@ -1,2 +1,5 @@
 # Hugo Website Gitignore File
 /public/
+
+# Dunno what this is but don't need?
+.hugo_build.lock
