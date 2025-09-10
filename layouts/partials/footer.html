@@ -14,8 +14,6 @@
 {{ end }}
 
 <footer>
-  {{/*  TODO: Fix this view on Github link - i18n breaking it currently  */}}
   <p>© <span id="copyright-year">{{ now.Year }}</span> {{ .Site.Title }} • 💻🌱</p>
   <p>{{ i18n "footer.powered_by" }} <a href="https://gohugo.io" target="_blank">Hugo</a> • {{ i18n "footer.view_on" }} <a href="{{ $githubUrl }}" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-  <p>{{ $githubUrl  }}</p>
 </footer>
