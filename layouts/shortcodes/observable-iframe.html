@@ -1,0 +1,24 @@
+{{/*  https://ballingt.com/observable-hugo-shortcode/  */}}
+{{ $notebook := .Get "notebook" }}
+{{ $cells := .Get "cells" }}
+<iframe
+    frameborder="0"
+    width="100%"
+    src="https://observablehq.com/embed/{{ $notebook }}{{ with $cells }}?cells={{ . }}{{ end }}">
+</iframe>
+
+<script>
+(function() {
+  let s = document.querySelectorAll('script');
+  let script = s[s.length - 1];
+  let iframe = script.previousElementSibling;
+  window.addEventListener("message", (e) => {
+    if (e.origin === 'https://observablehq.com' && e.source === iframe.contentWindow) {
+      const msg = JSON.parse(e.data);
+      if (msg.context === 'iframe.resize') {
+        iframe.height = msg.height;
+      }
+    }
+  });
+})();
+</script>

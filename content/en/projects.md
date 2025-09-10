@@ -2,4 +2,4 @@
 title: "Projects"
 ---
 
-{{< list-projects >}}
+{{<list-projects>}}

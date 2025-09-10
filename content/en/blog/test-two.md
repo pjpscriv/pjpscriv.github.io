@@ -1,10 +1,12 @@
 ---
+date: '2025-09-09T19:01:00-04:00'
 title: "Test Two"
 ---
 
 This second test page!
 
-
+<!-- TODO: Make syntax highlighting prettier (not just Molokai) -->
+<!-- https://gohugo.io/content-management/syntax-highlighting/ -->
 ```html
 {{ range .Pages }}
   <div class="section__item">
