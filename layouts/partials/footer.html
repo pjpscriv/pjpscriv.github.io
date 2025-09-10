@@ -4,17 +4,18 @@
 {{ if .File }}
   {{/* Page has a source file */}}
   {{ $filePath := .File.Path }}
-  {{ $githubUrl = printf "%s/blob/main/content/%s" $githubBase $filePath }}
+  {{ $githubUrl = printf "%s/blob/main/content/%s/%s" $githubBase .Site.LanguageCode $filePath }}
 {{ else if .Section }}
   {{/* List page for a section */}}
-  {{ $githubUrl = printf "%s/tree/main/content/%s" $githubBase .Section }}
+  {{ $githubUrl = printf "%s/tree/main/content/%s/%s" $githubBase .Site.LanguageCode .Section }}
 {{ else if eq .RelPermalink "/" }}
   {{/* Homepage */}}
   {{ $githubUrl = printf "%s/blob/main/layouts/index.html" $githubBase }}
 {{ end }}
 
 <footer>
+  {{/*  TODO: Fix this view on Github link - i18n breaking it currently  */}}
   <p>© <span id="copyright-year">{{ now.Year }}</span> {{ .Site.Title }} • 💻🌱</p>
   <p>{{ i18n "footer.powered_by" }} <a href="https://gohugo.io" target="_blank">Hugo</a> • {{ i18n "footer.view_on" }} <a href="{{ $githubUrl }}" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-  {{/*  <p>{{ $githubUrl  }}</p>  */}}
+  <p>{{ $githubUrl  }}</p>
 </footer>
