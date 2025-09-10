@@ -7,3 +7,8 @@ nav:
 footer:
   powered_by: "Powered by"
   view_on: "View on"
+
+"404":
+  title: "404 - Page Not Found"
+  message: "Looks like you're trying to find a page that doesn't exist."
+  return: "Return to Homepage"
