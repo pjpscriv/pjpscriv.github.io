@@ -46,10 +46,13 @@ function addSectionScrolls() {
     })
 }
 
+// TODO: Change logic so the links and languages toggles can't be open at the same time
 function toggleNavbarLinks() {
     const menuToggle = $('#menu-toggle')
     menuToggle.addEventListener('click', () => {
         const navbar = $('.navbar__links')
+        const languages = $('.navbar__languages')
+        languages.classList.remove('navbar__languages--open')
         navbar.classList.toggle('navbar__links--open')
     })
 }
@@ -58,6 +61,8 @@ function toggleNavbarLanguages() {
     const languageToggle = $('#language-toggle')
     languageToggle.addEventListener('click', () => {
         const languages = $('.navbar__languages')
+        const navbar = $('.navbar__links')
+        navbar.classList.remove('navbar__links--open')
         languages.classList.toggle('navbar__languages--open')
     })
 }
