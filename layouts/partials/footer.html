@@ -4,7 +4,7 @@
 {{ if .File }}
   {{/* Page has a source file */}}
   {{ $filePath := .File.Path }}
-  {{ $githubUrl = printf "%s/blob/main/content/%s/%s" $githubBase .Site.LanguageCode $filePath }}
+  {{ $githubUrl = printf "%s/blob/main/content/%s/%s?plain=1" $githubBase .Site.LanguageCode $filePath }}
 {{ else if .Section }}
   {{/* List page for a section */}}
   {{ $githubUrl = printf "%s/tree/main/content/%s/%s" $githubBase .Site.LanguageCode .Section }}
