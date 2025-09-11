@@ -19,16 +19,16 @@ title: People I Admire
 ### People I actually know IRL
 
 - [Maz Hermon](https://github.com/mazhermon)
+- [Will Hardwick-Smith](https://www.willhs.me)
 - [Luke Mansell](https://github.com/lukemansell)
 - [Will Richardson](https://willhbr.net)
-- [Nick Webster](https://nick.geek.nz)
 - [Josh Richards](https://josh.work)
 - [Daisy Rendell](https://dazede.github.io)
+- [Nick Webster](https://nick.geek.nz)
 - [Simon Merrick](https://simonmerrick.com)
 - [Cam Bryers](https://www.cameronbryers.dev)
-- [Josh Lowe](https://www.joshjohnlowe.com)
 - [Andre Westerlund](https://www.andrewesterlund.com)
-- [Will Hardwick-Smith](https://www.willhs.me)
+- [Josh Lowe](https://www.joshjohnlowe.com)
 
 
 ### People I don't know but I just think their websites are cool
