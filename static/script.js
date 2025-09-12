@@ -3,6 +3,7 @@ const $ = q => document.querySelector(q);
 const $$ = q => document.querySelectorAll(q);
 
 const DARK_MODE_CLASS = 'dark-mode'
+const LIGHT_MODE_CLASS = 'light-mode'
 const GRADIENT_CLASSES = ['', 'blue-grad', 'green-yellow-grad', 'lime-grad', 'green-grad'];
 // TODO: Add more gradient classes
 
@@ -23,8 +24,10 @@ function addDarkModeToggle() {
     switcher.addEventListener('click', () => {
         if (container.classList.contains(DARK_MODE_CLASS)) {
             container.classList.remove(DARK_MODE_CLASS)
+            container.classList.add(LIGHT_MODE_CLASS)
         } else {
             container.classList.add(DARK_MODE_CLASS)
+            container.classList.remove(LIGHT_MODE_CLASS)
         }
     })
 }
