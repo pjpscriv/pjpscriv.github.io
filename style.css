@@ -12,6 +12,19 @@
 }
 
 /* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fff;
+    --ornament-color: #666;
+    --bg-color: #222;
+  }
+
+  .light-mode {
+    --text-color: black;
+    --ornament-color: #eee;
+    --bg-color: #fff;
+  }
+}
 .dark-mode {
   --text-color: #fff;
   --ornament-color: #666;
