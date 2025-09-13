@@ -56,6 +56,8 @@
   --highlight-color: var(--secondary-color);
 }
 
+
+
 /**************** Root Element ****************/
 body {
   display: flex;
@@ -79,8 +81,8 @@ body {
 }
 
 
-/**************** Shared ****************/
 
+/******************* Shared *******************/
 
 /* Links */
 a {
@@ -115,7 +117,7 @@ h1 {
   line-height: 1em;
 }
 
-/**************** Navbar ****************/
+/******************* Navbar *******************/
 header {
   position: relative;
   z-index: 10;
@@ -129,21 +131,21 @@ header {
   transition: background-color 0.2s ease;
 }
 
-.navbar__logo {
+.header__logo {
   width: 2em;
   height: 2em;
 }
 
-.navbar__spacer {
+.header__spacer {
   flex-grow: 1;
 }
 
-.navbar__actions {
+.header__actions {
   display: flex;
   gap: 1em;
 }
 
-.navbar__links {
+.header__links {
   display: flex;
   gap: 1em;
 }
@@ -151,98 +153,47 @@ header {
 header .icon-link {
   width: 1.5em;
   height: 1.5em;
-
-  svg stop {
-    transition: stop-color 0.2s ease;
-  }
-
-  /* a::before {
-    width: 1em;
-    height: 1em;
-    color: var(--text-color-secondary);
-  } */
-
-  svg {
-    width: 1.5em;
-    height: 1.5em;
-  }
 }
 
-header .icon-link:hover {
-  text-decoration: none;
-  
-  svg {
-    .gradient-start { 
-      stop-color: var(--primary-color);
-    }
+header .icon-link:has(.header__logo) {
+  width: 2em;
+  height: 2em;
+}
 
-    .gradient-end { 
-      stop-color: var(--secondary-color);
-    }
-  }
+header .icon-link svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+  
+header .icon-link svg stop {
+  transition: stop-color 0.2s ease;
+}
+
+header .icon-link:hover svg .gradient-start { 
+  stop-color: var(--primary-color);
+}
+
+header .icon-link:hover svg .gradient-end { 
+  stop-color: var(--secondary-color);
 }
 
 #menu-toggle {
   display: none;
 }
 
-#dark-mode-toggle {
-  #moon {
-    display: none;
-  }
+#dark-mode-toggle #moon {
+  display: none;
 }
 
-.dark-mode #dark-mode-toggle {
-  #sun {
-    display: none;
-  }
-
-  #moon {
-    display: inline;
-  }
+.dark-mode #dark-mode-toggle #sun {
+  display: none;
 }
 
-
-@media screen and (width <= 576px) {
-  #menu-toggle {
-    display: block;
-  }
-
-  .navbar__links {
-    position: absolute;
-    top: 4rem;
-    right: 0;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100% - 2em);
-    height: 0;
-    padding: 0 1em;
-    background-color: var(--bg-color);
-    transition: height 0.3s ease, padding 0.3s ease, background-color 0.2s ease;
-    overflow: hidden;
-    gap: 1em;
-  }
-
-  .navbar__link {
-    font-size: 0;
-    transition: opacity 0.5s ease, color 0.2s ease, background-size 0.2s ease, font-size 0.3s ease;
-    opacity: 0;
-  }
-
-  .navbar__links--open {
-    position: absolute;
-    height: auto;
-    padding: 1em;
-    border-bottom: 2px solid var(--ornament-color);
-  }
-
-  .navbar__links--open .navbar__link {
-    font-size: 1em;
-    opacity: 1;
-  }
+.dark-mode #dark-mode-toggle #moon {
+  display: inline;
 }
 
-.navbar__languages {
+.header__languages {
   position: absolute;
   top: 4rem;
   right: 0;
@@ -258,24 +209,68 @@ header .icon-link:hover {
   gap: 1em;
 }
 
-.navbar__language {
+/* stylelint-disable no-descending-specificity */
+.header__languages a {
   font-size: 0;
   transition: opacity 0.5s ease, color 0.2s ease, background-size 0.2s ease, font-size 0.3s ease;
   opacity: 0;
 }
 
-.navbar__languages--open {
+.header__languages--open {
   position: absolute;
   height: auto;
   padding: 1em;
   border-bottom: 2px solid var(--ornament-color);
 }
 
-.navbar__languages--open .navbar__language {
+.header__languages--open a {
   font-size: 1em;
   opacity: 1;
 }
+/* stylelint-enable no-descending-specificity */
 
+/* Mobile Styles */
+@media screen and (width <= 576px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  .header__links {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 2em);
+    height: 0;
+    padding: 0 1em;
+    background-color: var(--bg-color);
+    transition: height 0.3s ease, padding 0.3s ease, background-color 0.2s ease;
+    overflow: hidden;
+    gap: 1em;
+  }
+
+  .header__links a {
+    font-size: 0;
+    transition: opacity 0.5s ease, color 0.2s ease, background-size 0.2s ease, font-size 0.3s ease;
+    opacity: 0;
+  }
+
+  .header__links--open {
+    position: absolute;
+    height: auto;
+    padding: 1em;
+    border-bottom: 2px solid var(--ornament-color);
+  }
+
+  .header__links--open a {
+    font-size: 1em;
+    opacity: 1;
+  }
+}
+
+
+/* TODO: Go throught this section and maybe move into own css file */
 
 /**************** Intro Content ****************/
 .intro {
@@ -398,6 +393,8 @@ header .icon-link:hover {
   }
 }
 
+
+
 /**************** Shared Section ****************/
 .section {
   display: flex;
@@ -493,16 +490,13 @@ header .icon-link:hover {
   display: none;
 }
 
-.dark-mode {
-  .section__item-image--dark {
-    display: block;
-  }
-
-  .section__item-image--light {
-    display: none;
-  }
+.dark-mode .section__item-image--dark {
+  display: block;
 }
 
+.dark-mode .section__item-image--light {
+  display: none;
+}
 
 .section__item-description {
   margin-top: 0;
@@ -525,6 +519,7 @@ header .icon-link:hover {
 }
 
 
+
 /**************** Footer ****************/
 footer {
   display: flex;
@@ -540,6 +535,7 @@ footer p {
   line-height: 1.5em;
   opacity: 0.5;
 }
+
 
 
 /* Code Highlights */

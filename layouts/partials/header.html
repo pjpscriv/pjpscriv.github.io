@@ -1,25 +1,25 @@
 <header>
   <a class="icon-link" href="{{ "/" | relLangURL }}" aria-label="Home">
-    <img class="navbar__logo" src="/img/pixel-peter.png">
+    <img class="header__logo" src="/img/pixel-peter.png">
   </a>
-  <div class="navbar__spacer"></div>
+  <div class="header__spacer"></div>
 
-  <div class="navbar__actions">
+  <div class="header__actions">
 
-    <div class="navbar__links">
-      <a class="navbar__link" href="{{ "about" | relLangURL }}">{{ i18n "nav.about" }}</a>
-      <a class="navbar__link" href="{{ "projects" | relLangURL }}">{{ i18n "nav.projects" }}</a>
-      <a class="navbar__link" href="{{ "experience" | relLangURL }}">{{ i18n "nav.experience" }}</a>
-      <a class="navbar__link" href="{{ "blog" | relLangURL }}">{{ i18n "nav.blog" }} <sup><small>(test)</small></sup></a>
+    <div class="header__links">
+      <a href="{{ "about" | relLangURL }}">{{ i18n "nav.about" }}</a>
+      <a href="{{ "projects" | relLangURL }}">{{ i18n "nav.projects" }}</a>
+      <a href="{{ "experience" | relLangURL }}">{{ i18n "nav.experience" }}</a>
+      <a href="{{ "blog" | relLangURL }}">{{ i18n "nav.blog" }} <sup><small>(test)</small></sup></a>
     </div>
 
-    <div class="navbar__languages">
+    <div class="header__languages">
       {{ range .Site.Languages }}
         {{ $langPageUrl := "" }}
         {{ if ne .Lang "en" }}
           {{ $langPageUrl = .Lang }}
         {{ end }}
-        <a class="navbar__language" href="/{{ $langPageUrl }}">{{ .LanguageName }}</a>
+        <a class="header__language" href="/{{ $langPageUrl }}">{{ .LanguageName }}</a>
       {{ end }}
     </div> 
 
