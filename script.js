@@ -11,6 +11,8 @@ const GRADIENT_CLASSES = ['', 'blue-grad', 'green-yellow-grad', 'lime-grad', 'gr
 const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
 if (userPrefersDark) {
     document.body.classList.add(DARK_MODE_CLASS)
+} else {
+    document.body.classList.add(LIGHT_MODE_CLASS)
 }
 const randomGradient = GRADIENT_CLASSES[Math.floor(Math.random() * (GRADIENT_CLASSES.length))]
 if(!!randomGradient) {
@@ -33,7 +35,7 @@ function addDarkModeToggle() {
 }
 
 function addSectionScrolls() {
-    const links = $$('.navbar__link')
+    const links = $$('.header__links a')
     links.forEach(el => {
         el.addEventListener('click', (e) => {
             e.preventDefault()
@@ -41,32 +43,31 @@ function addSectionScrolls() {
             const target = $(targetSelector);
             target.scrollIntoView({ behavior: 'smooth' });
 
-            const openNavbar = $('.navbar__links--open')
+            const openNavbar = $('.header__links--open')
             if (openNavbar) {
-                openNavbar.classList.remove('navbar__links--open')
+                openNavbar.classList.remove('header__links--open')
             }
         })
     })
 }
 
-// TODO: Change logic so the links and languages toggles can't be open at the same time
 function toggleNavbarLinks() {
     const menuToggle = $('#menu-toggle')
     menuToggle.addEventListener('click', () => {
-        const navbar = $('.navbar__links')
-        const languages = $('.navbar__languages')
-        languages.classList.remove('navbar__languages--open')
-        navbar.classList.toggle('navbar__links--open')
+        const navbar = $('.header__links')
+        const languages = $('.header__languages')
+        languages.classList.remove('header__languages--open')
+        navbar.classList.toggle('header__links--open')
     })
 }
 
 function toggleNavbarLanguages() {
     const languageToggle = $('#language-toggle')
     languageToggle.addEventListener('click', () => {
-        const languages = $('.navbar__languages')
-        const navbar = $('.navbar__links')
-        navbar.classList.remove('navbar__links--open')
-        languages.classList.toggle('navbar__languages--open')
+        const languages = $('.header__languages')
+        const navbar = $('.header__links')
+        navbar.classList.remove('header__links--open')
+        languages.classList.toggle('header__languages--open')
     })
 }
 
