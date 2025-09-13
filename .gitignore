@@ -3,3 +3,6 @@
 
 # Dunno what this is but don't need?
 .hugo_build.lock
+
+# Node modules
+/node_modules/

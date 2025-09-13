@@ -1,0 +1,13 @@
+{
+  "name": "pjpscriv.github.io",
+  "description": "Peter's personal website",
+  "scripts": {
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix"
+  },
+  "devDependencies": {
+    "stylelint": "^16.24.0",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-order": "^7.0.0"
+  }
+}

@@ -12,7 +12,7 @@
     <ul class="intro__links">
       {{ range .Site.Data.social }}
         <li>
-          <a class="fa-icon" href="{{ .url }}" target="_blank" {{ if eq .title "Mastodon" }}rel="me"{{ end }}>
+          <a class="icon-link" href="{{ .url }}" target="_blank" {{ if eq .title "Mastodon" }}rel="me"{{ end }}>
             {{ .svg | safeHTML }}
           </a>
         </li>
