@@ -1,12 +1,12 @@
 {{ define "main"}}
 {{ $siteData := .Site.Data }}
 
+{{ .Content }}
 
-<div id="404-container">
-  <!-- Content will be populated by JavaScript -->
-</div>
+<div id="404-container"></div>
 
 <script>
+
   // Manually store translations for each language defined in the site
   var translations = {
     {{ range .Site.Languages }}
@@ -20,11 +20,7 @@
   };
   var langCodes = Object.keys(translations);
 
-  
-  // Debug: Log the translations object
-  console.log("Available translations:", translations);
-  
-  // Function to get language from URL
+  // Get language code from URL
   function getLanguageFromUrl() {
     var path = window.location.pathname;
     for (var i = 0; i < langCodes.length; i++) {
@@ -37,16 +33,19 @@
     return "en";
   }
   
-  // Get appropriate translation using lang code from URL
+  // Get appropriate translations
   var currentLang = getLanguageFromUrl();
   var textData = translations[currentLang] || translations["en"];
+
+  // Update page title
+  document.title = `404 ${textData.title} |${document.title.split('|').slice(1)}`;
   
   // Populate the page with the appropriate translations
   var container = document.getElementById("404-container");
   const h1 = document.createElement('h1');
   const p = document.createElement('p');
   const a = document.createElement('a');
-  h1.textContent = textData.title;
+  h1.textContent = `404 - ${textData.title}`;
   p.textContent = textData.message;
   a.href = `/${currentLang}/`;
   a.textContent = `← ${textData.return}`;
@@ -54,6 +53,6 @@
   container.appendChild(h1);
   container.appendChild(p);
   container.appendChild(a);
-</script>
 
+</script>
 {{ end }}
