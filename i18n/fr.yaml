@@ -7,8 +7,3 @@ nav:
 footer:
   powered_by: "Propulsé par"
   view_on: "Voir sur"
-
-"404":
-  title: "404 - Page non trouvée"
-  message: "Il semble que vous essayez de trouver une page qui n'existe pas."
-  return: "Retour à l'accueil"

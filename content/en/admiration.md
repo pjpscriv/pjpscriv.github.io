@@ -6,9 +6,10 @@ title: People I Admire
 
 - [Sarah Drasner](https://sarah.dev)
 - [Tom Macwright](https://macwright.com)
+- [Maggie Appleton](https://maggieappleton.com)
+- [Dan Abramov](https://danabra.mov)
 - [Amelia Wattenberger](https://wattenberger.com)
 - [Josh Comeau](https://www.joshwcomeau.com)
-- [Dan Abramov](https://danabra.mov)
 - [Stephanie Tuerk](https://stephanietuerk.net)
 
 ## NZ People
