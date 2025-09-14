@@ -8,6 +8,7 @@
   --text-color-secondary: #999;
   --ornament-color: #eee;
   --bg-color: #fff;
+  --inline-code-color: #f44;
 }
 
 /* Dark Mode */
@@ -27,7 +28,7 @@
 
 .dark-mode {
   --text-color: #fff;
-  --ornament-color: #666;
+  --ornament-color: #444;
   --bg-color: #222;
 }
 
@@ -117,7 +118,17 @@ h1 {
   line-height: 1em;
 }
 
-/******************* Navbar *******************/
+h2, h3 {
+  padding-top: 1em;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+
+
+/******************* Header *******************/
 header {
   position: relative;
   z-index: 10;
@@ -134,10 +145,6 @@ header {
 .header__logo {
   width: 2em;
   height: 2em;
-}
-
-.header__spacer {
-  flex-grow: 1;
 }
 
 .header__actions {
@@ -552,4 +559,16 @@ pre code {
   span {
     line-height: 1.5em;
   }
+}
+
+p > code {
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 1.1em;
+  color: var(--inline-code-color);
+  background-color: var(--ornament-color);
+}
+
+p > a > code {
+  font-size: 1.1em;
 }

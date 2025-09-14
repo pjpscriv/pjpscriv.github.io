@@ -8,11 +8,14 @@ const GRADIENT_CLASSES = ['', 'blue-grad', 'green-yellow-grad', 'lime-grad', 'gr
 // TODO: Add more gradient classes
 
 /***************** First Load *****************/
+// TODO: Save user preference in local storage
 const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
 if (userPrefersDark) {
     document.body.classList.add(DARK_MODE_CLASS)
+    setSyntaxHighlightingTheme(true)
 } else {
     document.body.classList.add(LIGHT_MODE_CLASS)
+    setSyntaxHighlightingTheme(false)
 }
 const randomGradient = GRADIENT_CLASSES[Math.floor(Math.random() * (GRADIENT_CLASSES.length))]
 if(!!randomGradient) {
@@ -27,9 +30,11 @@ function addDarkModeToggle() {
         if (container.classList.contains(DARK_MODE_CLASS)) {
             container.classList.remove(DARK_MODE_CLASS)
             container.classList.add(LIGHT_MODE_CLASS)
+            setSyntaxHighlightingTheme(false)
         } else {
             container.classList.add(DARK_MODE_CLASS)
             container.classList.remove(LIGHT_MODE_CLASS)
+            setSyntaxHighlightingTheme(true)
         }
     })
 }
@@ -70,6 +75,23 @@ function toggleNavbarLanguages() {
         languages.classList.toggle('header__languages--open')
     })
 }
+
+function getStyleSheet(filename) {
+    for (let i = 0; i < document.styleSheets.length; i++) {
+        const sheet = document.styleSheets[i];
+        if (sheet.href && sheet.href.includes(filename)) {
+            return sheet;
+        }
+    }
+    return null;
+}
+
+function setSyntaxHighlightingTheme(isDark) {
+    lightSheet = getStyleSheet('syntax-light.css');
+    darkSheet = getStyleSheet('syntax-dark.css');
+    lightSheet.disabled = isDark;
+    darkSheet.disabled = !isDark;
+}    
 
 function main() {
     addDarkModeToggle();
