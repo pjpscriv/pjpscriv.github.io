@@ -4,13 +4,11 @@ const $$ = q => document.querySelectorAll(q);
 
 const DARK_MODE_CLASS = 'dark-mode'
 const LIGHT_MODE_CLASS = 'light-mode'
+const LOCAL_STORAGE_KEY = 'dark-mode-enabled'
 const GRADIENT_CLASSES = ['', 'blue-grad', 'green-yellow-grad', 'lime-grad', 'green-grad'];
 // TODO: Add more gradient classes
-const LOCAL_STORAGE_KEY = 'dark-mode-enabled'
 
 /***************** First Load *****************/
-// TODO: Load user preference in local storage
-
 const localStoragePref = localStorage.getItem(LOCAL_STORAGE_KEY) === 'true'
 const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches || localStoragePref
 setSyntaxHighlightingTheme(userPrefersDark)
