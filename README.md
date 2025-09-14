@@ -8,6 +8,6 @@ The site is structured using Hugo's content, layout, and data directories. Most 
 
 ## Deployment
 
-The website is deployed using GitHub Pages via the default deploy action.
+The website is deployed to [GitHub Pages](https://pages.github.com) via [@peaceiris/actions-hugo](https://github.com/peaceiris/actions-hugo).
 
 _Originally created during the 2019 [Summer of Tech](https://www.summeroftech.co.nz/) git tutorial, using the [fluxfederation/hello-summer](https://github.com/fluxfederation/hello-summer) template._
