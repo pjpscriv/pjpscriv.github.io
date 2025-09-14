@@ -3,6 +3,8 @@ if ($PSVersionTable.PSVersion.Major -lt 7) {
     exit 1
 }
 
+# Generate Chroma CSS files for light and dark themes
+# Options here: https://gohugo.io/quick-reference/syntax-highlighting-styles/
 hugo gen chromastyles --style=tango > static/chroma/syntax-light.css
 hugo gen chromastyles --style=onedark > static/chroma/syntax-dark.css
 

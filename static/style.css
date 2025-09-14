@@ -70,6 +70,7 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   transition: color 0.2s ease, background-color 0.2s ease;
+  overflow-x: hidden;
 }
 
 .container {
@@ -126,6 +127,10 @@ h2, h3 {
   flex-grow: 1;
 }
 
+.observable-link {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
 
 
 /******************* Header *******************/
