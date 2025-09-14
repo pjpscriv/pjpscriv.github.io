@@ -9,6 +9,7 @@
     </div>
     <div class="section__item-content">
       <a href="{{ .link }}" target="_blank">
+        {{/*  TODO: Somehow these images have slightly different heights (the first gets a few pixels more of what appears to be bottom padding)  */}}
         <img src="{{ .img_light }}" alt="{{ .title }}" class="section__item-image section__item-image--light">
         <img src="{{ .img_dark  }}" alt="{{ .title }}" class="section__item-image section__item-image--dark">
       </a>

@@ -1,4 +1,7 @@
 {{ define "main" }}
-<h1 id='{{ replace .Title " " "-" | lower }}'>{{ .Title }}</h1>
-{{ .Content }}
+<main>
+  <h1 id='{{ replace .Title " " "-" | lower }}'>{{ .Title }}</h1>
+  {{ .Content }}
+</main>
+<div class="flex-spacer"></div>
 {{ end }}

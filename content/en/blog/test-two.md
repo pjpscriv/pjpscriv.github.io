@@ -5,8 +5,12 @@ title: "Test Two"
 
 This second test page!
 
-<!-- TODO: Make syntax highlighting prettier (not just Molokai) -->
-<!-- https://gohugo.io/content-management/syntax-highlighting/ -->
+What does inline formatting look like? Does it look good? Let's check.
+
+Here is a `filename.txt`. And here is `anotherOne.css`. Here's one that's [`also-a-link.html`](/)
+
+There we go, that's better.
+
 ```html
 {{ range .Pages }}
   <div class="section__item">

@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-{{ partial "head.html" . }}
+  {{ partial "head.html" . }}
 <body>
   <div class="container">
-  {{ partial "header.html" . }}
-  <main>
+    {{ partial "header.html" . }}
     {{ block "main" . }}{{ end }}
-  </main>
-  {{ partial "footer.html" . }}
+    {{ partial "footer.html" . }}
   </div>
   <script src="/script.js"></script>
 </body>

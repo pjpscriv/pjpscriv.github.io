@@ -13,3 +13,7 @@ defaultContentLanguage = "en"
     languageName = "Français"
     contentDir = "content/fr"
     weight = 2
+
+[markup]
+  [markup.highlight]
+    noClasses = false

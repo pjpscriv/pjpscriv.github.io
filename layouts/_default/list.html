@@ -1,12 +1,14 @@
 {{ define "main" }}
-{{ range .Pages }}
-  <div class="section__item">
-    <div class="section__item-head">
-      <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
-      <p class="section__item-period">{{ .Date.Format "Jan 2, 2006" }}</p>
+<main>
+  {{ range .Pages }}
+    <div class="section__item">
+      <div class="section__item-head">
+        <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+        <p class="section__item-period">{{ .Date.Format "Jan 2, 2006" }}</p>
+      </div>
     </div>
-  </div>
-{{ else }}
-  <p>No posts found.</p>
-{{ end }}
+  {{ else }}
+    <p>No posts found.</p>
+  {{ end }}
+</main>
 {{ end }}
