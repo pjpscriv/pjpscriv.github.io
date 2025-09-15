@@ -2,25 +2,17 @@ const log = m => console.log(m);
 const $ = q => document.querySelector(q);
 const $$ = q => document.querySelectorAll(q);
 
-const DARK_MODE_CLASS = 'dark-mode'
-const LIGHT_MODE_CLASS = 'light-mode'
-const LOCAL_STORAGE_KEY = 'dark-mode-enabled'
+// Variables defined in dark-mode-detector.html
+//    DARK_MODE_CLASS, LIGHT_MODE_CLASS, LOCAL_STORAGE_KEY, localStoragePref, userPrefersDark
 const GRADIENT_CLASSES = ['', 'blue-grad', 'green-yellow-grad', 'lime-grad', 'green-grad'];
 // TODO: Add more gradient classes
 
 /***************** First Load *****************/
-const localStoragePref = localStorage.getItem(LOCAL_STORAGE_KEY) === 'true'
-const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches || localStoragePref
-setSyntaxHighlightingTheme(userPrefersDark)
-if (userPrefersDark) {
-  document.body.classList.add(DARK_MODE_CLASS)
-} else {
-  document.body.classList.add(LIGHT_MODE_CLASS)
-}
 const randomGradient = GRADIENT_CLASSES[Math.floor(Math.random() * (GRADIENT_CLASSES.length))]
 if(!!randomGradient) {
   document.body.classList.add(randomGradient)
 }
+setSyntaxHighlightingTheme(userPrefersDark)
 
 /***************** Click functionality *****************/
 function addDarkModeToggle() {
