@@ -1,0 +1,22 @@
+<script>
+  // Dark mode detection script
+  const DARK_MODE_CLASS = 'dark-mode'
+  const LIGHT_MODE_CLASS = 'light-mode'
+  const LOCAL_STORAGE_KEY = 'dark-mode-enabled'
+  
+  const localStoragePref = localStorage.getItem(LOCAL_STORAGE_KEY) === 'true'
+  if (localStoragePref === true) {
+    document.body.classList.add(DARK_MODE_CLASS)
+  }
+  const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches || localStoragePref
+  if (userPrefersDark) {
+    document.body.classList.add(DARK_MODE_CLASS)
+  } else {
+    document.body.classList.add(LIGHT_MODE_CLASS)
+  }
+
+  // Re-add body color transition after initial load
+  window.addEventListener('load', () => {
+    document.body.style.transition = 'color 0.2s ease, background-color 0.2s ease'
+  });
+</script>

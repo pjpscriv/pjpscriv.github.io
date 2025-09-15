@@ -11,8 +11,8 @@ hugo gen chromastyles --style=onedark > static/chroma/syntax-dark.css
 # Disable stylelint in both files
 $lightFileContent = Get-Content "static/chroma/syntax-light.css"
 echo "/* stylelint-disable */" | Out-File -FilePath "static/chroma/syntax-light.css" -Encoding utf8
-echo $lightFileContent | Add-Content -Path "static/chroma/syntax-light.css" -Encoding utf8
+echo $lightFileContent | Add-Content -Path "static/css/chroma/syntax-light.css" -Encoding utf8
 
 $darkFileContent = Get-Content "static/chroma/syntax-dark.css"
 echo "/* stylelint-disable */" | Out-File -FilePath "static/chroma/syntax-dark.css" -Encoding utf8
-echo $darkFileContent | Add-Content -Path "static/chroma/syntax-dark.css" -Encoding utf8
+echo $darkFileContent | Add-Content -Path "static/css/chroma/syntax-dark.css" -Encoding utf8
