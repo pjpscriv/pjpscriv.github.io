@@ -1,36 +1,79 @@
-- title: "Dot Match"
-  content: "A match-three game where you align dots of the same colour to score points. Built with HTML Canvas and TypeScript, using a simple NoSQL database to store high scores and feature requests. Hosted on Google Cloud."
-  period: "2024"
+- period: "2025"
+  title: "Gmail Label Colorizer"
+  link: "https://chromewebstore.google.com/detail/gmail-label-colorizer"
+  skills: [ "Browser Extension", "JavaScript" ]
+
+- period: "2025"
+  title: "GitHub Social Icons"
+  link: "https://chromewebstore.google.com/detail/github-social-icons"
+  skills: [ "Browser Extension", "TypeScript" ]
+
+- period: "2025"
+  title: "ANSI Code Generator"
+  link: "https://pjpscriv.com/ansicodes"
+  skills: [ "HTML", "JavaScript" ]
+  fork: true
+
+- period: "2025"
+  title: "CyberCanada"
+  link: "https://pjpscriv.com/cyber-canada"
+  skills: [ "Three.js" ]
+  description: "Canadian Patriotism on the Information Superhighway."
+
+- period: "2024"
+  title: "Dot Match"
   link: "https://dotmatch.lol"
-  img_light: "/img/projects/dotmatch.jpg"
-  img_dark: "/img/projects/dotmatch.jpg"
   skills: [ "TypeScript", "Python", "Flask", "Cloud Run", "Firestore" ]
   featured: true
+  description: "A match-three game where you align dots of the same colour to score points. Built with HTML Canvas and TypeScript, using a simple NoSQL database to store high scores and feature requests. Hosted on Google Cloud."
+  img_light: "/img/projects/dotmatch-lol-light.jpg"
+  img_dark: "/img/projects/dotmatch-lol-dark.jpg"
 
-- title: "Wet Bulb Calculator"
-  content: "A single-component web app that takes temperature and humidity values and returns a 'wet bulb temperature' - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients."
-  period: "2023"
+- period: "2023"
+  title: "Wet Bulb Calculator"
   link: "https://pjpscriv.com/wet-bulb-calculator"
-  img_light: "/img/projects/wet-bulb-light.jpg"
-  img_dark: "/img/projects/wet-bulb-dark.jpg"
   skills: [ "Angular", "Chroma.js" ]
   featured: true
+  description: "A single-component web app that takes temperature and humidity values and returns a 'wet bulb temperature' - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients."
+  img_light: "/img/projects/wet-bulb-light.jpg"
+  img_dark: "/img/projects/wet-bulb-dark.jpg"
 
-- title: "Day Visualizer"
-  content: "A simple web app that shows how much of the day is nighttime and how much is daytime. Allows users to change the time and location to see how day length changes depending on where and when in the world you are. Built with Angular, using Google Maps API for location logic."
-  period: "2023"
+- period: "2023"
+  title: "Day Visualizer"
   link: "https://pjpscriv.com/day"
-  img_light: "/img/projects/day.jpg"
-  img_dark: "/img/projects/day.jpg"
   skills: [ "Angular", "Google Maps API" ]
   featured: true
+  description: "A simple web app that shows how much of the day is nighttime and how much is daytime. Allows users to change the time and location to see how day length changes depending on where and when in the world you are. Built with Angular, using Google Maps API for location logic."
+  img_light: "/img/projects/day.jpg"
+  img_dark: "/img/projects/day.jpg"
 
-- title: "Message Map"
-  content: "A tool to explore your Facebook Messenger data. View all your messages in their totality, then zoom all the way in to specific messages. See summaries for, and filter by chat, sender, and a few other criteria. A fork of the [original project](https://github.com/adurivault/FBMessage) by a pair of French students. Refactored into Angular, using Material UI component library, NgRx (Redux) for state management, and D3.js for data visualization."
-  period: "2021 - 22"
+- period: "2022"
+  title: "Advent of Code 2022"
+  link: "https://github.com/pjpscriv/advent-of-code-2022"
+  skills: [ "Python"]
+
+- period: "2021 - 22"
+  title: "Message Map"
   link: "https://pjpscriv.com/message-map"
-  img_light: "/img/projects/message-map-light.jpg"
-  img_dark: "/img/projects/message-map-dark.jpg"
   skills: [ "Angular", "Angular Material", "NgRx", "D3" ]
   featured: true
+  description: "A tool to explore your Facebook Messenger data. View all your messages in their totality, then zoom all the way in to specific messages. See summaries for, and filter by chat, sender, and a few other criteria. A fork of the [original project](https://github.com/adurivault/FBMessage) by a pair of French students. Refactored into Angular, using Material UI component library, NgRx (Redux) for state management, and D3.js for data visualization."
+  img_light: "/img/projects/message-map-light.jpg"
+  img_dark: "/img/projects/message-map-dark.jpg"
 
+- period: "2020"
+  title: "Posh-Hg Async"
+  link: "https://github.com/pjpscriv/posh-hg-async"
+  skills: [ "PowerShell", "Mercurial" ]
+  fork: true
+  description: "A fork of [Posh-Hg](https://github.com/posh-hg/posh-hg) that adds support for asynchronous operations."
+
+- period: "2019"
+  title: "Sudoku"
+  link: "https://pjpscriv.com/sudoku"
+  skills: [ "HTML", "CSS", "JavaScript" ]
+
+- period: "2016"
+  title: "Animal Spin"
+  link: "https://pjpscriv.com/animal-spin"
+  skills: [ "CSS", "JavaScript" ]

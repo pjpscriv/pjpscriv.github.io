@@ -3,9 +3,12 @@
   "description": "Peter's personal website",
   "scripts": {
     "lint:css": "stylelint \"**/*.css\"",
-    "lint:css:fix": "stylelint \"**/*.css\" --fix"
+    "lint:css:fix": "stylelint \"**/*.css\" --fix",
+    "screenshot": "node screenshot.js --mode light",
+    "screenshot:dark": "node screenshot.js --mode dark"
   },
   "devDependencies": {
+    "playwright": "^1.47.0",
     "stylelint": "^16.24.0",
     "stylelint-config-standard": "^39.0.0",
     "stylelint-order": "^7.0.0"

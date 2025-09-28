@@ -1,34 +1,34 @@
-{{ $lang := .Page.Language.Lang }}
-{{ $workTitle := .Get "work-title" | default "Work" }}
-{{ $educationTitle := .Get "education-title" | default "Education" }}
-{{ $experiences := index .Site.Data $lang "experience" }}
+{{- $lang := .Page.Language.Lang -}}
+{{- $workTitle := .Get "work-title" | default "Work" -}}
+{{- $educationTitle := .Get "education-title" | default "Education" -}}
+{{- $experiences := index .Site.Data $lang "experience" -}}
 
 <div class="section">
 
-  <h3 class="section__sub-title">{{ $workTitle }}</h3>
-  {{ range where $experiences "type" "work" }}
+  <h3 class="section__sub-title">{{- $workTitle -}}</h3>
+  {{- range where $experiences "type" "work" -}}
     <div class="section__item">
       <div class="section__item-head">
-        <h4>{{ .title }} • <a href="{{ .link }}">{{ .org }}</a></h4>
-        <p class="section__item-period">{{ .period }}</p>
+        <h4>{{- .title -}} • <a href="{{- .link -}}">{{- .org -}}</a></h4>
+        <p class="section__item-period">{{- .period -}}</p>
       </div>
-      <p class="section__item-description">{{ .content | markdownify }}</p>
+      <p class="section__item-description">{{- .content | markdownify -}}</p>
       <div class="section__item-pills">
-        {{ range .skills }}
-          <span class="skill-pill">{{ . }}</span>
-        {{ end }}
+        {{- range .skills -}}
+          <span class="skill-pill">{{- . -}}</span>
+        {{- end -}}
       </div>
     </div>
-  {{ end }}
+  {{- end -}}
   
-  <h3 class="section__sub-title">{{ $educationTitle }}</h3>
-  {{ range where $experiences "type" "education" }}
+  <h3 class="section__sub-title">{{- $educationTitle -}}</h3>
+  {{- range where $experiences "type" "education" -}}
     <div class="section__item">
       <div class="section__item-head">
-        <h4>{{ .title }} • <a href="{{ .link }}">{{ .org }}</a></h4>
-        <p class="section__item-period">{{ .period }}</p>
+        <h4>{{- .title -}} • <a href="{{- .link -}}">{{- .org -}}</a></h4>
+        <p class="section__item-period">{{- .period -}}</p>
       </div>
     </div>
-  {{ end }}
+  {{- end -}}
 
 </div>

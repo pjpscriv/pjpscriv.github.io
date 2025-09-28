@@ -1,17 +1,17 @@
-{{ $notebook := .Get "notebook" }}
-{{ $cells := .Get "cells" }}
-{{ $id := .Get "id" | default (printf "observable-%d" now.Unix) }}
+{{- $notebook := .Get "notebook" -}}
+{{- $cells := .Get "cells" -}}
+{{- $id := .Get "id" | default (printf "observable-%d" now.Unix) -}}
 
-<div id="{{ $id }}" class="observable-embed"></div>
-<p class="observable-link"> See original notebook on <a href="https://observablehq.com/{{ $notebook }}" target="_blank" rel="noopener">Observable →</a></p>
+<div id="{{- $id -}}" class="observable-embed"></div>
+<p class="observable-link"> See original notebook on <a href="https://observablehq.com/{{- $notebook -}}" target="_blank" rel="noopener">Observable →</a></p>
 
 {{/*  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">  */}}
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-  import notebook from "https://api.observablehq.com/{{ $notebook }}.js?v=4";
+  import notebook from "https://api.observablehq.com/{{- $notebook -}}.js?v=4";
   
-  const target = document.querySelector("#{{ $id }}");
-  const cells = "{{ $cells }}".split(",").map(d => d.trim());
+  const target = document.querySelector("#{{- $id -}}");
+  const cells = "{{- $cells -}}".split(",").map(d => d.trim());
 
   // Create ID map
   const renders = {};

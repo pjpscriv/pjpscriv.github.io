@@ -1,19 +1,40 @@
 <script>
   // Dark mode detection script
   const DARK_MODE_CLASS = 'dark-mode'
-  const LIGHT_MODE_CLASS = 'light-mode'
   const LOCAL_STORAGE_KEY = 'dark-mode-enabled'
+  const DARK_MODE_EXPIRY_TIME = 12 * 60 * 60; // 12 hours
+
   
-  const localStoragePref = localStorage.getItem(LOCAL_STORAGE_KEY) === 'true'
-  if (localStoragePref === true) {
-    document.body.classList.add(DARK_MODE_CLASS)
+  function getLocalStorageDarkModePref() {
+    const storedDataRaw = localStorage.getItem(LOCAL_STORAGE_KEY);
+    if (!storedDataRaw) {
+      return null;
+    }
+    try {
+      const data = JSON.parse(storedDataRaw);
+      if (typeof data === 'object' && data !== null && 'darkMode' in data && 'savedAt' in data) {
+        const now = Math.floor(Date.now() / 1000);
+        if (now - data.savedAt <= DARK_MODE_EXPIRY_TIME) {
+          return data.darkMode;
+        } else {
+          localStorage.removeItem(LOCAL_STORAGE_KEY);
+          return null;
+        }
+      }
+    } catch (e) { // Invalid JSON, clear localStorage
+      console.error('Error reading dark mode preference from localStorage:', e);
+      localStorage.removeItem(LOCAL_STORAGE_KEY);
+      return null;
+    }
   }
-  const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches || localStoragePref
-  if (userPrefersDark) {
+
+  const localStoragePref = getLocalStorageDarkModePref(); // true, false, or null
+  const browserColorPref = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  const darkModeEnabled = (localStoragePref === null) ? browserColorPref : localStoragePref;
+  if (darkModeEnabled) {
     document.body.classList.add(DARK_MODE_CLASS)
-  } else {
-    document.body.classList.add(LIGHT_MODE_CLASS)
-  }
+  } 
 
   // Re-add body color transition after initial load
   window.addEventListener('load', () => {

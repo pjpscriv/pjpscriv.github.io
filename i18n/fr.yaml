@@ -4,6 +4,12 @@ nav:
   experience: "Expérience"
   blog: "Blog"
 
+proj_list:
+  year: "Année"
+  project: "Projet"
+  skills: "Compétences"
+  link: "Lien"
+
 footer:
   powered_by: "Propulsé par"
   view_on: "Voir sur"

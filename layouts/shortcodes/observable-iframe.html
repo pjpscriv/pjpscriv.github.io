@@ -1,10 +1,10 @@
 {{/*  https://ballingt.com/observable-hugo-shortcode/  */}}
-{{ $notebook := .Get "notebook" }}
-{{ $cells := .Get "cells" }}
+{{- $notebook := .Get "notebook" -}}
+{{- $cells := .Get "cells" -}}
 <iframe
     frameborder="0"
     width="100%"
-    src="https://observablehq.com/embed/{{ $notebook }}{{ with $cells }}?cells={{ . }}{{ end }}">
+    src="https://observablehq.com/embed/{{- $notebook -}}{{- with $cells -}}?cells={{- . -}}{{- end -}}">
 </iframe>
 
 <script>

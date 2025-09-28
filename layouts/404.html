@@ -1,5 +1,5 @@
-{{ define "main"}}
-{{ $siteData := .Site.Data }}
+{{- define "main"}}
+{{- $siteData := .Site.Data -}}
 
 <main>
   <div id="404-container"></div>
@@ -8,14 +8,14 @@
 <script>
   // Manually store translations for each language defined in the site
   var translations = {
-    {{ range .Site.Languages }}
-      {{ $data := index $siteData .Lang "404" }}
-      "{{ .Lang }}": {
-        "title": {{ $data.title }},
-        "message": {{ $data.message }},
-        "return": {{ $data.return }}
+    {{- range .Site.Languages -}}
+      {{- $data := index $siteData .Lang "404" -}}
+      "{{- .Lang -}}": {
+        "title": {{- $data.title -}},
+        "message": {{- $data.message -}},
+        "return": {{- $data.return -}}
       },
-    {{ end }}
+    {{- end -}}
   };
   var langCodes = Object.keys(translations);
 
@@ -53,4 +53,4 @@
   container.appendChild(p);
   container.appendChild(a);
 </script>
-{{ end }}
+{{- end -}}

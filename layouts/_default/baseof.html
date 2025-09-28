@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{- .Site.LanguageCode -}}">
   {{ partial "head.html" . }}
 <body>
   {{ partial "dark-mode-detector.html" . }}
   <div class="container">
     {{ partial "header.html" . }}
-    {{ block "main" . }}{{ end }}
+    {{ block "main" . }}
+    {{ end }}
     {{ partial "footer.html" . }}
   </div>
   <script src="/js/script.js"></script>

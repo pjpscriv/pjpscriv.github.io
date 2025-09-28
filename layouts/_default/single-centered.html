@@ -1,6 +1,6 @@
-{{ define "main" }}
+{{- define "main" -}}
 <main>
-  <h1 id='{{ replace .Title " " "-" | lower }}'>{{ .Title }}</h1>
-  {{ .Content }}
+  <h1 id='{{- replace .Title " " "-" | lower -}}'>{{- .Title -}}</h1>
+  {{- .Content -}}
 </main>
-{{ end }}
+{{- end -}}

@@ -3,7 +3,7 @@ const $ = q => document.querySelector(q);
 const $$ = q => document.querySelectorAll(q);
 
 // Variables defined in dark-mode-detector.html
-//    DARK_MODE_CLASS, LIGHT_MODE_CLASS, LOCAL_STORAGE_KEY, localStoragePref, userPrefersDark
+//    DARK_MODE_CLASS, LIGHT_MODE_CLASS, LOCAL_STORAGE_KEY, darkModeEnabled
 const GRADIENT_CLASSES = ['', 'blue-grad', 'green-yellow-grad', 'lime-grad', 'green-grad'];
 // TODO: Add more gradient classes
 
@@ -12,7 +12,7 @@ const randomGradient = GRADIENT_CLASSES[Math.floor(Math.random() * (GRADIENT_CLA
 if(!!randomGradient) {
   document.body.classList.add(randomGradient)
 }
-setSyntaxHighlightingTheme(userPrefersDark)
+setSyntaxHighlightingTheme(darkModeEnabled)
 
 /***************** Click functionality *****************/
 function addDarkModeToggle() {
@@ -22,13 +22,15 @@ function addDarkModeToggle() {
     const darkModeActive = container.classList.contains(DARK_MODE_CLASS)
     if (darkModeActive) {
       container.classList.remove(DARK_MODE_CLASS)
-      container.classList.add(LIGHT_MODE_CLASS)
     } else {
       container.classList.add(DARK_MODE_CLASS)
-      container.classList.remove(LIGHT_MODE_CLASS)
     }
     setSyntaxHighlightingTheme(!darkModeActive)
-    localStorage.setItem(LOCAL_STORAGE_KEY, !darkModeActive);
+    const saveData = {
+      darkMode: !darkModeActive,
+      savedAt: Math.floor(Date.now() / 1000)
+    };
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(saveData));
   })
 }
 

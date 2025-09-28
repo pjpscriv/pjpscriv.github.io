@@ -1,5 +1,5 @@
 ---
-title: "Experience"
+title: Experience
 ---
 
 {{<list-experience
