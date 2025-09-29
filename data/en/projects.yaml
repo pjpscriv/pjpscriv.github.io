@@ -1,11 +1,11 @@
 - period: "2025"
   title: "Gmail Label Colorizer"
-  link: "https://chromewebstore.google.com/detail/gmail-label-colorizer"
+  link: "https://chromewebstore.google.com/detail/pjainmnpfajfihmlgdbhaigmehlmeikm"
   skills: [ "Browser Extension", "JavaScript" ]
 
 - period: "2025"
   title: "GitHub Social Icons"
-  link: "https://chromewebstore.google.com/detail/github-social-icons"
+  link: "https://chromewebstore.google.com/detail/ledidlccnpfooopagmkgihgibfbnbbnp"
   skills: [ "Browser Extension", "TypeScript" ]
 
 - period: "2025"
@@ -37,6 +37,11 @@
   description: "A single-component web app that takes temperature and humidity values and returns a 'wet bulb temperature' - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients."
   img_light: "/img/projects/wet-bulb-light.jpg"
   img_dark: "/img/projects/wet-bulb-dark.jpg"
+
+- period: "2023"
+  title: "Emoji Imager"
+  link: "https://emoji.pjpscriv.com"
+  skills: [ "Python", "Flask", "Pillow" ]
 
 - period: "2023"
   title: "Day Visualizer"

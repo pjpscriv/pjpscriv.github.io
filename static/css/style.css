@@ -90,11 +90,6 @@ a:not(.icon-link) {
   background-repeat: no-repeat;
 }
 
-a:not(.icon-link):hover {
-  color: var(--highlighted-text-color);
-  background-size: 100% 100%;
-}
-
 /* Highlight Color */
 ::selection {
   color: var(--highlighted-text-color);
@@ -343,50 +338,39 @@ header .icon-link:hover svg .gradient-end {
   gap: 1em;
   list-style: none;
   padding: 0;
-
-  li {
-    height: 2em;
-  }
-
-  svg {
-    width: 2em;
-    height: 2em;
-  }
-
-  a {
-    position: relative;
-    display: block;
-    width: 32px;
-    color: var(--text-color-secondary);
-
-    svg stop {
-      transition: stop-color 0.2s ease;
-    }
-  }
-
-  a::before {
-    width: 1em;
-    height: 1em;
-    color: var(--text-color-secondary);
-  }
-
-
-
-  a:hover {
-    text-decoration: none;
-  
-    svg {
-      .gradient-start { 
-        stop-color: var(--primary-color);
-      }
-
-      .gradient-end { 
-        stop-color: var(--secondary-color);
-      }
-    }
-  }
 }
 
+.intro__links li {
+  height: 2em;
+}
+
+.intro__links li svg {
+  width: 2em;
+  height: 2em;
+}
+
+.intro__links a {
+  position: relative;
+  display: block;
+  width: 32px;
+  color: var(--text-color-secondary);
+}
+
+.intro__links li svg stop {
+  transition: stop-color 0.2s ease;
+}
+
+.intro__links a:hover {
+    text-decoration: none;
+}
+
+.intro__links a:hover svg .gradient-start { 
+  stop-color: var(--primary-color);
+}
+
+.intro__links a:hover svg .gradient-end { 
+  stop-color: var(--secondary-color);
+}
 
 @media screen and (width <= 660px) {
   .intro {
@@ -477,6 +461,7 @@ header .icon-link:hover svg .gradient-end {
 
   /* gap: 0.5em; */
 
+  /* stylelint-disable-next-line no-descending-specificity */
   > a {
     display: flex;
     align-items: center;
@@ -632,6 +617,7 @@ p > a > code {
   font-weight: 600;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .project-link a {
   display: inline-block;
   max-width: 18em;
@@ -662,4 +648,10 @@ p > a > code {
   .projects-table td:nth-child(1) {
     width: 5%;
   }
+}
+
+/* Text Link Hover Effect - Putting this at the end to appease stylelint's no-descending-specificity rule */
+a:not(.icon-link):hover {
+  color: var(--highlighted-text-color);
+  background-size: 100% 100%;
 }

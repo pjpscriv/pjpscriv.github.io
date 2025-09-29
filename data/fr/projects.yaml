@@ -1,11 +1,11 @@
 - period: "2025"
   title: "Gmail Label Colorizer"
-  link: "https://chromewebstore.google.com/detail/gmail-label-colorizer"
+  link: "https://chromewebstore.google.com/detail/pjainmnpfajfihmlgdbhaigmehlmeikm"
   skills: [ "Extension de Navigateur", "JavaScript" ]
 
 - period: "2025"
   title: "GitHub Social Icons"
-  link: "https://chromewebstore.google.com/detail/github-social-icons"
+  link: "https://chromewebstore.google.com/detail/ledidlccnpfooopagmkgihgibfbnbbnp"
   skills: [ "Extension de Navigateur", "TypeScript" ]
 
 - period: "2025"
@@ -37,6 +37,11 @@
   description: "Une application web à composant unique qui prend les valeurs de température et d'humidité et renvoie une 'température de bulbe humide', la température que le corps peut atteindre par refroidissement par évaporation. Conçue avec Angular, utilisant Chroma.js pour créer des gradients."
   img_light: "/img/projects/wet-bulb-light.jpg"
   img_dark: "/img/projects/wet-bulb-dark.jpg"
+
+- period: "2023"
+  title: "Imageur d'Émojis"
+  link: "https://emoji.pjpscriv.com"
+  skills: [ "Python", "Flask", "Pillow" ]
 
 - period: "2023"
   title: "Visualiseur de Journée"
