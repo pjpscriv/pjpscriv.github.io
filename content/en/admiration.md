@@ -16,6 +16,7 @@ title: People I Admire
 
 - [Sam Jarman](https://www.samjarman.co.nz)
 - [Amir Mohtasebi](https://mohtasebi.com)
+- [Mate Watson](https://nw.nz/)
 
 ### People I actually know IRL
 
