@@ -4,7 +4,7 @@ date: 2025-01-11
 ---
 
 {{<observable-embed
-    notebook="@pjpscriv/curved-text"
+    notebook="@pjpscriv/nz-average-temperatures"
     cells=`
         viewof overlap,
         viewof bucketSize,
