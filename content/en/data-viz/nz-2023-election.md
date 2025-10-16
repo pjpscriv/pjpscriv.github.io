@@ -1,6 +1,6 @@
 ---
-date: '2025-09-10T02:08:45-04:00'
-title: 'Aotearoa 2023 Electorates'
+title: 2023 Aotearoa/New Zealand Electorate Hexamap
+date: 2025-03-20
 ---
 
 {{<observable-embed

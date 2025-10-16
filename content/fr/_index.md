@@ -12,6 +12,10 @@ layout: "index"
 
 # Projets
 
-{{<list-projects-featured>}}
+{{<list-projects-preview>}}
 
 Voir [tous les projets →](/fr/projects)
+
+{{<list-data-viz-preview>}}
+
+Voir [tous les data vizes →](/fr/data-viz)

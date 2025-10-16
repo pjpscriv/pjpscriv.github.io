@@ -2,6 +2,7 @@
   "name": "pjpscriv.github.io",
   "description": "Peter's personal website",
   "scripts": {
+    "start": "hugo server --noHTTPCache",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:css:fix": "stylelint \"**/*.css\" --fix",
     "screenshot": "node screenshot.js --mode light",

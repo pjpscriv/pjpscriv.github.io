@@ -1,5 +1,6 @@
 {{- define "main" -}}
 <main>
+  <h1 id='{{- replace .Title " " "-" | lower -}}'>{{- .Title -}}</h1>
   {{- range .Pages -}}
     <div class="section__item">
       <div class="section__item-head">
