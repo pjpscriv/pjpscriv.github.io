@@ -1,8 +1,15 @@
 nav:
   about: "À propos"
-  projects: "Projets"
   experience: "Expérience"
-  blog: "Blog"
+  projects: "Projets"
+  data-viz: "Data Viz"
+  writing: "Écriture"
+
+intro:
+  greeting: "Salut 👋 Je suis"
+  name: "Peter Scriven"
+  tagline: "Ingénieur Logiciel"
+  more: "En savoir plus sur moi"
 
 proj_list:
   year: "Année"
@@ -10,6 +17,11 @@ proj_list:
   skills: "Compétences"
   link: "Lien"
 
+exp_list:
+  work: "Travail"
+  education: "Éducation"
+
 footer:
   powered_by: "Propulsé par"
   view_on: "Voir sur"
+  edit_on: "Modifier cette page sur"

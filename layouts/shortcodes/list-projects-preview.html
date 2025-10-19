@@ -3,7 +3,7 @@
 
 {{- range (where $projects "featured" "!=" nil) -}}
   {{- if .featured -}}
-    <div class="section__item">
+    <div class="section__item project-featured">
       <div class="section__item-head">
         <h4><a href="{{- .link -}}" target="_blank">{{- .title -}}</a></h4>
         <p class="section__item-period">{{- .period -}}</p>

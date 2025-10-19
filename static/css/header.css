@@ -1,0 +1,145 @@
+/******************* Header *******************/
+header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  gap: 1em;
+  padding: 0 1em;
+  container-type: size;
+  background-color: var(--bg-color);
+  transition: background-color 0.2s ease;
+}
+
+.header__logo {
+  width: 2em;
+  height: 2em;
+}
+
+.header__actions {
+  display: flex;
+  gap: 1em;
+}
+
+.header__links {
+  display: flex;
+  gap: 1em;
+}
+
+header .icon-link {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+header .icon-link:has(.header__logo) {
+  width: 2em;
+  height: 2em;
+}
+
+header .icon-link svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+  
+header .icon-link svg stop {
+  transition: stop-color 0.2s ease;
+}
+
+header .icon-link:hover svg .gradient-start { 
+  stop-color: var(--primary-color);
+}
+
+header .icon-link:hover svg .gradient-end { 
+  stop-color: var(--secondary-color);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#dark-mode-toggle #moon {
+  display: none;
+}
+
+.dark-mode #dark-mode-toggle #sun {
+  display: none;
+}
+
+.dark-mode #dark-mode-toggle #moon {
+  display: inline;
+}
+
+.header__languages {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 2em);
+  height: 0;
+  padding: 0 1em;
+  background-color: var(--bg-color);
+  transition: height 0.9s ease, padding 0.9s ease, background-color 0.2s ease;
+  overflow: hidden;
+  gap: 1em;
+}
+
+.header__languages a {
+  font-size: 0;
+  transition: opacity 0.5s ease, color 0.2s ease, background-size 0.2s ease, font-size 0.3s ease;
+  opacity: 0;
+}
+
+.header__languages--open {
+  position: absolute;
+  height: auto;
+  padding: 1em;
+  border-bottom: 2px solid var(--ornament-color);
+}
+
+.header__languages--open a {
+  font-size: 1em;
+  opacity: 1;
+}
+
+/* Mobile Styles */
+@media screen and (width <= 576px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  .header__links {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 2em);
+    height: 0;
+    padding: 0 1em;
+    background-color: var(--bg-color);
+    transition: height 0.3s ease, padding 0.3s ease, background-color 0.2s ease;
+    overflow: hidden;
+    gap: 1em;
+  }
+
+  .header__links a {
+    font-size: 0;
+    transition: opacity 0.5s ease, color 0.2s ease, background-size 0.2s ease, font-size 0.3s ease;
+    opacity: 0;
+  }
+
+  .header__links--open {
+    position: absolute;
+    height: auto;
+    padding: 1em;
+    border-bottom: 2px solid var(--ornament-color);
+  }
+
+  .header__links--open a {
+    font-size: 1em;
+    opacity: 1;
+  }
+}

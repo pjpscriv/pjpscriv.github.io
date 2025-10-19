@@ -1,8 +1,15 @@
 nav:
   about: "About"
-  projects: "Projects"
   experience: "Experience"
-  blog: "Blog"
+  projects: "Projects"
+  data-viz: "Data Viz"
+  writing: "Writing"
+
+intro:
+  greeting: "Hey 👋 I'm"
+  name: "Peter Scriven"
+  tagline: "Software Engineer"
+  more: "More about me"
 
 proj_list:
   year: "Year"
@@ -10,6 +17,11 @@ proj_list:
   skills: "Skills"
   link: "Link"
 
+exp_list:
+  work: "Work"
+  education: "Education"
+
 footer:
   powered_by: "Powered by"
   view_on: "View on"
+  edit_on: "Edit page on"

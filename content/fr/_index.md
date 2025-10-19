@@ -4,18 +4,21 @@ layout: "index"
 ---
 
 {{<full-height>}}
-{{<intro
-    greeting="Salut 👋 Je suis"
-    title="Ingénieur logiciel"
->}}
+  {{<intro>}}
 {{</full-height>}}
 
-# Projets
+## Projets
 
 {{<list-projects-preview>}}
 
 Voir [tous les projets →](/fr/projects)
 
+## Data Viz
+
 {{<list-data-viz-preview>}}
 
 Voir [tous les data vizes →](/fr/data-viz)
+
+## Écriture
+
+{{<list-writing-preview>}}

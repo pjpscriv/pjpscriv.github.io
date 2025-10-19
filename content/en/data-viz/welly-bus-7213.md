@@ -1,6 +1,6 @@
 ---
 title: "Wellington Bus Stop #7213"
-date: 2023-03-25
+date: 2025-03-25
 ---
 
 {{<observable-embed

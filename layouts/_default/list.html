@@ -2,9 +2,9 @@
 <main>
   <h1 id='{{- replace .Title " " "-" | lower -}}'>{{- .Title -}}</h1>
   {{- range .Pages -}}
-    <div class="section__item">
+    <div class="">
       <div class="section__item-head">
-        <h4><a href="{{- .RelPermalink -}}">{{- .Title -}}</a></h4>
+        <a href="{{- .RelPermalink -}}">{{- .Title -}}</a>
         <p class="section__item-period">{{- .Date.Format "Jan 2, 2006" -}}</p>
       </div>
     </div>
@@ -12,4 +12,5 @@
     <p>No posts found.</p>
   {{- end -}}
 </main>
+<div class="flex-spacer"></div>
 {{- end -}}

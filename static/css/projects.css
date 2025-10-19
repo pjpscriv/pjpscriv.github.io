@@ -1,0 +1,82 @@
+/**************** Projects Table ****************/
+.projects-table {
+  margin: 1em 0;
+  overflow-x: auto;
+}
+
+.projects-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.projects-table th,
+.projects-table td {
+  padding: 12px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.projects-table td {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.projects-table th {
+  padding-bottom: 0.5em;
+  font-family: Raleway, sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+
+  /* color: var(--text-color-secondary); */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.projects-table th:nth-child(2) {
+  width: 40%;
+}
+
+.project-period {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--text-color-secondary);
+  white-space: nowrap;
+}
+
+.project-title {
+  font-weight: 600;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.project-link a {
+  display: inline-block;
+  max-width: 18em;
+  color: var(--text-color-secondary);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (width <= 768px) {
+  .projects-table th,
+  .projects-table td {
+    padding: 8px 4px;
+  }
+}
+
+@media screen and (width <= 576px) {
+  .projects-table {
+    font-size: 0.9em;
+  }
+  
+  .projects-table th:nth-child(3),
+  .projects-table td:nth-child(3) {
+    display: none;
+  }
+  
+  .projects-table th:nth-child(1),
+  .projects-table td:nth-child(1) {
+    width: 5%;
+  }
+}

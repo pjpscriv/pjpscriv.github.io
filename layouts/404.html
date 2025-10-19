@@ -2,7 +2,7 @@
 {{- $siteData := .Site.Data -}}
 
 <main>
-  <div id="404-container"></div>
+  <div id="container-404"></div>
 </main>
 
 <script>
@@ -40,7 +40,7 @@
   document.title = `404 ${textData.title} |${document.title.split('|').slice(1)}`;
   
   // Populate the page with the appropriate translations
-  var container = document.getElementById("404-container");
+  var container = document.getElementById("container-404");
   const h1 = document.createElement('h1');
   const p = document.createElement('p');
   const a = document.createElement('a');

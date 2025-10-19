@@ -4,24 +4,24 @@ layout: "index"
 ---
 
 {{<full-height>}}
-  {{<intro
-      greeting="Hey 👋 I'm"
-      title="Software Engineer"
-  >}}
+  {{<intro>}}
 {{</full-height>}}
 
-
-# Projects
+## Projects
 
 {{<list-projects-preview>}}
 
 See [all projects →](/projects)
 
-<!-- # Data Viz
-TODO: list of data viz stuff -->
+## Data Viz
+
 {{<list-data-viz-preview>}}
 
-See [all data vizes →](/data-viz)
+See [data viz gallery →](/data-viz)
 
-<!-- # Writing
-TODO: Add preview links to  -->
+## Writing
+
+{{<list-writing-preview>}}
+
+See [all writing →](/writing)
+

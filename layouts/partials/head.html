@@ -1,10 +1,15 @@
 <head>
-  {{- $title := print (cond .IsHome "" (printf "%s | " .Title)) .Site.Title -}}
+  {{- $title := print (cond .IsHome "" (printf "%s • " .Title)) .Site.Title -}}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{- $title -}}</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/header.css">
+  <link rel="stylesheet" type="text/css" href="/css/intro.css">
+  <link rel="stylesheet" type="text/css" href="/css/projects.css">
+  <link rel="stylesheet" type="text/css" href="/css/projects-featured.css">
+  <link rel="stylesheet" type="text/css" href="/css/footer.css">
   <link rel="stylesheet" type="text/css" href="/css/chroma/syntax-dark.css">
   <link rel="stylesheet" type="text/css" href="/css/chroma/syntax-light.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600">

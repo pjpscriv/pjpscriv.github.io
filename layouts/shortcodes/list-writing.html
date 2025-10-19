@@ -1,0 +1,17 @@
+{{- $lang := .Page.Language.Lang -}}
+{{- $posts := where site.RegularPages "Section" "post" -}}
+{{- $posts = where $posts "Language.Lang" $lang -}}
+{{- $posts = $posts.ByDate.Reverse -}}
+
+{{/* Optionally limit to recent posts - remove this line to show all */}}
+
+{{- range $posts -}}
+  <div class="">
+    <div class="section__item-head">
+      <a href="{{- .RelPermalink -}}">{{- .Title -}}</a>
+      <p class="section__item-period">{{- .Date.Format "Jan 2, 2006" -}}</p>
+    </div>
+  </div>
+{{- else -}}
+  <p>No posts found.</p>
+{{- end -}}

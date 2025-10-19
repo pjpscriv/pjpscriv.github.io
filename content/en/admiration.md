@@ -2,7 +2,9 @@
 title: People I Admire
 ---
 
-## Global People
+## Globally
+
+People from around the world who's work I admire. For the most part, a mix of software development, data viz and design. 
 
 - [Sarah Drasner](https://sarah.dev)
 - [Tom Macwright](https://macwright.com)
@@ -11,14 +13,18 @@ title: People I Admire
 - [Amelia Wattenberger](https://wattenberger.com)
 - [Josh Comeau](https://www.joshwcomeau.com)
 - [Stephanie Tuerk](https://stephanietuerk.net)
+- [Evan Peck](https://evanpeck.github.io/)
 
-## NZ People
+## From New Zealand
 
 - [Sam Jarman](https://www.samjarman.co.nz)
 - [Amir Mohtasebi](https://mohtasebi.com)
 - [Nate Watson](https://nw.nz/)
+- [Aaron Schiff](https://schiff.nz/)
 
-### People I actually know IRL
+## Peers
+
+People I've worked with / know IRL.
 
 - [Maz Hermon](https://github.com/mazhermon)
 - [Will Hardwick-Smith](https://www.willhs.me)
@@ -32,8 +38,7 @@ title: People I Admire
 - [Andre Westerlund](https://www.andrewesterlund.com)
 - [Josh Lowe](https://www.joshjohnlowe.com)
 
-
-### People I don't know but I just think their websites are cool
+### People who just have cool websites
 
 I used them as reference for this one!
 
@@ -41,18 +46,4 @@ I used them as reference for this one!
 - [Brittany Chiang](https://brittanychiang.com) *The classic*
 - [Kshitij Choudhary](https://www.kshitij.ws)
 - [Ahkber Jagannath](https://akberjag.github.io)
-
-
-
-<!-- 
-### Old heads
-
-- [Ben Gracewood](https://ben.gracewood.nz)
-- [Dave Moskovitz](https://dave.moskovitz.co.nz)
-- [Ben Kepes](https://www.diversity.net.nz)
-- 
-
-
-
-
- -->
+- [Max Bo](https://maxbo.me)

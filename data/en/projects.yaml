@@ -33,7 +33,7 @@
   title: "Wet Bulb Calculator"
   link: "https://pjpscriv.com/wet-bulb-calculator"
   skills: [ "Angular", "Chroma.js" ]
-  featured: true
+  featured: false
   description: "A single-component web app that takes temperature and humidity values and returns a 'wet bulb temperature' - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients."
   img_light: "/img/projects/wet-bulb-light.jpg"
   img_dark: "/img/projects/wet-bulb-dark.jpg"
