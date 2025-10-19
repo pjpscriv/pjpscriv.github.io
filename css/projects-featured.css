@@ -1,0 +1,5 @@
+.project-featured {
+  padding: 0.8em;
+  padding-top: 0.5em;
+  border: var(--border-color) 1px solid;
+}
