@@ -2,7 +2,7 @@
 title: About
 ---
 
-I'm Peter, a Software Engineer from Aotearoa New Zealand. I've recently moved to Montréal, Canada 🍁 having spent the past 5 years working for [Trade Me](https://trademe.co.nz) in NZ.
+I'm a Software Engineer from Aotearoa New Zealand. I've recently moved to Montréal, Canada 🍁 having spent the past 5 years working for [Trade Me](https://trademe.co.nz) in NZ.
 
 I'm passionate, friendly, and excited about building interesting systems that solve important problems. I'm currently learning French and spending a bit more time tinkering in small open source projects.
 
