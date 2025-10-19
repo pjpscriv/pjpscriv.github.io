@@ -1,6 +1,7 @@
 ---
 title: New Zealand Fertility Rates
 date: 2025-06-23
+img: nz-fertility.jpg
 ---
 
 {{<observable-embed

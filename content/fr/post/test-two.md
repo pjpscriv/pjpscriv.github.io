@@ -21,12 +21,12 @@ Voilà, c'est mieux.
     <div class="section__item-content">
       <div>
         <p class="section__item-description">{{ .Summary }}</p>
-        <a href="{{ .RelPermalink }}" class="section__view-all">Lire la suite →</a>
+        <a href="{{ .RelPermalink }}" class="section__view-all">Read More →</a>
       </div>
     </div>
   </div>
 {{ else }}
-  <p>Aucun article trouvé.</p>
+  <p>No posts found.</p>
 {{ end }}
 ```
 

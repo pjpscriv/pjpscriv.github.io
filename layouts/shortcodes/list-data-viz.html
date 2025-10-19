@@ -1,0 +1,47 @@
+{{- $lang := .Page.Language.Lang -}}
+{{- $posts := where site.RegularPages "Section" "data-viz" -}}
+{{- $posts = where $posts "Language.Lang" $lang -}}
+{{- $posts = $posts.ByDate.Reverse -}}
+
+{{- $postsByYear := dict -}}
+{{- range $posts -}}
+  {{- $year := .Date.Format "2006" -}}
+  {{- $yearPosts := index $postsByYear $year -}}
+  {{- if not $yearPosts -}}
+    {{- $yearPosts = slice -}}
+  {{- end -}}
+  {{- $yearPosts = $yearPosts | append . -}}
+  {{- $postsByYear = merge $postsByYear (dict $year $yearPosts) -}}
+{{- end -}}
+
+{{- $years := slice -}}
+{{- range $year, $yearPosts := $postsByYear -}}
+  {{- $years = $years | append $year -}}
+{{- end -}}
+{{- $years = sort $years "value" "desc" -}}
+
+<div class="data-viz-gallery">
+  {{- range $years -}}
+    <h2>{{- . -}}</h2>
+    <div class="data-viz-list">
+      {{- range index $postsByYear . -}}
+        {{- if .Params.img -}}
+          <div class="data-viz-list__item">
+            <div class="data-viz-list__img">
+              <a href="{{- .RelPermalink -}}">
+                <img src="/img/data-viz/{{- .Params.img -}}" alt="{{- .Title -}}" width="170">
+              </a>
+            </div>
+            <h3 class="data-viz-list__title">
+              <a href="{{- .RelPermalink -}}">{{- .Title -}}</a>
+            </h3>
+          </div>
+        {{- end -}}
+      {{- end -}}
+    </div>
+  {{- end -}}
+  
+  {{- if eq (len $posts) 0 -}}
+    <p>No data visualization posts found.</p>
+  {{- end -}}
+</div>

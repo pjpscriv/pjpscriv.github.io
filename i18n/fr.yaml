@@ -16,10 +16,18 @@ proj_list:
   project: "Projet"
   skills: "Compétences"
   link: "Lien"
+  more: "Voir tous les projets"
 
 exp_list:
   work: "Travail"
   education: "Éducation"
+
+data-viz:
+  back: "Retour à la galerie"
+  more: "Voir la galerie de data viz"
+
+writing:
+  more: "Voir tous l'écriture"
 
 footer:
   powered_by: "Propulsé par"

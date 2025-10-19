@@ -1,6 +1,7 @@
 ---
 title: 2023 Aotearoa/New Zealand Electorate Hexamap
 date: 2025-03-20
+img: nz-2023-election.jpg
 ---
 
 {{<observable-embed

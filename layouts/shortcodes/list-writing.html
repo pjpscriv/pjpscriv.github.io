@@ -3,15 +3,31 @@
 {{- $posts = where $posts "Language.Lang" $lang -}}
 {{- $posts = $posts.ByDate.Reverse -}}
 
-{{/* Optionally limit to recent posts - remove this line to show all */}}
-
+{{- $postsByYear := dict -}}
 {{- range $posts -}}
-  <div class="">
-    <div class="section__item-head">
-      <a href="{{- .RelPermalink -}}">{{- .Title -}}</a>
-      <p class="section__item-period">{{- .Date.Format "Jan 2, 2006" -}}</p>
+  {{- $year := .Date.Format "2006" -}}
+  {{- $yearPosts := index $postsByYear $year -}}
+  {{- if not $yearPosts -}}
+    {{- $yearPosts = slice -}}
+  {{- end -}}
+  {{- $yearPosts = $yearPosts | append . -}}
+  {{- $postsByYear = merge $postsByYear (dict $year $yearPosts) -}}
+{{- end -}}
+
+{{- $years := slice -}}
+{{- range $year, $yearPosts := $postsByYear -}}
+  {{- $years = $years | append $year -}}
+{{- end -}}
+{{- $years = sort $years "value" "desc" -}}
+
+{{- range $years -}}
+  <h2>{{- . -}}</h2>
+  {{- range index $postsByYear . -}}
+    <div class="">
+      <div class="section__item-head">
+        <a href="{{- .RelPermalink -}}">{{- .Title -}}</a>
+        <p class="section__item-period">{{- .Date.Format "Jan 2" -}}</p>
+      </div>
     </div>
-  </div>
-{{- else -}}
-  <p>No posts found.</p>
+  {{- end -}}
 {{- end -}}

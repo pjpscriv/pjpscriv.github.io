@@ -1,6 +1,7 @@
 ---
 title: Org Chart
 date: 2025-05-19
+img: org-chart.jpg
 ---
 
 {{<observable-embed

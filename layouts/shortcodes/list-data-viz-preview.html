@@ -1,1 +1,20 @@
-<p>Data viz preview list here</p>
+{{- $lang := .Page.Language.Lang -}}
+{{- $posts := where site.RegularPages "Section" "data-viz" -}}
+{{- $posts = where $posts "Language.Lang" $lang -}}
+{{- $posts = $posts.ByDate.Reverse -}}
+{{- $posts = first 4 $posts -}}
+
+<div class="data-viz-list">
+  {{- range $posts -}}
+    {{- if .Params.img -}}
+      <div class="data-viz-list__img">
+        <a href="{{- .RelPermalink -}}">
+          <img src="/img/data-viz/{{- .Params.img -}}" alt="{{- .Title -}}" title="{{- .Title -}}" width="170">
+        </a>
+      </div>
+    {{- end -}}
+  {{- else -}}
+    <p>No data visualization posts found.</p>
+  {{- end -}}
+</div>
+<p class="see-more-link"><a href="./data-viz">{{ i18n "data-viz.more" }} →</a></p>

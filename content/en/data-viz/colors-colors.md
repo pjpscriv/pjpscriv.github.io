@@ -1,6 +1,7 @@
 ---
 title: COLORSxSTUDIOS Colors
 date: 2025-03-04
+img: colors-colors.jpg
 ---
 
 {{<observable-embed

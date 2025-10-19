@@ -1,6 +1,7 @@
 ---
 title: Google Calendar Colors
 date: 2025-03-01
+img: google-calendar-colors.jpg
 ---
 
 {{<observable-embed

@@ -1,7 +1,7 @@
 ---
 title: The Categories of Trade Me
 date: 2023-09-19
-image: 
+img: trade-me-categories.jpg
 ---
 
 {{<observable-embed

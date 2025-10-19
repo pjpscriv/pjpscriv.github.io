@@ -16,10 +16,18 @@ proj_list:
   project: "Project"
   skills: "Skills"
   link: "Link"
+  more: "See all projects"
 
 exp_list:
   work: "Work"
   education: "Education"
+
+data-viz:
+  back: "Back to gallery"
+  more: "See data viz gallery"
+
+writing:
+  more: "See all writing"
 
 footer:
   powered_by: "Powered by"
