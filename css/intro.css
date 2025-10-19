@@ -1,7 +1,7 @@
 /**************** Intro Content ****************/
 :root {
   --social-icon-size: 1.5em;
-  --social-icon-gap: 0.5em;
+  --social-icon-gap: 0.75em;
 }
 
 .intro {
@@ -109,6 +109,6 @@
 
   .intro__links {
     justify-content: center;
-    padding: 0 4em;
+    padding: 0 1em;
   }
 }
