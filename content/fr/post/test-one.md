@@ -1,6 +1,7 @@
 ---
 title: "Une test en français"
 date: '2025-09-09T19:00:00-04:00'
+summary: Voici c'est mon premier test de écritation en français.
 ---
 
 Voici c'est un petit test ✨.

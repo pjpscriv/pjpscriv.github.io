@@ -23,11 +23,13 @@ exp_list:
   education: "Education"
 
 data-viz:
-  back: "Back to gallery"
   more: "See data viz gallery"
+  back: "Back to gallery"
+  non-found: "No data viz posts found."
 
 writing:
   more: "See all writing"
+  non-found: "No posts found."
 
 footer:
   powered_by: "Powered by"

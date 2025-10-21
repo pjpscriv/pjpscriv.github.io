@@ -2,6 +2,18 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": "explicit"
   },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell 7": {
+      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "args": [
+        "-NoExit",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        ". '${workspaceFolder}/scripts/new-post-helper.ps1'"
+      ]
+    }
+  },
   "stylelint.validate": ["css"],
   "css.validate": false
 }

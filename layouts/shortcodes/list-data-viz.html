@@ -42,6 +42,6 @@
   {{- end -}}
   
   {{- if eq (len $posts) 0 -}}
-    <p>No data visualization posts found.</p>
+    <p>{{ i18n "data-viz.non-found" }}</p>
   {{- end -}}
 </div>

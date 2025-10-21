@@ -23,11 +23,13 @@ exp_list:
   education: "Éducation"
 
 data-viz:
-  back: "Retour à la galerie"
   more: "Voir la galerie de data viz"
+  back: "Retour à la galerie"
+  non-found: "Aucune visualisation trouvée."
 
 writing:
   more: "Voir tous l'écriture"
+  non-found: "Aucun article trouvé."
 
 footer:
   powered_by: "Propulsé par"
