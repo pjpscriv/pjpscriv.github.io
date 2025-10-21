@@ -29,8 +29,8 @@ function generateFilename(url, isDarkMode) {
     const urlObj = new URL(url);
     let name;
     
-    if (urlObj.hostname.includes('pjpscriv.com')) {
-      // For pjpscriv.com, use the first level route after '/'
+    if (urlObj.hostname.includes('pjpscriv.co.nz')) {
+      // For pjpscriv.co.nznz, use the first level route after '/'
       const pathParts = urlObj.pathname.split('/').filter(part => part.length > 0);
       name = pathParts.length > 0 ? pathParts[0] : 'home';
     } else {

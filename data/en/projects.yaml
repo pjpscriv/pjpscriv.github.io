@@ -10,13 +10,13 @@
 
 - period: "2025"
   title: "ANSI Code Generator"
-  link: "https://pjpscriv.com/ansicodes"
+  link: "https://pjpscriv.co.nz/ansicodes"
   skills: [ "HTML", "JavaScript" ]
   fork: true
 
 - period: "2025"
   title: "CyberCanada"
-  link: "https://pjpscriv.com/cyber-canada"
+  link: "https://pjpscriv.co.nz/cyber-canada"
   skills: [ "Three.js" ]
   description: "Canadian Patriotism on the Information Superhighway."
 
@@ -31,7 +31,7 @@
 
 - period: "2023"
   title: "Wet Bulb Calculator"
-  link: "https://pjpscriv.com/wet-bulb-calculator"
+  link: "https://pjpscriv.co.nz/wet-bulb-calculator"
   skills: [ "Angular", "Chroma.js" ]
   featured: false
   description: "A single-component web app that takes temperature and humidity values and returns a 'wet bulb temperature' - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients."
@@ -40,12 +40,12 @@
 
 - period: "2023"
   title: "Emoji Imager"
-  link: "https://emoji.pjpscriv.com"
+  link: "https://emoji.pjpscriv.co.nz"
   skills: [ "Python", "Flask", "Pillow" ]
 
 - period: "2023"
   title: "Day Visualizer"
-  link: "https://pjpscriv.com/day"
+  link: "https://pjpscriv.co.nz/day"
   skills: [ "Angular", "Google Maps API" ]
   featured: true
   description: "A simple web app that shows how much of the day is nighttime and how much is daytime. Allows users to change the time and location to see how day length changes depending on where and when in the world you are. Built with Angular, using Google Maps API for location logic."
@@ -59,7 +59,7 @@
 
 - period: "2021 - 22"
   title: "Message Map"
-  link: "https://pjpscriv.com/message-map"
+  link: "https://pjpscriv.co.nz/message-map"
   skills: [ "Angular", "Angular Material", "NgRx", "D3" ]
   featured: true
   description: "A tool to explore your Facebook Messenger data. View all your messages in their totality, then zoom all the way in to specific messages. See summaries for, and filter by chat, sender, and a few other criteria. A fork of the [original project](https://github.com/adurivault/FBMessage) by a pair of French students. Refactored into Angular, using Material UI component library, NgRx (Redux) for state management, and D3.js for data visualization."
@@ -75,10 +75,10 @@
 
 - period: "2019"
   title: "Sudoku"
-  link: "https://pjpscriv.com/sudoku"
+  link: "https://pjpscriv.co.nz/sudoku"
   skills: [ "HTML", "CSS", "JavaScript" ]
 
 - period: "2016"
   title: "Animal Spin"
-  link: "https://pjpscriv.com/animal-spin"
+  link: "https://pjpscriv.co.nz/animal-spin"
   skills: [ "CSS", "JavaScript" ]
