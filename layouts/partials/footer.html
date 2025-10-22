@@ -20,7 +20,9 @@
     <ul class="social-links">
       {{- range .Site.Data.social }}
       <li>
-        <a class="icon-link" href="{{- .url -}}" target="_blank" {{ if eq .title "Mastodon" }}rel="me"{{ end }}>
+        {{- $Url := cond (and (eq .title "RSS") (ne $.Site.LanguageCode "en")) (printf "/%s%s" $.Site.LanguageCode .url) .url -}}
+        {{/*  {{- $Url := .url -}}  */}}
+        <a class="icon-link" href="{{- $Url -}}" target="_blank" {{ if eq .title "Mastodon" }}rel="me"{{ end }}>
           {{ .svg | safeHTML -}}
         </a>
       </li>

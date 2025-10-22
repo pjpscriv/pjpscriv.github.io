@@ -1,3 +1,17 @@
+- title: "RSS"
+  url: "/index.xml"
+  svg: |
+    <svg role="img" viewBox="0 0 16 16" width="16" height="16" fill="url(#gradient-rss)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 0C14.6569 0 16 1.34315 16 3V13C16 14.6569 14.6569 16 13 16H3C1.34315 16 0 14.6569 0 13V3C0 1.34315 1.34315 0 3 0H13ZM4 10C2.89543 10 2 10.8954 2 12C2 13.1046 2.89543 14 4 14C5.10457 14 6 13.1046 6 12C6 10.8954 5.10457 10 4 10ZM2 8C3.5913 8 5.11697 8.63259 6.24219 9.75781C7.36741 10.883 8 12.4087 8 14H10C10 11.8783 9.15752 9.84306 7.65723 8.34277C6.15694 6.84248 4.12173 6 2 6V8ZM2 4C3.31322 4 4.61389 4.2582 5.82715 4.76074C7.04036 5.26329 8.14273 6.00015 9.07129 6.92871C9.99985 7.85727 10.7367 8.95964 11.2393 10.1729C11.7418 11.3861 12 12.6868 12 14H14C14 10.8174 12.7358 7.76508 10.4854 5.51465C8.23492 3.26421 5.1826 2 2 2V4Z"/>
+      <defs>
+        <linearGradient id="gradient-rss">
+          <stop offset="0%" class="gradient-start" stop-color="var(--text-color-secondary"/>
+          <stop offset="100%" class="gradient-end" stop-color="var(--text-color-secondary"/>
+        </linearGradient>
+      </clipPath>
+      </defs>
+    </svg>
+
 - title: "GitHub"
   url: "https://github.com/pjpscriv"
   svg: |
