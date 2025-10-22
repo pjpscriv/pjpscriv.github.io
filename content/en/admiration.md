@@ -19,8 +19,8 @@ People from around the world who's work I admire. For the most part, a mix of so
 
 - [Sam Jarman](https://www.samjarman.co.nz)
 - [Amir Mohtasebi](https://mohtasebi.com)
-- [Nate Watson](https://nw.nz/)
 - [Aaron Schiff](https://schiff.nz/)
+- [Nate Watson](https://nw.nz/)
 
 ## Peers
 
@@ -44,6 +44,4 @@ I used them as reference for this one!
 
 - [Cameron Bernhardt](https://cameronbernhardt.com)
 - [Brittany Chiang](https://brittanychiang.com) *The classic*
-- [Kshitij Choudhary](https://www.kshitij.ws)
-- [Ahkber Jagannath](https://akberjag.github.io)
 - [Max Bo](https://maxbo.me)
