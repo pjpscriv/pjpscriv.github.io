@@ -1,9 +1,11 @@
 nav:
   about: "À propos"
+  now: "Maintenant"
   experience: "Expérience"
   projects: "Projets"
   data-viz: "Data Viz"
   writing: "Écriture"
+  admiration: "Admiration"
 
 intro:
   greeting: "Salut 👋 Je suis"

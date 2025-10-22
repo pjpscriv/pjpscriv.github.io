@@ -1,16 +1,96 @@
 /**************** Footer ****************/
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 3em;
-  padding-bottom: 1em;
+  padding-top: 10em;
+  padding-bottom: 4em;
 }
 
 footer p {
   margin: 0;
+  margin-bottom: 0.5em;
   font-size: 12px;
   line-height: 1.5em;
-  text-align: center;
   opacity: 0.5;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.footer__sitemap {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 4em;
+  padding: 0 3em;
+  text-wrap: nowrap;
+}
+
+.footer__sitemap-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: left;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  padding: 0;
+  flex-flow: row wrap;
+  gap: var(--social-icon-gap);
+  list-style: none;
+}
+
+.social-links li {
+  height: var(--social-icon-size);
+}
+
+.social-links li svg {
+  width: var(--social-icon-size);
+  height: var(--social-icon-size);
+}
+
+.social-links a {
+  position: relative;
+  display: block;
+  width: var(--social-icon-size);
+  color: var(--text-color-secondary);
+}
+
+.social-links li svg stop {
+  transition: stop-color 0.2s ease;
+}
+
+.social-links a:hover {
+    text-decoration: none;
+}
+
+.social-links a:hover svg .gradient-start { 
+  stop-color: var(--primary-color);
+}
+
+.social-links a:hover svg .gradient-end { 
+  stop-color: var(--secondary-color);
+}
+
+@media screen and (width <= 576px) {
+  .social-links {
+    justify-content: center;
+    padding: 0 1em;
+  }
+}
+
+@media screen and (width <= 576px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+  }
 }

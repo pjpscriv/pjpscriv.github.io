@@ -34,6 +34,7 @@ function addDarkModeToggle() {
   })
 }
 
+/* *
 function addSectionScrolls() {
   const links = $$('.header__links a')
   links.forEach(el => {
@@ -50,7 +51,9 @@ function addSectionScrolls() {
     })
   })
 }
+/* */
 
+/* *
 function toggleNavbarLinks() {
   const menuToggle = $('#menu-toggle')
   menuToggle.addEventListener('click', (e) => {
@@ -61,24 +64,21 @@ function toggleNavbarLinks() {
     navbar.classList.toggle('header__links--open')
   })
 }
+/* */
 
 function toggleNavbarLanguages() {
   const languageToggle = $('#language-toggle')
   languageToggle.addEventListener('click', (e) => {
     e.stopPropagation()
     const languages = $('.header__languages')
-    const navbar = $('.header__links')
-    navbar.classList.remove('header__links--open')
     languages.classList.toggle('header__languages--open')
   })
 }
 
 function closeNavbarsOnClickOutside() {
   document.addEventListener('click', (event) => {
-    const navbar = $('.header__links')
     const languages = $('.header__languages')
-    if (!navbar.contains(event.target) && !languages.contains(event.target)) {
-      navbar.classList.remove('header__links--open')
+    if (!languages.contains(event.target)) {
       languages.classList.remove('header__languages--open')
     }
   })
@@ -103,8 +103,6 @@ function setSyntaxHighlightingTheme(isDark) {
 
 function main() {
   addDarkModeToggle();
-  // addSectionScrolls();
-  toggleNavbarLinks();
   toggleNavbarLanguages();
   closeNavbarsOnClickOutside();
 }
