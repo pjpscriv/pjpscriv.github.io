@@ -1,4 +1,9 @@
 - period: "2025"
+  title: "Quebecle"
+  link: "https://pjpscriv.co.nz/quebecle"
+  skills: [ "Co-Pilot", "JavaScript" ]
+
+- period: "2025"
   title: "Gmail Label Colorizer"
   link: "https://chromewebstore.google.com/detail/pjainmnpfajfihmlgdbhaigmehlmeikm"
   skills: [ "Browser Extension", "JavaScript" ]
