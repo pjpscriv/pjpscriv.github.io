@@ -1,4 +1,12 @@
-- title: "Développeur Full Stack Senior"
+- title: "Étudiant en français"
+  org: "Centre Saint-Louis"
+  content: ""
+  link: "https://centre-st-louis.cssdm.gouv.qc.ca"
+  period: "2025 - Présent"
+  skills: [ "Français" ]
+  type: "education"
+
+- title: "Développeur Full Stack"
   org: "Trade Me"
   content: "Trade Me est le plus grand marché en ligne de Nouvelle-Zélande et le [5e site web le plus visité](https://www.similarweb.com/website/trademe.co.nz/). Je travaille actuellement dans l'équipe Marketplace, développant des fonctionnalités pour les vendeurs à grand volume."
   link: "https://trademe.co.nz"

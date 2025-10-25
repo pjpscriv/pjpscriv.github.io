@@ -1,0 +1,47 @@
+:root {
+  --exp-point-size: 16px;
+  --exp-left-margin: 16px;
+  --exp-margin-combined: calc((var(--exp-point-size) / 2) + 1px);
+}
+
+.experience__timeline-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience {
+  width: 100%;
+  padding: 0.5em 0.8em;
+  border: 1px solid var(--border-color);
+}
+
+.experience .section__item-pills {
+  margin-top: -0.5em;
+  margin-bottom: 0.2em;
+}
+
+/* The Line */
+.experience__line {
+  z-index: 10;
+  margin: calc(6px + (var(--exp-point-size) / 2)) var(--exp-left-margin) -12px var(--exp-margin-combined);
+  border: 1px solid var(--border-color);
+  border-left-width: 0;
+}
+
+/* The Dot */
+.experience__line::before {
+  position: absolute;
+  z-index: 20;
+  width: var(--exp-point-size);
+  height: var(--exp-point-size);
+  margin-top: calc(-1 * (var(--exp-point-size) / 2));
+  margin-left: calc(-1 * var(--exp-margin-combined));
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  content: "";
+}
+
+.experience__timeline-wrapper:last-of-type .experience__line {
+  border-color: transparent;
+}

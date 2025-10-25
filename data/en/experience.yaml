@@ -1,24 +1,36 @@
-- title: "Senior Full Stack Developer"
+- title: "French Student"
+  org: "Centre Saint-Louis"
+  content: ""
+  link: "https://centre-st-louis.cssdm.gouv.qc.ca"
+  period: "2025 - Present"
+  period_long: "Apr 2025 - Present"
+  skills: [ "French" ]
+  type: "education"
+
+- title: "Full Stack Developer"
   org: "Trade Me"
   content: "Trade Me is New Zealand's largest online marketplace, and [5th most visited website](https://www.similarweb.com/website/trademe.co.nz/). My final role was working in the Marketplace team, building features for high-volume sellers."
   link: "https://trademe.co.nz"
   period: "2019 - 2025"
+  period_long: "Nov 2019 - Jan 2025"
   skills: [ "Angular", "TypeScript", "SCSS", ".NET", "C#", "ElasticSearch", "Google Cloud", "GitLab" ]
   type: "work"
 
 - title: "Data Analyst"
-  content: ""
+  content: "CSS is a disability advocacy group in NZ. They had partnered with another company to create an app called \"Access Aware\" that let people report mobility carpark abuses. I classified and analysed this data, creating a [custom reporting tool](https://github.com/pjpscriv/access-aware-reporting) that pulled data from an external API and sent out monthly reports."
   org: "CCS Disability Action"
   link: "https://www.ccsdisabilityaction.org.nz"
   period: "2018 - 2019"
+  period_long: "Mar 2018 - Nov 2019"
   skills: [ "Node.js", "JavaScript", "MongoDB" ]
   type: "work"
 
 - title: "Developer Intern"
-  content: ""
+  content: "Snapper provides bus & train card services in Wellington. I had a summer internship where I worked on Snapper's external client services, mainly the Android app."
   org: "Snapper"
   link: "https://www.snapper.co.nz"
   period: "2016 - 2017"
+  period_long: "Nov 2016 - Feb 2017"
   skills: [ "Android", "Java", "AWS" ]
   type: "work"
 
@@ -27,5 +39,6 @@
   content: ""
   link: "https://www.wgtn.ac.nz"
   period: "2016 - 2019"
+  period_long: "2016 - 2019"
   skills: []
   type: "education"

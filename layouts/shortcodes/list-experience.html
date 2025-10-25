@@ -1,12 +1,13 @@
 {{- $lang := .Page.Language.Lang -}}
 {{- $experiences := index .Site.Data $lang "experience" -}}
 
-<h3 class="section__sub-title">{{- i18n "exp_list.work" -}}</h3>
-{{- range where $experiences "type" "work" -}}
-  <div class="section__item">
+{{- range $experiences -}}
+<div class="experience__timeline-wrapper">
+  <div class="experience__line"></div>
+  <div class="section__item experience">
     <div class="section__item-head">
       <h4>{{ .title }} • <a href="{{- .link -}}">{{- .org -}}</a></h4>
-      <p class="section__item-period">{{- .period -}}</p>
+      <p class="section__item-period">{{- .period_long -}}</p>
     </div>
     <p class="section__item-description">{{- .content | markdownify -}}</p>
     <div class="section__item-pills">
@@ -15,14 +16,5 @@
       {{- end -}}
     </div>
   </div>
-{{- end -}}
-
-<h3 class="section__sub-title">{{- i18n "exp_list.education" -}}</h3>
-{{- range where $experiences "type" "education" -}}
-  <div class="section__item">
-    <div class="section__item-head">
-      <h4>{{ .title }} • <a href="{{- .link -}}">{{- .org -}}</a></h4>
-      <p class="section__item-period">{{- .period -}}</p>
-    </div>
-  </div>
+</div>
 {{- end -}}
