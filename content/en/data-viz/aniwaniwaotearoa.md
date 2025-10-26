@@ -8,6 +8,6 @@ img: aniwaniwaotearoa.jpg
     notebook="@pjpscriv/aniwaniwaotearoa"
     cells=`
         viewof color_start,
-        chart   
+        FULLWIDTH chart
 `>}}
 

@@ -8,6 +8,6 @@ img: circular-text.jpg
     notebook="@pjpscriv/curved-text"
     cells=`
         viewof options,
-        svg,
+        FULLWIDTH svg,
         svgCode
 `>}}

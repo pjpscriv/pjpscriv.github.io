@@ -311,3 +311,27 @@ input[type="number"] {
   border-radius: 2px;
   background: transparent;
 }
+
+.observablehq form button {
+  color: black;
+
+  /* padding: 2px 4px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  color: var(--text-color);
+  background: var(--ornament-color); */
+}
+
+.observablehq form select {
+  color: black;
+}
+
+/* Observable fullwidth */
+.observable-fullwidth {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
+}

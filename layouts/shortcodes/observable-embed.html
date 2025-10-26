@@ -2,9 +2,7 @@
 {{- $cells := .Get "cells" -}}
 {{- $id := .Get "id" | default (printf "observable-%d" now.Unix) -}}
 
-<p class="see-more-link">
-  <a href="..">← {{ i18n "data-viz.back" }}</a>
-</p>
+<p class="see-more-link"><a href="..">← {{ i18n "data-viz.back" }}</a></p>
 <div id="{{- $id -}}" class="observable-embed"></div>
 <p class="observable-link"> See original notebook on <a href="https://observablehq.com/{{- $notebook -}}" target="_blank" rel="noopener">Observable →</a></p>
 
@@ -14,13 +12,16 @@
   import notebook from "https://api.observablehq.com/{{- $notebook -}}.js?v=4";
   
   const target = document.querySelector("#{{- $id -}}");
-  const cells = "{{- $cells -}}".split(",").map(d => d.trim());
+  const cellNames = "{{- $cells -}}".split(",").map(d => d.trim());
 
   // Create ID map
   const renders = {};
-  for (let cell of cells) {
-    const id = cell.toLocaleLowerCase().replace(/\s+/g, '-');
-    renders[cell] = `${id}`;
+  for (let cellName of cellNames) {
+    const id = cellName.toLocaleLowerCase().replace(/\s+/g, '-');
+    if (cellName.startsWith("FULLWIDTH ")) {
+      cellName = cellName.replace("FULLWIDTH ", "");
+    }
+    renders[cellName] = id;
   }
   console.log(renders);
 
@@ -29,6 +30,9 @@
     const id = renders[i]
     renders[i] = document.createElement('div');
     renders[i].id = id;
+    if (id.startsWith("fullwidth-")) {
+      renders[i].classList.add("observable-fullwidth");
+    }
     target.appendChild(renders[i]);
   }
 

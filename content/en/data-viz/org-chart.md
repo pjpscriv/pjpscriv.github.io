@@ -11,5 +11,5 @@ img: org-chart.jpg
         viewof linkStrength,
         viewof repelStrength,
         viewof refresh_button,
-        org_tree
+        FULLWIDTH org_tree
 `>}}
