@@ -16,8 +16,11 @@ layout: "index"
 ## Data Viz
 
 {{<list-data-viz-preview>}}
+
+<!--
 {{<homepage-split>}}
 
 ## Writing
 
 {{<list-writing-preview>}}
+ -->

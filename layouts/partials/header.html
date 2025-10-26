@@ -4,20 +4,22 @@
   </a>
   <div class="flex-spacer"></div>
   <div class="header__actions">
-    <!-- --
+    {{/*
     <div class="header__links">
       <a href="{{- "about" | relLangURL -}}">{{- i18n "nav.about" -}}</a>
-      {{/*  <a href="{{- "experience" | relLangURL -}}">{{- i18n "nav.experience" -}}</a>  */}}
+      <a href="{{- "experience" | relLangURL -}}">{{- i18n "nav.experience" -}}</a>
       <a href="{{- "projects" | relLangURL -}}">{{- i18n "nav.projects" -}}</a>
       <a href="{{- "data-viz" | relLangURL -}}">{{- i18n "nav.data-viz" -}}</a>
       <a href="{{- "writing" | relLangURL -}}">{{- i18n "nav.writing" -}}</a>
     </div>
-    <!-- -->
+    */}}
     <div class="header__languages">
+      {{- $path := strings.TrimPrefix (printf "/%s/" $.Page.Lang) $.Page.RelPermalink -}}
+      {{- $path = strings.TrimPrefix "/" $path -}}
       {{- range .Site.Languages -}}
-        {{- $langPageUrl := "" -}}
+        {{- $langPageUrl := $path -}}
         {{- if ne .Lang "en" -}}
-          {{- $langPageUrl = .Lang -}}
+          {{- $langPageUrl = printf "%s/%s" .Lang $path -}}
         {{- end -}}
         <a class="header__language" href="/{{- $langPageUrl -}}">{{- .LanguageName -}}</a>
       {{- end -}}
