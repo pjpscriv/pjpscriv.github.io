@@ -107,7 +107,7 @@ h1:not(:first-of-type) {
   padding-top: 1em;
 }
 
-h2, h3 {
+h2:not(:first-of-type), h3 {
   padding-top: 1em;
 }
 
