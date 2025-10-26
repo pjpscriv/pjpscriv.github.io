@@ -5,3 +5,5 @@ summary: This is the first test post I have created and this is the summary stri
 ---
 
 This is the first test page!
+
+Well how about that :P
