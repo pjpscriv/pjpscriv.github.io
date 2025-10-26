@@ -5,11 +5,11 @@
 }
 
 .intro {
-  /* height: 90vh; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 2em;
   line-height: 1.5em;
 }
 
