@@ -3,9 +3,9 @@ title: "Peter Scriven"
 layout: "index"
 ---
 
-{{<full-height>}}
-  {{<intro>}}
-{{</full-height>}}
+{{<intro>}}
+  I'm a Software Engineer from Aoteroa New Zealand currently living and learning French in Montreal, Canada 🍁. I'm interested in data-viz, open data, and the open web.
+{{</intro>}}
 
 ## Projects
 

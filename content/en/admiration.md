@@ -38,10 +38,11 @@ People I've worked with / know IRL.
 - [Andre Westerlund](https://www.andrewesterlund.com)
 - [Josh Lowe](https://www.joshjohnlowe.com)
 
-### People who just have cool websites
+### People who have cool websites
 
 I used them as reference for this one!
 
+- [Joel Hooks](https://joelhooks.com)
 - [Cameron Bernhardt](https://cameronbernhardt.com)
 - [Brittany Chiang](https://brittanychiang.com) *The classic*
 - [Max Bo](https://maxbo.me)
