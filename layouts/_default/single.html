@@ -1,6 +1,9 @@
 {{- define "main" -}}
 <main>
   <h1 id='{{- replace .Title " " "-" | lower -}}'>{{- .Title -}}</h1>
+  {{- if not .Params.hide_date -}}
+    <p class="subtitle">{{ $.Page.Date.Format "Mon, 2 Jan 2006" }}</p>
+  {{- end -}}
   {{- .Content -}}
 </main>
 <div class="flex-spacer"></div>

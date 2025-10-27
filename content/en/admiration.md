@@ -1,5 +1,6 @@
 ---
 title: People I Admire
+hide_date: true
 ---
 
 ## Globally

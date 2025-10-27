@@ -1,5 +1,6 @@
 ---
 title: "À propos de moi"
+hide_date: true
 ---
 
 Je suis un ingénieur logiciel expérimenté d'Aotearoa Nouvelle-Zélande travaillant comme développeur full stack senior chez [Trade Me](https://trademe.co.nz), le [5e site web le plus visité](https://www.similarweb.com/website/trademe.co.nz/) en Nouvelle-Zélande.

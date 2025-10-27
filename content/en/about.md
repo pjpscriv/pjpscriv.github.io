@@ -1,5 +1,6 @@
 ---
 title: About
+hide_date: true
 ---
 
 I'm a Software Engineer from Aotearoa New Zealand. I've recently moved to Montréal, Canada 🍁 having spent the past 5 years working for [Trade Me](https://trademe.co.nz) in NZ.

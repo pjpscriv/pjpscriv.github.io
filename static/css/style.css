@@ -111,6 +111,16 @@ h2:not(:first-of-type), h3 {
   padding-top: 1em;
 }
 
+/* h1 with a subtitle after it */
+h1:has(~ .subtitle) {
+  margin-bottom: 0;
+}
+
+.subtitle {
+  margin-top: 0.5em;
+  color: var(--text-color-secondary);
+}
+
 .flex-spacer {
   flex-grow: 1;
 }
