@@ -15,7 +15,9 @@ People from around the world who's work I admire. For the most part, a mix of so
 - [Stephanie Tuerk](https://stephanietuerk.net)
 - [Evan Peck](https://evanpeck.github.io/)
 
-## From New Zealand
+## New Zealand
+
+A bit closer to home.
 
 - [Sam Jarman](https://www.samjarman.co.nz)
 - [Amir Mohtasebi](https://mohtasebi.com)
@@ -33,6 +35,7 @@ People I've worked with / know IRL.
 - [Josh Richards](https://josh.work)
 - [Daisy Rendell](https://dazede.github.io)
 - [Nick Webster](https://nick.geek.nz)
+- [Jamie Sanson](https://jamie.sanson.dev/)
 - [Simon Merrick](https://simonmerrick.com)
 - [Cam Bryers](https://www.cameronbryers.dev)
 - [Andre Westerlund](https://www.andrewesterlund.com)
