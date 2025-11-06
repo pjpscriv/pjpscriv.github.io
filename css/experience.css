@@ -15,6 +15,41 @@
   border: 1px solid var(--border-color);
 }
 
+.experience__head {
+  display: grid;
+  grid-template: "icon title period" auto / auto auto 1fr;
+}
+
+@media (width <= 450px) {
+  .experience__head {
+    grid-template: "icon period" auto "title title" auto / auto 1fr;
+  }
+}
+
+.experience__icon {
+  display: inline-block;
+  grid-area: icon;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.experience__icon svg {
+  fill: var(--border-color);
+}
+
+.experience__title {
+  grid-area: title;
+}
+
+.section__item-period {
+  grid-area: period;
+}
+
+.experience__content {
+  margin-top: 0.5em;
+}
+
 .experience .section__item-pills {
   margin-top: -0.5em;
   margin-bottom: 0.2em;
@@ -42,6 +77,12 @@
   content: "";
 }
 
-.experience__timeline-wrapper:last-of-type .experience__line {
-  border-color: transparent;
+.experience__timeline-wrapper:last-of-type {
+  .experience__line {
+    border-color: transparent;
+  }
+
+  .section__item {
+    margin-bottom: 0;
+  }
 }

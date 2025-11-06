@@ -1,8 +1,9 @@
+/* Data Viz Gallery Styles */
 .data-viz-list {
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
-  justify-content: space-evenly;
+  justify-content: left;
 }
 
 .data-viz-list__img {
@@ -20,15 +21,6 @@
 
 .data-viz-list__img img {
   border-radius: 3px;
-}
-
-/* Data Viz Gallery Styles */
-.data-viz-gallery {
-  margin: 2rem 0;
-}
-
-.data-viz-gallery .data-viz-list {
-  justify-content: left;
 }
 
 .data-viz-list__item {

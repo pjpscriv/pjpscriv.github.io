@@ -107,7 +107,7 @@ h1:not(:first-of-type) {
   padding-top: 1em;
 }
 
-h2:not(:first-of-type), h3 {
+h2:not(h1 + h2), h3 {
   padding-top: 1em;
 }
 
@@ -185,20 +185,18 @@ h1:has(~ .subtitle) {
 .section__item-head {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-
-  /* flex-wrap: wrap; */
+  align-items: start;
 }
 
 .section__item-period {
+  flex-grow: 1;
   margin-top: 0.2em;
   margin-bottom: 0;
   font-size: 0.9em;
   font-weight: 600;
+  text-align: right;
   opacity: 0.5;
   text-wrap: nowrap;
-
-  /* text-align: right; */
 }
 
 .section__item-content {
