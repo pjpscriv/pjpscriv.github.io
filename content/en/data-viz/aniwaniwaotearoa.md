@@ -1,6 +1,6 @@
 ---
 title: Āniwaniwawaotearoa
-date: 2025-03-10
+date: 2020-06-17
 img: aniwaniwaotearoa.jpg
 ---
 

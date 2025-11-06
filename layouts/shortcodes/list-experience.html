@@ -5,15 +5,19 @@
 <div class="experience__timeline-wrapper">
   <div class="experience__line"></div>
   <div class="section__item experience">
-    <div class="section__item-head">
-      <h4>{{ .title }} • <a href="{{- .link -}}">{{- .org -}}</a></h4>
-      <p class="section__item-period">{{- .period_long -}}</p>
+    <div class="section__item-head experience__head">
+      {{ $iconPath := printf "static/img/icons/%s_stroke_300.svg" .type }}
+      <div class="experience__icon">{{ readFile $iconPath | safeHTML }}</div>
+      <h4 class="experience__title">{{ .title }} • <a href="{{ .link }}">{{ .org }}</a></h4>
+      <p class="section__item-period">{{- .period -}}</p>
     </div>
-    <p class="section__item-description">{{- .content | markdownify -}}</p>
-    <div class="section__item-pills">
-      {{- range .skills -}}
-        <span class="skill-pill">{{- . -}}</span>
-      {{- end -}}
+    <div class="experience__content">
+      <p class="section__item-description">{{- .content | markdownify -}}</p>
+      <div class="section__item-pills">
+        {{- range .skills -}}
+          <span class="skill-pill">{{- . -}}</span>
+        {{- end -}}
+      </div>
     </div>
   </div>
 </div>

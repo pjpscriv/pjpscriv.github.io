@@ -5,7 +5,7 @@
   period: "2025 - Present"
   period_long: "Apr 2025 - Present"
   skills: [ "French" ]
-  type: "education"
+  type: "school"
 
 - title: "Full Stack Developer"
   org: "Trade Me"
@@ -41,4 +41,4 @@
   period: "2016 - 2019"
   period_long: "2016 - 2019"
   skills: []
-  type: "education"
+  type: "school"

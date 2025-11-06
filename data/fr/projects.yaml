@@ -53,7 +53,7 @@
   link: "https://pjpscriv.co.nznz/day"
   skills: [ "Angular", "Google Maps API" ]
   featured: true
-  description: "A simple web app that shows how much of the day is nighttime and how much is daytime. Allows users to change the time and location to see how day length changes depending on where and when in the world you are. Built with Angular, using Google Maps API for location logic."
+  description: "Une simple application web qui montre combien de temps de la journée est nuit et combien de temps est jour. Permet aux utilisateurs de changer l'heure et l'emplacement pour voir comment la durée du jour change en fonction de l'endroit et du moment dans le monde. Conçue avec Angular, en utilisant l'API Google Maps pour la logique de localisation."
   img_light: "/img/projects/day.jpg"
   img_dark: "/img/projects/day.jpg"
 

@@ -20,28 +20,26 @@
 {{- end -}}
 {{- $years = sort $years "value" "desc" -}}
 
-<div class="data-viz-gallery">
-  {{- range $years -}}
-    <h2>{{- . -}}</h2>
-    <div class="data-viz-list">
-      {{- range index $postsByYear . -}}
-        {{- if .Params.img -}}
-          <div class="data-viz-list__item">
-            <div class="data-viz-list__img">
-              <a href="{{- .RelPermalink -}}">
-                <img src="/img/data-viz/{{- .Params.img -}}" alt="{{- .Title -}}" width="170">
-              </a>
-            </div>
-            <h3 class="data-viz-list__title">
-              <a href="{{- .RelPermalink -}}">{{- .Title -}}</a>
-            </h3>
+{{- range $years -}}
+  <h2>{{- . -}}</h2>
+  <div class="data-viz-list">
+    {{- range index $postsByYear . -}}
+      {{- if .Params.img -}}
+        <div class="data-viz-list__item">
+          <div class="data-viz-list__img">
+            <a href="{{- .RelPermalink -}}">
+              <img src="/img/data-viz/{{- .Params.img -}}" alt="{{- .Title -}}" width="170">
+            </a>
           </div>
-        {{- end -}}
+          <h3 class="data-viz-list__title">
+            <a href="{{- .RelPermalink -}}">{{- .Title -}}</a>
+          </h3>
+        </div>
       {{- end -}}
-    </div>
-  {{- end -}}
-  
-  {{- if eq (len $posts) 0 -}}
-    <p>{{ i18n "data-viz.non-found" }}</p>
-  {{- end -}}
-</div>
+    {{- end -}}
+  </div>
+{{- end -}}
+
+{{- if eq (len $posts) 0 -}}
+  <p>{{ i18n "data-viz.non-found" }}</p>
+{{- end -}}
