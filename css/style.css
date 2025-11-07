@@ -343,3 +343,13 @@ input[type="number"] {
   margin-right: -50vw;
   margin-left: -50vw;
 }
+
+
+/* Notes styles - TODO: move somewhere better */
+.notes-list {
+  padding-top: 1em;
+}
+
+.notes-list h3 {
+  padding: 0;
+}

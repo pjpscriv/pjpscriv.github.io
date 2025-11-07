@@ -2,7 +2,7 @@ const log = m => console.log(m);
 const $ = q => document.querySelector(q);
 const $$ = q => document.querySelectorAll(q);
 
-// Variables defined in dark-mode-detector.html
+// Variables defined in dark-mode.html
 //    DARK_MODE_CLASS, LIGHT_MODE_CLASS, LOCAL_STORAGE_KEY, darkModeEnabled
 const GRADIENT_CLASSES = ['', 'blue-grad', 'green-yellow-grad', 'lime-grad', 'green-grad'];
 // TODO: Add more gradient classes
