@@ -47,6 +47,7 @@ People I've worked with / know IRL.
 I used them as reference for this one!
 
 - [Joel Hooks](https://joelhooks.com)
+- [Tom Critchlow](https://tomcritchlow.com/)
 - [Cameron Bernhardt](https://cameronbernhardt.com)
 - [Brittany Chiang](https://brittanychiang.com) *The classic*
 - [Max Bo](https://maxbo.me)
