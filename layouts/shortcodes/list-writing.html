@@ -3,6 +3,7 @@
 {{- $posts = where $posts "Language.Lang" $lang -}}
 {{- $posts = $posts.ByDate.Reverse -}}
 
+{{/*  Create a map of posts by year  */}}
 {{- $postsByYear := dict -}}
 {{- range $posts -}}
   {{- $year := .Date.Format "2006" -}}
@@ -19,6 +20,7 @@
   {{- $years = $years | append $year -}}
 {{- end -}}
 {{- $years = sort $years "value" "desc" -}}
+{{/*  -----------------------------  */}}
 
 {{- range $years -}}
   <h2>{{- . -}}</h2>

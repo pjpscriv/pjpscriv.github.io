@@ -1,6 +1,7 @@
 ---
 title: People I Admire
 hide_date: true
+url: admiration
 ---
 
 ## Globally
@@ -38,6 +39,7 @@ People I've worked with / know IRL.
 - [Nick Webster](https://nick.geek.nz)
 - [Jamie Sanson](https://jamie.sanson.dev/)
 - [Simon Merrick](https://simonmerrick.com)
+- [Tana Tanoi](http://tanamakes.games)
 - [Cam Bryers](https://www.cameronbryers.dev)
 - [Andre Westerlund](https://www.andrewesterlund.com)
 - [Josh Lowe](https://www.joshjohnlowe.com)

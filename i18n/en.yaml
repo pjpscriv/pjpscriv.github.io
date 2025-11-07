@@ -1,3 +1,5 @@
+dateFormat: "Mon, 2 Jan 2006"
+
 nav:
   about: "About"
   now: "Now"
@@ -5,7 +7,7 @@ nav:
   projects: "Projects"
   data-viz: "Data Viz"
   writing: "Writing"
-  admiration: "Admiration"
+  notes: "Notes"
 
 intro:
   greeting: "Hey 👋 I'm"
