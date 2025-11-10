@@ -107,7 +107,7 @@ h1:not(:first-of-type) {
   padding-top: 1em;
 }
 
-h2:not(h1 + h2), h3 {
+h2:not(h1 + h2, .subtitle + h2), h3 {
   padding-top: 1em;
 }
 
@@ -141,6 +141,13 @@ h1:has(~ .subtitle) {
 /* See more links */
 .see-more-link {
   font-size: 14px;
+}
+
+.updated {
+  margin-top: 0;
+  font-size: 0.75em;
+  color: var(--text-color-secondary);
+  font-style: italic;
 }
 
 
