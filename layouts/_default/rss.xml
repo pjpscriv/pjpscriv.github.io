@@ -1,0 +1,31 @@
+{{- $posts := where .Site.RegularPages "Type" "post" -}}
+{{- $dataVizes := where .Site.RegularPages "Type" "data-viz" -}}
+{{- $pages := union $posts $dataVizes -}}
+{{- $pages = where $pages "Params.unlisted" "!=" true -}}
+{{- $pages = $pages.ByDate.Reverse -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <!-- Channel Metadata -->
+    <title>{{ .Site.Title }}</title>
+    <language>{{ .Site.Language.Lang }}</language>
+    <description>Recent content on {{ .Site.Title }}</description>
+    <link>{{ .Permalink }}</link>
+    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
+    {{ if .Site.Lastmod -}}
+    <lastBuildDate>{{ .Site.Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{- end }}
+
+    <!-- Items -->
+    {{- range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Content | html }}</description>
+    </item>
+    {{- end }}
+  </channel>
+</rss>
