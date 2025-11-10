@@ -35,6 +35,13 @@ writing:
   more: "Voir tous l'écriture"
   non-found: "Aucun article trouvé."
 
+notes:
+  more: "Voir toutes les notes"
+  non-found: "Aucune note trouvée."
+
+page:
+  updated: "Mis à jour"
+
 footer:
   powered_by: "Propulsé par"
   view_on: "Voir sur"

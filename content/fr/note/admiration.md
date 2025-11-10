@@ -1,7 +1,7 @@
 ---
 title: Admiration
 url: admiration
-hide_date: true
+updated: 2025-11-06
 ---
 
 Admiration ?? En français ? Je pense que non. Essayez [en anglais](/admiration).

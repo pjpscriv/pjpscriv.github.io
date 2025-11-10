@@ -1,6 +1,7 @@
 ---
 title: Now
-date: 2025-11-05
+# date: 2024-11-22
+updated: 2025-11-05
 ---
 
 My [/now page](https://nownownow.com/about).
@@ -11,5 +12,5 @@ Currently I'm:
   - I'm now up to level 6 (out of 8)!
 - Thinking about applying for jobs
 - Doing some volunteering for groups back in New Zealand
-- Doing an ridiculous amount of updates to this site
+- Doing a ridiculous amount of updates to this site
 

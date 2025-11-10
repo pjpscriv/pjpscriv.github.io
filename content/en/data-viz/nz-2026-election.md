@@ -3,7 +3,7 @@ title: 'Aotearoa/New Zealand 2026 Electiorates'
 date: '2025-11-05T13:22:05-05:00'
 img: 'nz-2026-election.jpg'
 draft: false
-hidden: true
+unlisted: true
 ---
 
 {{<observable-embed

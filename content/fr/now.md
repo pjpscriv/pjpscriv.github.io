@@ -1,6 +1,6 @@
 ---
 title: Maintenant
-date: 2025-11-05
+updated: 2025-11-05
 ---
 
 Mon page de [/now](https://nownownow.com/about).

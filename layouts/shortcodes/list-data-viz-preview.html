@@ -1,7 +1,7 @@
 {{- $lang := .Page.Language.Lang -}}
 {{- $posts := where site.RegularPages "Section" "data-viz" -}}
 {{- $posts = where $posts "Language.Lang" $lang -}}
-{{- $posts = where $posts "Params.hidden" "!=" true -}}
+{{- $posts = where $posts "Params.unlisted" "!=" true -}}
 {{- $posts = $posts.ByDate.Reverse -}}
 {{- $posts = first 4 $posts -}}
 

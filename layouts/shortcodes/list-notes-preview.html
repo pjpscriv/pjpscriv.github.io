@@ -1,0 +1,16 @@
+{{- $lang := .Page.Language.Lang -}}
+{{- $posts := where site.RegularPages "Section" "note" -}}
+{{- $posts = where $posts "Language.Lang" $lang -}}
+{{- $posts = where $posts "Params.updated" "!=" nil -}}
+{{- $posts = where $posts "Params.unlisted" "!=" true -}}
+{{- $posts = $posts.ByParam "update" -}}
+
+{{- range first 4 $posts -}}
+  <div class="">
+    <a href="{{- .RelPermalink -}}">{{- .Title -}}</a>
+    <p class="updated">{{ i18n "page.updated" }} {{ .Params.updated | dateFormat (i18n "dateFormat") }}</p>
+  </div>
+{{- else -}}
+  <p>{{ i18n "notes.non-found" }}</p>
+{{- end -}}
+<p class="see-more-link"><a href="./notes">{{ i18n "notes.more" }} →</a></p>

@@ -35,6 +35,13 @@ writing:
   more: "See all writing"
   non-found: "No posts found."
 
+notes:
+  more: "See all notes"
+  non-found: "No notes found."
+
+page:
+  updated: "Updated"
+
 footer:
   powered_by: "Powered by"
   view_on: "View on"

@@ -13,15 +13,20 @@ layout: "index"
 {{<list-projects-preview>}}
 {{<homepage-split>}}
 
-<!-- 
+<!-- --
 ## Data Viz
 
 {{<list-data-viz-preview>}}
 {{<homepage-split>}}
- -->
+<!-- -->
 
-<!-- 
 ## Écriture
 
 {{<list-writing-preview>}}
- -->
+{{<homepage-split>}}
+
+## Notes
+
+{{<list-notes-preview>}}
+
+<!-- -->

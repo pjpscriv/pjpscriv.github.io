@@ -1,7 +1,7 @@
 ---
 title: People I Admire
-hide_date: true
 url: admiration
+updated: 2025-11-06
 ---
 
 ## Globally

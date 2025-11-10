@@ -1,6 +1,5 @@
 ---
 title: 🪴Notes
-hide_date: true
 ---
 
 My personal wiki / digital garden / rought notes collection. For writing that doesn't fit the form of a [blog post](/writing) but I think is still worth sharing. Content here is more "tended to" than "posted and completed".
