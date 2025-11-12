@@ -139,8 +139,14 @@ h1:has(~ .subtitle) {
 }
 
 /* See more links */
+.back-to-parent,
 .see-more-link {
   font-size: 14px;
+}
+
+.back-to-parent {
+  margin-top: 0.5em;
+  margin-bottom: -0.5em;
 }
 
 .updated {

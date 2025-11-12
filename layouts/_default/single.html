@@ -1,5 +1,6 @@
 {{- define "main" -}}
 <main>
+  {{- partial "parent-link.html" . -}}
   <h1 id='{{- replace .Title " " "-" | lower -}}'>{{- .Title -}}</h1>
   {{- partial "subtitle.html" . }}
   {{- .Content -}}

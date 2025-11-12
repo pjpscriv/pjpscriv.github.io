@@ -2,7 +2,6 @@
 {{- $cells := .Get "cells" -}}
 {{- $id := .Get "id" | default (printf "observable-%d" now.Unix) -}}
 
-<p class="see-more-link"><a href="..">← {{ i18n "data-viz.back" }}</a></p>
 <div id="{{- $id -}}" class="observable-embed"></div>
 <p class="observable-link"> See original notebook on <a href="https://observablehq.com/{{- $notebook -}}" target="_blank" rel="noopener">Observable →</a></p>
 
