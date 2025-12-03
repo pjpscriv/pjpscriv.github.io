@@ -1,7 +1,7 @@
 ---
 title: People I Admire
 url: admiration
-updated: 2025-11-06
+updated: 2025-12-03
 ---
 
 ## Globally
