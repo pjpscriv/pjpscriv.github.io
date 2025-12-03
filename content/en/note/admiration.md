@@ -16,6 +16,7 @@ People from around the world who's work I admire. For the most part, a mix of so
 - [Josh Comeau](https://www.joshwcomeau.com)
 - [Stephanie Tuerk](https://stephanietuerk.net)
 - [Evan Peck](https://evanpeck.github.io/)
+- [Tyler Fisher](https://tylerjfisher.com/)
 
 ## New Zealand
 
