@@ -1,10 +1,18 @@
 {{/*  https://ballingt.com/observable-hugo-shortcode/  */}}
 {{- $notebook := .Get "notebook" -}}
-{{- $cells := .Get "cells" -}}
+{{- $cellsRaw := .Get "cells" -}}
+{{- $cellsArray := split $cellsRaw "," -}}
+{{- $cellsClean := slice -}}
+{{- range $cellsArray -}}
+  {{ $cellsClean = $cellsClean | append (trim . "\n\r\t  ") -}}
+{{- end -}}
+{{- $cells := delimit $cellsClean "," -}}
+
+
 <iframe
     frameborder="0"
     width="100%"
-    src="https://observablehq.com/embed/{{- $notebook -}}{{- with $cells -}}?cells={{- . -}}{{- end -}}">
+    src="https://observablehq.com/embed/{{- $notebook -}}?cells={{- $cells | safeURL -}}">
 </iframe>
 
 <script>

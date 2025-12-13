@@ -4,6 +4,7 @@
 {{- $posts = where $posts "Params.updated" "!=" nil -}}
 {{- $posts = where $posts "Params.unlisted" "!=" true -}}
 {{- $posts = $posts.ByParam "update" -}}
+{{- $posts = $posts.Reverse -}}
 
 {{- range first 4 $posts -}}
   <div class="">

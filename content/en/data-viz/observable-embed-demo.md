@@ -1,13 +1,13 @@
 ---
-title: 'Aotearoa/New Zealand 2026 Electorates'
-date: '2025-11-05T13:22:05-05:00'
+title: 'Observable iFrame Embed Demo'
+date: '2025-12-13T13:22:05-05:00'
 img: 'nz-2026-election.jpg'
 draft: false
 unlisted: true
 ---
 
-{{<observable-embed
-    notebook="d/145c825f4a902622"
+{{<observable-iframe
+    notebook="145c825f4a902622"
     cells=`
         md_1,
         viewof chart_style,
