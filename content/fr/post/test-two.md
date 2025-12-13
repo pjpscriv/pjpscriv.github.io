@@ -1,6 +1,6 @@
 ---
 date: '2025-09-09T19:01:00-04:00'
-title: Une deuxieme test en français
+title: Un deuxieme test en français
 summary: Et ici c'est le deuxieme. Ceci est le resumé.
 ---
 
