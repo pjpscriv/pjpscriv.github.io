@@ -1,10 +1,5 @@
-{{- $lang := .Page.Language.Lang -}}
-{{- $notes := where site.RegularPages "Section" "note" -}}
-{{- $notes = where $notes "Language.Lang" $lang -}}
-{{/*  {{- $notes = $notes -}}  */}}
-
 <div class="notes-list">
-  {{- range $notes -}}
+  {{- range .Page.Pages -}}
     <h3><a href="{{- .RelPermalink -}}">{{- .Title -}}</a></h3>
   {{- end -}}
 </div>

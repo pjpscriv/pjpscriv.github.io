@@ -6,6 +6,11 @@ This repository contains the source code for my personal website, built with [Hu
 
 The site is structured using Hugo's content, layout, and data directories. Most pages and components are managed through Hugo's templating system, with some custom HTML/CSS/JavaScript for additional features.
 
+To run the local development server, run:
+```shell
+npm start
+```
+
 ### Linting
 
 This project uses [Stylelint](https://stylelint.io/) for CSS linting. The configuration lives in [`.stylelintrc.json`](/.stylelintrc.json).

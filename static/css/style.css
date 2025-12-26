@@ -359,10 +359,6 @@ input[type="number"] {
 
 
 /* Notes styles - TODO: move somewhere better */
-.notes-list {
-  padding-top: 1em;
-}
-
 .notes-list h3 {
   padding: 0;
 }
