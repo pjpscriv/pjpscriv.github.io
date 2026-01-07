@@ -17,3 +17,22 @@ defaultContentLanguage = "en"
 [markup]
   [markup.highlight]
     noClasses = false
+
+[mediaTypes]
+  [mediaTypes."application/rss+xml"]
+    suffixes = ["xml"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss+xml"
+    baseName = "index"
+
+  [outputFormats.feed]
+    mediaType = "application/rss+xml"
+    baseName = "feed"
+    isPlainText = false
+    rel = "alternate"
+
+[outputs]
+  home = ["HTML", "RSS", "feed"]
+  section = ["HTML", "RSS", "feed"]
