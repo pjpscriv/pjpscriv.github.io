@@ -8,24 +8,24 @@ layout: "index"
 {{</intro>}}
 {{<homepage-split>}}
 
-## Projets
+## [Projets →](./projects)
 
 {{<list-projects-preview>}}
 {{<homepage-split>}}
 
 <!-- --
-## Data Viz
+## [Data Viz →](./data-viz)
 
 {{<list-data-viz-preview>}}
 {{<homepage-split>}}
 <!-- -->
 
-## Écriture
+## [Écriture →](./writing)
 
 {{<list-writing-preview>}}
 {{<homepage-split>}}
 
-## Notes
+## [Notes →](./notes)
 
 {{<list-notes-preview>}}
 
