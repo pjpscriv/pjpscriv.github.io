@@ -2,6 +2,10 @@
 
 Things I want to update.
 
+To help the LLM keep track what work has been done and what's left to do. 
+
+Except it's me, I'm the LLM.
+
 - [x] In experience list, move the icons inside the circles
 - Projects page
   - [x] Make the name a link at the small breakpoint
@@ -12,7 +16,7 @@ Things I want to update.
 - On posts
   - [x] Remove day name from format
   - [x] Add word count and "time to read"
-- [ ] In the header, reduce the left and right padding at the mobile breakpoint
+- [x] In the header, reduce the left and right padding at the mobile breakpoint
 
 ### Later
 
