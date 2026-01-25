@@ -1,18 +1,19 @@
 {{- $githubBase := "https://github.com/pjpscriv/pjpscriv.github.io" -}}
-{{- $githubUrl := $githubBase -}}
-{{- $linkText := i18n "footer.view_on" -}}
+{{- $viewLink := $githubBase -}}
+{{- $editLink := "" -}}
+{{- $hasEditLink := false -}}
 
 {{- if .File -}}
   {{/* Page has a source file */}}
   {{- $filePath := replace .File.Path "\\" "/" -}}
-  {{- $githubUrl = printf "%s/edit/main/content/%s/%s?plain=1" $githubBase .Site.LanguageCode $filePath -}}
-  {{- $linkText = i18n "footer.edit_on" -}}
+  {{- $viewLink = printf "%s/blob/main/content/%s/%s" $githubBase .Site.LanguageCode $filePath -}}
+  {{- $editLink = printf "%s/edit/main/content/%s/%s?plain=1" $githubBase .Site.LanguageCode $filePath -}}
 {{- else if .Section -}}
   {{/* List page for a section */}}
-  {{- $githubUrl = printf "%s/tree/main/content/%s/%s" $githubBase .Site.LanguageCode .Section -}}
+  {{- $viewLink = printf "%s/tree/main/content/%s/%s" $githubBase .Site.LanguageCode .Section -}}
 {{- else if eq .RelPermalink "/" -}}
   {{/* Homepage */}}
-  {{- $githubUrl = printf "%s/blob/main/layouts/index.html" $githubBase -}}
+  {{- $viewLink = printf "%s/blob/main/layouts/index.html" $githubBase -}}
 {{- end -}}
 
 <footer>
@@ -28,7 +29,11 @@
       {{- end -}}
     </ul>
     <p>© <span id="copyright-year">{{ now.Year }}</span> {{ .Site.Title }} • 💻🌱</p>
-    <p>{{- i18n "footer.powered_by" -}} <a href="https://gohugo.io" target="_blank">Hugo</a> • {{ $linkText }} <a href="{{- $githubUrl -}}" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    <p>
+      {{- i18n "footer.powered_by" -}} <a href="https://gohugo.io" target="_blank">Hugo</a> • 
+      {{ i18n "footer.code_on" }} <a href="{{- $viewLink -}}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      {{ if $editLink }} • ✏️<a href="{{- $editLink -}}">{{ i18n "footer.edit"}}</a>{{ end }}
+    </p>
   </div>
   <div class="footer__sitemap">
     <div class="footer__sitemap-group">

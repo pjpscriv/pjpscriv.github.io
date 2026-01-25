@@ -1,6 +1,7 @@
-dateFormat: "Mon, 2 Jan 2006"
+dateFormat: "2 Jan 2006"
 
 nav:
+  home: "Home"
   about: "About"
   now: "Now"
   experience: "Experience"
@@ -34,6 +35,8 @@ data-viz:
 writing:
   more: "See all writing"
   non-found: "No posts found."
+  words: "words"
+  min-read: "min read"
 
 notes:
   more: "See all notes"
@@ -45,5 +48,5 @@ page:
 
 footer:
   powered_by: "Powered by"
-  view_on: "View on"
-  edit_on: "Edit page on"
+  code_on: "Code on"
+  edit: "Edit"

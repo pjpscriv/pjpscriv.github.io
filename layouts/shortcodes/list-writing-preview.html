@@ -12,7 +12,8 @@
       <a href="{{- .RelPermalink -}}">{{- .Title -}}</a>
       <p class="section__item-period">{{- .Date.Format "Jan 2, 2006" -}}</p>
     </div>
-     <p class="section__item-description">{{- .Summary -}}</p>
+    <p class="section__item-description">{{- .Summary -}}</p>
+    <p class="section__item-meta">{{ .WordCount }} {{ i18n "writing.words" }} · {{ .ReadingTime }} {{ i18n "writing.min-read" }}</p>
   </div>
 {{- else -}}
   <p>{{ i18n "writing.non-found" }}</p>

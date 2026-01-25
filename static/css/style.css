@@ -118,6 +118,7 @@ h1:has(~ .subtitle) {
 
 .subtitle {
   margin-top: 0.5em;
+  font-size: 14px;
   color: var(--text-color-secondary);
 }
 
@@ -254,6 +255,13 @@ h1:has(~ .subtitle) {
   margin-top: 0;
   font-size: 0.85em;
   line-height: 1.5em;
+}
+
+.section__item-meta {
+  margin-top: -1.2em;
+  font-size: 0.75em;
+  color: var(--text-color-secondary);
+  font-style: italic;
 }
 
 .section__item-pills {

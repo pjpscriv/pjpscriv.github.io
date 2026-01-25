@@ -1,10 +1,14 @@
 {{- $parent := .Parent -}}
 {{- if $parent -}}
-  {{- if ne $parent.Kind "home" -}}
-    <div class="back-to-parent" aria-label="Parent navigation">
-      <a href="{{ $parent.RelPermalink }}" class="back-link">
-        ← {{ i18n "page.back" }} {{ if eq $parent.Kind "section" }}{{ $parent.Title }}{{ else }}{{ $parent.LinkTitle }}{{ end }}
-      </a>
-    </div>
+  {{- $linkText := print (i18n "page.back") " " $parent.LinkTitle -}}
+  {{- if eq $parent.Kind "section" -}}
+    {{- $linkText = print (i18n "page.back") " " $parent.Title -}}
+  {{- else if eq $parent.Kind "home" -}}
+    {{- $linkText =  i18n "nav.home" -}}
   {{- end -}}
+  <div class="back-to-parent" aria-label="Parent navigation">
+    <a href="{{ $parent.RelPermalink }}" class="back-link">
+      ← {{ $linkText }}
+    </a>
+  </div>
 {{- end -}}

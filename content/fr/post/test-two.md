@@ -2,6 +2,7 @@
 date: '2025-09-09T19:01:00-04:00'
 title: Un deuxieme test en français
 summary: Et ici c'est le deuxieme. Ceci est le resumé.
+show_reading_info: true
 ---
 
 Cette deuxième page de test !

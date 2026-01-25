@@ -2,6 +2,7 @@
 date: '2025-09-09T19:01:00-04:00'
 title: "Test Two"
 summary: This is the second post I've created. It contains more tests relating to code snippets and inline samples.
+show_reading_info: true
 ---
 
 This second test page!

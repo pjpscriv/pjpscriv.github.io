@@ -1,6 +1,7 @@
-dateFormat: "Mon 2 Jan 2006"
+dateFormat: "2 Jan 2006"
 
 nav:
+  home: "Accueil"
   about: "À propos"
   now: "Maintenant"
   experience: "Expérience"
@@ -38,6 +39,8 @@ writing:
 notes:
   more: "Voir toutes les notes"
   non-found: "Aucune note trouvée."
+  words: "mots"
+  min-read: "min de lecture"
 
 page:
   updated: "Mis à jour"
@@ -45,5 +48,5 @@ page:
 
 footer:
   powered_by: "Propulsé par"
-  view_on: "Voir sur"
-  edit_on: "Modifier cette page sur"
+  code_on: "Code sur"
+  edit: "Modifier"

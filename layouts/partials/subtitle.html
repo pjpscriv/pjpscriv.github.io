@@ -1,17 +1,25 @@
-{{- $showSubtitle := or (.Params.date) (.Params.updated) -}}
 {{- $subtitleText := "" -}}
-{{- if and (.Params.date) (.Params.updated) -}}
-  {{- $dateText := printf "%s" ($.Page.Date | dateFormat (i18n "dateFormat")) -}}
-  {{- $updatedText := printf "%s" (.Params.updated | dateFormat (i18n "dateFormat")) -}}
-  {{- $subtitleText = printf "%s • %s: %s" $dateText (i18n "page.updated") $updatedText -}}
-{{- end -}}
-{{- if and (.Params.date) (not .Params.updated) -}}
+
+{{- if .Params.date }}
   {{- $subtitleText = printf "%s" ($.Page.Date | dateFormat (i18n "dateFormat")) -}}
 {{- end -}}
-{{- if and (not .Params.date) (.Params.updated) -}}
-  {{- $subtitleText = printf "%s: %s" (i18n "page.updated") (.Params.updated | dateFormat (i18n "dateFormat")) -}}
+
+{{- if .Params.updated }}
+  {{- if ne $subtitleText "" -}}
+    {{- $subtitleText = printf "%s • " $subtitleText -}}
+  {{- end -}}
+  {{- $updatedText := printf "%s %s" (i18n "page.updated") (.Params.updated | dateFormat (i18n "dateFormat")) -}}
+  {{- $subtitleText = printf "%s%s" $subtitleText $updatedText -}}
 {{- end -}}
 
-{{- if $showSubtitle -}}
+{{- if .Params.show_reading_info -}}
+  {{- if ne $subtitleText "" -}}
+    {{- $subtitleText = printf "%s • " $subtitleText -}}
+  {{- end -}}
+  {{- $readingInfo := printf "%d %s • %d %s" .WordCount (i18n "writing.words") .ReadingTime (i18n "writing.min-read") -}}
+  {{- $subtitleText = printf "%s%s" $subtitleText $readingInfo -}}
+{{- end -}}
+
+{{- if $subtitleText -}}
   <p class="subtitle">{{- $subtitleText -}}</p>
 {{- end -}}

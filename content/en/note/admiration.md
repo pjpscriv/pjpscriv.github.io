@@ -15,8 +15,9 @@ People from around the world who's work I admire. For the most part, a mix of so
 - [Amelia Wattenberger](https://wattenberger.com)
 - [Josh Comeau](https://www.joshwcomeau.com)
 - [Stephanie Tuerk](https://stephanietuerk.net)
-- [Evan Peck](https://evanpeck.github.io/)
-- [Tyler Fisher](https://tylerjfisher.com/)
+- [Evan Peck](https://evanpeck.github.io)
+- [Tyler Fisher](https://tylerjfisher.com)
+- [Owen Lacy](https://owenlacey.dev)
 
 ## New Zealand
 
@@ -24,8 +25,9 @@ A bit closer to home.
 
 - [Sam Jarman](https://www.samjarman.co.nz)
 - [Amir Mohtasebi](https://mohtasebi.com)
-- [Aaron Schiff](https://schiff.nz/)
-- [Nate Watson](https://nw.nz/)
+- [Aaron Schiff](https://schiff.nz)
+- [Nate Watson](https://nw.nz)
+- [Finn Greig](https://www.finngreig.com)
 
 ## Peers
 
@@ -50,7 +52,10 @@ People I've worked with / know IRL.
 I used them as reference for this one!
 
 - [Joel Hooks](https://joelhooks.com)
-- [Tom Critchlow](https://tomcritchlow.com/)
+- [Tom Critchlow](https://tomcritchlow.com)
 - [Cameron Bernhardt](https://cameronbernhardt.com)
 - [Brittany Chiang](https://brittanychiang.com) *The classic*
+- [Chris Heuberger](https://www.chrisheuberger.com)
 - [Max Bo](https://maxbo.me)
+- [Xavier Salazar](https://xsalazar.com)
+- [Jamie Kyle](https://jamie.build)
