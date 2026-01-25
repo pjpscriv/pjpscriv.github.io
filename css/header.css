@@ -110,6 +110,10 @@ header .icon-link:hover svg .gradient-end {
     display: block;
   }
 
+  header {
+    padding: 0;
+  }
+
   .header__links {
     position: absolute;
     top: 4rem;

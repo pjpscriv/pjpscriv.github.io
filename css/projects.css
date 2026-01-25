@@ -49,13 +49,54 @@
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
-.project-link a {
+.project-link .old-link {
   display: inline-block;
   max-width: 18em;
   color: var(--text-color-secondary);
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.project-link-pill {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 2px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 2em;
+  font-size: 0.85em;
+  cursor: default
+}
+
+.project-link-pill a {
+  width: fit-content;
+  line-height: 1.3em;
+  color: var(--text-color-secondary);
+  background-size: 0 0;
+}
+
+.project-link-pill svg {
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+  fill: var(--text-color-secondary);
+}
+
+.project-link-pill:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+
+  svg {
+    transform: translate(2px, -2px);
+    fill: var(--primary-color);
+  }
+}
+
+.project-link-pill:hover a {
+  color: var(--primary-color);
+  background-size: 100% 0.9px;
 }
 
 @media screen and (width <= 768px) {
@@ -70,10 +111,10 @@
     font-size: 0.9em;
   }
   
-  .projects-table th:nth-child(3),
+  /* .projects-table th:nth-child(3),
   .projects-table td:nth-child(3) {
     display: none;
-  }
+  } */
   
   .projects-table th:nth-child(1),
   .projects-table td:nth-child(1) {

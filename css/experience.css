@@ -1,6 +1,6 @@
 :root {
-  --exp-point-size: 16px;
-  --exp-left-margin: 16px;
+  --exp-point-size: 28px;
+  --exp-left-margin: 22px;
   --exp-margin-combined: calc((var(--exp-point-size) / 2) + 1px);
 }
 
@@ -24,6 +24,11 @@
   .experience__head {
     grid-template: "icon period" auto "title title" auto / auto 1fr;
   }
+}
+
+.experience__period {
+  text-wrap: wrap;
+  font-size: 0.85em;
 }
 
 .experience__icon {
@@ -63,10 +68,13 @@
   border-left-width: 0;
 }
 
-/* The Dot */
-.experience__line::before {
+/* The Dot & Icon */
+.experience__line-icon {
   position: absolute;
-  z-index: 20;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: var(--exp-point-size);
   height: var(--exp-point-size);
   margin-top: calc(-1 * (var(--exp-point-size) / 2));
@@ -74,7 +82,12 @@
   border: 1px solid var(--border-color);
   border-radius: 50%;
   background-color: var(--bg-color);
-  content: "";
+
+  svg {
+    fill: var(--text-color-secondary);
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .experience__timeline-wrapper:last-of-type {
