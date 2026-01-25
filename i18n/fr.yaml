@@ -20,7 +20,7 @@ proj_list:
   year: "Année"
   project: "Projet"
   skills: "Compétences"
-  link: "Lien"
+  links: "Liens"
   more: "Voir tous les projets"
 
 exp_list:
@@ -35,12 +35,12 @@ data-viz:
 writing:
   more: "Voir tous l'écriture"
   non-found: "Aucun article trouvé."
+  words: "mots"
+  min-read: "min de lecture"
 
 notes:
   more: "Voir toutes les notes"
   non-found: "Aucune note trouvée."
-  words: "mots"
-  min-read: "min de lecture"
 
 page:
   updated: "Mis à jour"

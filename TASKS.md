@@ -2,9 +2,9 @@
 
 Things I want to update.
 
-- [ ] In experience list, move the icons inside the circles
+- [x] In experience list, move the icons inside the circles
 - Projects page
-  - [ ] Make the name a link at the small breakpoint
+  - [x] Make the name a link at the small breakpoint
   - [ ] Add a "fork", "personal project", "little tool", icon for each project
 - [x] Add "Back to home" page links
 - [x] Add a "view page on github" link in the footer too

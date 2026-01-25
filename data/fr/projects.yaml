@@ -1,33 +1,45 @@
 - period: "2025"
   title: "Quebécle"
-  link: "https://pjpscriv.co.nz/quebecle"
+  links: 
+    - url: "https://pjpscriv.co.nz/quebecle"
+      label: "Site Web"
   skills: [ "Co-Pilot", "TypeScript" ]
 
 - period: "2025"
   title: "Gmail Label Colorizer"
-  link: "https://chromewebstore.google.com/detail/pjainmnpfajfihmlgdbhaigmehlmeikm"
+  links: 
+    - url: "https://chromewebstore.google.com/detail/pjainmnpfajfihmlgdbhaigmehlmeikm"
+      label: "Chrome Webstore"
   skills: [ "Extension de Navigateur", "JavaScript" ]
 
 - period: "2025"
   title: "GitHub Social Icons"
-  link: "https://chromewebstore.google.com/detail/ledidlccnpfooopagmkgihgibfbnbbnp"
+  links: 
+    - url: "https://chromewebstore.google.com/detail/ledidlccnpfooopagmkgihgibfbnbbnp"
+      label: "Chrome Webstore"
   skills: [ "Extension de Navigateur", "TypeScript" ]
 
 - period: "2025"
   title: "Générateur de Code ANSI"
-  link: "https://pjpscriv.co.nz/ansicodes"
+  links: 
+    - url: "https://pjpscriv.co.nz/ansicodes"
+      label: "Site Web"
   skills: [ "HTML", "JavaScript" ]
   fork: true
 
 - period: "2025"
   title: "CyberCanada"
-  link: "https://pjpscriv.co.nz/cyber-canada"
+  links: 
+    - url: "https://pjpscriv.co.nz/cyber-canada"
+      label: "Site Web"
   skills: [ "Three.js" ]
   description: "Patriotisme canadien sur l'autoroute de l'information."
 
 - period: "2024"
   title: "Dot Match"
-  link: "https://dotmatch.lol"
+  links: 
+    - url: "https://dotmatch.lol"
+      label: "Site Web"
   skills: [ "TypeScript", "Python", "Flask", "Cloud Run", "Firestore" ]
   featured: true
   description: "Un jeu de match-3 où vous alignez des points de la même couleur pour marquer des points. Conçu avec HTML Canvas et TypeScript, en utilisant une base de données NoSQL simple pour stocker les meilleurs scores et les demandes de fonctionnalités. Hébergé sur Google Cloud."
@@ -36,7 +48,9 @@
 
 - period: "2023"
   title: "Calculateur de Bulbe Humide"
-  link: "https://pjpscriv.co.nz/wet-bulb-calculator"
+  links: 
+    - url: "https://pjpscriv.co.nz/wet-bulb-calculator"
+      label: "Site Web"
   skills: [ "Angular", "Chroma.js" ]
   featured: false
   description: "Une application web à composant unique qui prend les valeurs de température et d'humidité et renvoie une 'température de bulbe humide', la température que le corps peut atteindre par refroidissement par évaporation. Conçue avec Angular, utilisant Chroma.js pour créer des gradients."
@@ -45,12 +59,16 @@
 
 - period: "2023"
   title: "Imageur d'Émojis"
-  link: "https://emoji.pjpscriv.co.nz"
+  links: 
+    - url: "https://emoji.pjpscriv.co.nz"
+      label: "Site Web"
   skills: [ "Python", "Flask", "Pillow" ]
 
 - period: "2023"
   title: "Visualiseur de Journée"
-  link: "https://pjpscriv.co.nz/day"
+  links: 
+    - url: "https://pjpscriv.co.nz/day"
+      label: "Site Web"
   skills: [ "Angular", "Google Maps API" ]
   featured: true
   description: "Une simple application web qui montre combien de temps de la journée est nuit et combien de temps est jour. Permet aux utilisateurs de changer l'heure et l'emplacement pour voir comment la durée du jour change en fonction de l'endroit et du moment dans le monde. Conçue avec Angular, en utilisant l'API Google Maps pour la logique de localisation."
@@ -59,12 +77,16 @@
 
 - period: "2022"
   title: "Advent of Code 2022"
-  link: "https://github.com/pjpscriv/advent-of-code-2022"
+  links: 
+    - url: "https://github.com/pjpscriv/advent-of-code-2022"
+      label: "GitHub"
   skills: [ "Python"]
 
 - period: "2021 - 22"
   title: "Carte des Messages"
-  link: "https://pjpscriv.co.nz/message-map"
+  links: 
+    - url: "https://pjpscriv.co.nz/message-map"
+      label: "Site Web"
   skills: [ "Angular", "Angular Material", "NgRx", "D3" ]
   featured: true
   description: "Un outil pour explorer vos données Facebook Messenger. Visualisez tous vos messages dans leur totalité, puis zoomez jusqu'à des messages spécifiques. Consultez des résumés, filtrez par chat, expéditeur et quelques autres critères. Un fork du [projet original](https://github.com/adurivault/FBMessage) par deux étudiants français. Refactorisé dans Angular, en utilisant NgRx (Redux) pour la gestion de l'état et D3.js pour la visualisation des données."
@@ -73,17 +95,23 @@
 
 - period: "2020"
   title: "Posh-Hg Async"
-  link: "https://github.com/pjpscriv/posh-hg-async"
+  links: 
+    - url: "https://github.com/pjpscriv/posh-hg-async"
+      label: "GitHub"
   skills: [ "PowerShell", "Mercurial" ]
   fork: true
   description: "Un fork de [Posh-Hg](https://github.com/posh-hg/posh-hg) qui ajoute la prise en charge des opérations asynchrones."
 
 - period: "2019"
   title: "Sudoku"
-  link: "https://pjpscriv.co.nz/sudoku"
+  links: 
+    - url: "https://pjpscriv.co.nz/sudoku"
+      label: "Site Web"
   skills: [ "HTML", "CSS", "JavaScript" ]
 
 - period: "2016"
   title: "Tourner les Animaux"
-  link: "https://pjpscriv.co.nz/animal-spin"
+  links: 
+    - url: "https://pjpscriv.co.nz/animal-spin"
+      label: "Site Web"
   skills: [ "CSS", "JavaScript" ]

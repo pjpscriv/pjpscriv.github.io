@@ -20,7 +20,7 @@ proj_list:
   year: "Year"
   project: "Project"
   skills: "Skills"
-  link: "Link"
+  links: "Links"
   more: "See all projects"
 
 exp_list:

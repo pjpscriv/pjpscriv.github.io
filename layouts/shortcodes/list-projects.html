@@ -7,7 +7,7 @@
       <tr>
         <th>{{ i18n "proj_list.year" }}</th>
         <th>{{ i18n "proj_list.project" }}</th>
-        <th>{{ i18n "proj_list.link" }}</th>
+        <th>{{ i18n "proj_list.links" }}</th>
       </tr>
     </thead>
     <tbody>
@@ -16,7 +16,12 @@
         <td class="project-period">{{- .period -}}</td>
         <td class="project-title">{{- .title -}}</td>
         <td class="project-link">
-          <a href="{{- .link -}}" target="_blank">{{- replace .link "https://" "" -}}</a>
+          {{- range .links -}}
+          <div class="project-link-pill">
+            <a href="{{- .url -}}" target="_blank">{{- .label -}}</a>
+            {{ readFile "static/img/icons/arrow.svg" | safeHTML }}
+          </div>
+          {{- end -}}
         </td>
       </tr>
       {{- end -}}
