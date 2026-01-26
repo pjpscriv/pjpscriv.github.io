@@ -80,10 +80,9 @@ footer p {
   stop-color: var(--secondary-color);
 }
 
-@media screen and (width <= 576px) {
+@media screen and (width <= 675px) {
   .social-links {
-    justify-content: center;
-    padding: 0 1em;
+    max-width: 30vw;
   }
 }
 
@@ -92,5 +91,16 @@ footer p {
     flex-direction: column;
     text-align: center;
     gap: 2em;
+  }
+
+  .footer__links {
+    align-items: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+    width: 60%;
+    min-width: min(200px, 90%);
+    padding: 0 1em;
   }
 }
