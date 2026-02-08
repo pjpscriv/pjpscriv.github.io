@@ -1,5 +1,5 @@
 ---
-title: Les sites utils
+title: Les sites utiles
 updated: 2025-11-12
 ---
 
