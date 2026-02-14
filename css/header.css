@@ -8,7 +8,7 @@ header {
   gap: 1em;
   padding: 0 1em;
   container-type: size;
-  background-color: var(--bg-color);
+  background-color: transparent;
   transition: background-color 0.2s ease;
 }
 

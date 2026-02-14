@@ -34,7 +34,7 @@
 }
 
 .projects-table th:nth-child(2) {
-  width: 40%;
+  width: 33%;
 }
 
 .project-period {
@@ -49,6 +49,12 @@
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
+.project-link-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
 .project-link .old-link {
   display: inline-block;
   max-width: 18em;
