@@ -1,28 +1,42 @@
 {{- $lang := .Page.Language.Lang -}}
-{{- $projects := index .Site.Data $lang "projects" -}}
+{{- $baseData := .Site.Data.projects -}}
+{{- $langData := index .Site.Data $lang "projects" -}}
 
-{{- range (where $projects "featured" "!=" nil) -}}
-  {{- if .featured -}}
-    <div class="section__item project-featured">
-      <div class="section__item-head">
-        <h4><a href="{{- .link -}}" target="_blank">{{- .title -}}</a></h4>
-        <p class="section__item-period">{{- .period -}}</p>
-      </div>
-      <div class="section__item-content">
-        <a href="{{- .link -}}" target="_blank">
-          <img src="{{- .img_light -}}" alt="{{- .title -}}" class="section__item-image section__item-image--light">
-          <img src="{{- .img_dark  -}}" alt="{{- .title -}}" class="section__item-image section__item-image--dark">
-        </a>
-        <div>
-          <p class="section__item-description">{{- .description | markdownify -}}</p>
-          <div class="section__item-pills">
-            {{- range .skills -}}
-              <span class="skill-pill">{{- . -}}</span>
-            {{- end -}}
-          </div>
+{{- $baseProjects := $baseData.projects -}}
+{{- $baseSkills := $baseData.skills -}}
+
+{{- $langProjects := $langData.projects -}}
+{{- $langSkills := $langData.skills -}}
+
+{{- range (where $baseProjects "featured" true) -}}
+  {{- $projectId := .id -}}
+  {{- $langProject := index $langProjects $projectId -}}
+  
+  {{- $title := (index $langProject "title") | default .title -}}
+  {{- $description := (index $langProject "description") | default .description -}}
+  {{- $link := (index .links 0).url -}}
+  
+  <div class="section__item project-featured">
+    <div class="section__item-head">
+      <h4><a href="{{- $link -}}" target="_blank">{{- $title -}}</a></h4>
+      <p class="section__item-period">{{- .period -}}</p>
+    </div>
+    <div class="section__item-content">
+      <a href="{{- $link -}}" target="_blank">
+        <img src="{{- .img_light -}}" alt="{{- $title -}}" class="section__item-image section__item-image--light">
+        <img src="{{- .img_dark  -}}" alt="{{- $title -}}" class="section__item-image section__item-image--dark">
+      </a>
+      <div>
+        <p class="section__item-description">{{- $description | markdownify -}}</p>
+        <div class="section__item-pills">
+          {{- range .skills -}}
+            {{- $skillKey := . -}}
+            {{- $skill := index $langSkills $skillKey | default (index $baseSkills $skillKey) | default $skillKey -}}
+            <span class="skill-pill">{{- $skill -}}</span>
+          {{- end -}}
         </div>
       </div>
     </div>
-  {{- end -}}
+  </div>
 {{- end -}}
 <!-- <p class="see-more-link"><a href="./projects">{{ i18n "proj_list.more" }} →</a></p> -->

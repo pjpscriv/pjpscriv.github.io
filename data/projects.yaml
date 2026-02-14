@@ -1,0 +1,173 @@
+projects:
+  - id: "quebecle"
+    period: "2025"
+    links:
+      - url: "https://pjpscriv.co.nz/quebecle"
+        label: "website"
+      - url: "https://github.com/pjpscriv/quebecle"
+        label: "github"
+    skills: [ "copilot", "typescript" ]
+
+  - id: "gmail_label_colorizer"
+    title: "Gmail Label Colorizer"
+    period: "2025"
+    links:
+      - url: "https://chromewebstore.google.com/detail/pjainmnpfajfihmlgdbhaigmehlmeikm"
+        label: "chrome"
+      - url: "https://addons.mozilla.org/en-GB/firefox/addon/gmail-label-colorizer"
+        label: "firefox"
+      - url: "https://github.com/pjpscriv/gmail-label-colorizer"
+        label: "github"
+    skills: [ "browser_ext", "javascript" ]
+
+  - id: "github_social_icons"
+    title: "GitHub Social Icons"
+    period: "2025"
+    links:
+      - url: "https://chromewebstore.google.com/detail/ledidlccnpfooopagmkgihgibfbnbbnp"
+        label: "chrome"
+      - url: "https://addons.mozilla.org/en-GB/firefox/addon/github-social-icons"
+        label: "firefox"
+      - url: "https://github.com/pjpscriv/github-social-icons"
+        label: "github"
+    skills: [ "browser_ext", "typescript" ]
+
+  - id: "ansi_code_generator"
+    period: "2025"
+    links:
+      - url: "https://pjpscriv.co.nz/ansicodes"
+        label: "website"
+      - url: "https://github.com/pjpscriv/ansicodes"
+        label: "github"
+    skills: [ "html", "javascript" ]
+    fork: true
+
+  - id: "cyber_canada"
+    title: "CyberCanada"
+    period: "2025"
+    links:
+      - url: "https://pjpscriv.co.nz/cyber-canada"
+        label: "website"
+      - url: "https://github.com/pjpscriv/cyber-canada"
+        label: "github"
+    skills: [ "three_js" ]
+
+  - id: "dot_match"
+    title: "Dot Match"
+    period: "2024"
+    links:
+      - url: "https://dotmatch.lol"
+        label: "website"
+    skills: [ "typescript", "python", "flask", "cloud_run", "firestore" ]
+    featured: true
+    img_light: "/img/projects/dotmatch-lol-light.jpg"
+    img_dark: "/img/projects/dotmatch-lol-dark.jpg"
+
+  - id: "wet_bulb_calculator"
+    period: "2023"
+    links:
+      - url: "https://pjpscriv.co.nz/wet-bulb-calculator"
+        label: "website"
+      - url: "https://github.com/pjpscriv/wet-bulb-calculator"
+        label: "github"
+    skills: [ "angular", "chroma_js" ]
+    featured: false
+    img_light: "/img/projects/wet-bulb-light.jpg"
+    img_dark: "/img/projects/wet-bulb-dark.jpg"
+
+  - id: "emoji_imager"
+    period: "2023"
+    links:
+      - url: "https://emoji.pjpscriv.co.nz"
+        label: "website"
+      - url: "https://github.com/pjpscriv/emoji-imager"
+        label: "github"
+    skills: [ "python", "flask", "pillow" ]
+
+  - id: "day_visualizer"
+    period: "2023"
+    links:
+      - url: "https://pjpscriv.co.nz/day"
+        label: "website"
+      - url: "https://github.com/pjpscriv/day"
+        label: "github"
+    skills: [ "angular", "google_maps_api" ]
+    featured: true
+    img_light: "/img/projects/day.jpg"
+    img_dark: "/img/projects/day.jpg"
+
+  - id: "advent_of_code_2022"
+    title: "Advent of Code 2022"
+    period: "2022"
+    links:
+      - url: "https://github.com/pjpscriv/advent-of-code-2022"
+        label: "github"
+      - url: "https://adventofcode.com/2022"
+        label: "website"
+    skills: [ "python" ]
+
+  - id: "message_map"
+    period: "2021 - 22"
+    links:
+      - url: "https://pjpscriv.co.nz/message-map"
+        label: "website"
+      - url: "https://github.com/pjpscriv/message-map"
+        label: "github"
+    skills: [ "angular", "angular_material", "ngrx", "d3" ]
+    featured: true
+    img_light: "/img/projects/message-map-light.jpg"
+    img_dark: "/img/projects/message-map-dark.jpg"
+
+  - id: "posh_hg_async"
+    title: "Posh-Hg Async"
+    period: "2020"
+    links:
+      - url: "https://github.com/pjpscriv/posh-hg-async"
+        label: "github"
+    skills: [ "powershell", "mercurial" ]
+    fork: true
+
+  - id: "sudoku"
+    title: "Sudoku"
+    period: "2019"
+    links:
+      - url: "https://pjpscriv.co.nz/sudoku"
+        label: "website"
+      - url: "https://github.com/pjpscriv/sudoku"
+        label: "github"
+    skills: [ "html", "css", "javascript" ]
+
+  - id: "animal_spin"
+    period: "2016"
+    links:
+      - url: "https://pjpscriv.co.nz/animal-spin"
+        label: "website"
+      - url: "https://github.com/pjpscriv/animal-spin"
+        label: "github"
+    skills: [ "css", "javascript" ]
+
+links:
+  chrome: "Chrome Webstore"
+  firefox: "Firefox Add-on"
+  github: "GitHub"
+
+skills:
+  copilot: "Co-Pilot"
+  typescript: "TypeScript"
+  javascript: "JavaScript"
+  html: "HTML"
+  three_js: "Three.js"
+  python: "Python"
+  flask: "Flask"
+  cloud_run: "Cloud Run"
+  firestore: "Firestore"
+  angular: "Angular"
+  chroma_js: "Chroma.js"
+  pillow: "Pillow"
+  google_maps_api: "Google Maps API"
+  angular_material: "Angular Material"
+  ngrx: "NgRx"
+  d3: "D3"
+  powershell: "PowerShell"
+  mercurial: "Mercurial"
+  css: "CSS"

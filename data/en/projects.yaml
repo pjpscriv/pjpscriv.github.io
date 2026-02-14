@@ -1,117 +1,41 @@
-- period: "2025"
-  title: "Quebecle"
-  links: 
-    - url: "https://pjpscriv.co.nz/quebecle"
-      label: "Website"
-  skills: [ "Co-Pilot", "TypeScript" ]
+projects:
+  quebecle:
+    title: "Quebecle"
+  
+  ansi_code_generator:
+    title: "ANSI Code Generator"
+  
+  cyber_canada:
+    description: "Canadian Patriotism on the Information Superhighway."
+  
+  dot_match:
+    description: "A match-three game where you align dots of the same colour to score points. Built with HTML Canvas and TypeScript, using a simple NoSQL database to store high scores and feature requests. Hosted on Google Cloud."
+  
+  wet_bulb_calculator:
+    title: "Wet Bulb Calculator"
+    description: "A single-component web app that takes temperature and humidity values and returns a 'wet bulb temperature' - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients."
+  
+  emoji_imager:
+    title: "Emoji Imager"
+  
+  day_visualizer:
+    title: "Day Visualizer"
+    description: "A simple web app that shows how much of the day is nighttime and how much is daytime. Allows users to change the time and location to see how day length changes depending on where and when in the world you are. Built with Angular, using Google Maps API for location logic."
+  
+  message_map:
+    title: "Message Map"
+    description: "A tool to explore your Facebook Messenger data. View all your messages in their totality, then zoom all the way in to specific messages. See summaries for, and filter by chat, sender, and a few other criteria. A fork of the [original project](https://github.com/adurivault/FBMessage) by a pair of French students. Refactored into Angular, using Material UI component library, NgRx (Redux) for state management, and D3.js for data visualization."
+  
+  posh_hg_async:
+    description: "A fork of [Posh-Hg](https://github.com/posh-hg/posh-hg) that adds support for asynchronous operations."
+  
+  animal_spin:
+    title: "Animal Spin"
 
-- period: "2025"
-  title: "Gmail Label Colorizer"
-  links: 
-    - url: "https://chromewebstore.google.com/detail/pjainmnpfajfihmlgdbhaigmehlmeikm"
-      label: "Chrome Webstore"
-  skills: [ "Browser Extension", "JavaScript" ]
 
-- period: "2025"
-  title: "GitHub Social Icons"
-  links: 
-    - url: "https://chromewebstore.google.com/detail/ledidlccnpfooopagmkgihgibfbnbbnp"
-      label: "Chrome Webstore"
-  skills: [ "Browser Extension", "TypeScript" ]
+links:
+  website: "Website"
 
-- period: "2025"
-  title: "ANSI Code Generator"
-  links: 
-    - url: "https://pjpscriv.co.nz/ansicodes"
-      label: "Website"
-  skills: [ "HTML", "JavaScript" ]
-  fork: true
 
-- period: "2025"
-  title: "CyberCanada"
-  links: 
-    - url: "https://pjpscriv.co.nz/cyber-canada"
-      label: "Website"
-  skills: [ "Three.js" ]
-  description: "Canadian Patriotism on the Information Superhighway."
-
-- period: "2024"
-  title: "Dot Match"
-  links: 
-    - url: "https://dotmatch.lol"
-      label: "Website"
-  skills: [ "TypeScript", "Python", "Flask", "Cloud Run", "Firestore" ]
-  featured: true
-  description: "A match-three game where you align dots of the same colour to score points. Built with HTML Canvas and TypeScript, using a simple NoSQL database to store high scores and feature requests. Hosted on Google Cloud."
-  img_light: "/img/projects/dotmatch-lol-light.jpg"
-  img_dark: "/img/projects/dotmatch-lol-dark.jpg"
-
-- period: "2023"
-  title: "Wet Bulb Calculator"
-  links: 
-    - url: "https://pjpscriv.co.nz/wet-bulb-calculator"
-      label: "Website"
-  skills: [ "Angular", "Chroma.js" ]
-  featured: false
-  description: "A single-component web app that takes temperature and humidity values and returns a 'wet bulb temperature' - the temperature the body can reach with evaporative cooling. Built with Angular, using Chroma.js to create gradients."
-  img_light: "/img/projects/wet-bulb-light.jpg"
-  img_dark: "/img/projects/wet-bulb-dark.jpg"
-
-- period: "2023"
-  title: "Emoji Imager"
-  links: 
-    - url: "https://emoji.pjpscriv.co.nz"
-      label: "Website"
-  skills: [ "Python", "Flask", "Pillow" ]
-
-- period: "2023"
-  title: "Day Visualizer"
-  links: 
-    - url: "https://pjpscriv.co.nz/day"
-      label: "Website"
-  skills: [ "Angular", "Google Maps API" ]
-  featured: true
-  description: "A simple web app that shows how much of the day is nighttime and how much is daytime. Allows users to change the time and location to see how day length changes depending on where and when in the world you are. Built with Angular, using Google Maps API for location logic."
-  img_light: "/img/projects/day.jpg"
-  img_dark: "/img/projects/day.jpg"
-
-- period: "2022"
-  title: "Advent of Code 2022"
-  links: 
-    - url: "https://github.com/pjpscriv/advent-of-code-2022"
-      label: "GitHub"
-  skills: [ "Python"]
-
-- period: "2021 - 22"
-  title: "Message Map"
-  links: 
-    - url: "https://pjpscriv.co.nz/message-map"
-      label: "Website"
-  skills: [ "Angular", "Angular Material", "NgRx", "D3" ]
-  featured: true
-  description: "A tool to explore your Facebook Messenger data. View all your messages in their totality, then zoom all the way in to specific messages. See summaries for, and filter by chat, sender, and a few other criteria. A fork of the [original project](https://github.com/adurivault/FBMessage) by a pair of French students. Refactored into Angular, using Material UI component library, NgRx (Redux) for state management, and D3.js for data visualization."
-  img_light: "/img/projects/message-map-light.jpg"
-  img_dark: "/img/projects/message-map-dark.jpg"
-
-- period: "2020"
-  title: "Posh-Hg Async"
-  links: 
-    - url: "https://github.com/pjpscriv/posh-hg-async"
-      label: "GitHub"
-  skills: [ "PowerShell", "Mercurial" ]
-  fork: true
-  description: "A fork of [Posh-Hg](https://github.com/posh-hg/posh-hg) that adds support for asynchronous operations."
-
-- period: "2019"
-  title: "Sudoku"
-  links: 
-    - url: "https://pjpscriv.co.nz/sudoku"
-      label: "Website"
-  skills: [ "HTML", "CSS", "JavaScript" ]
-
-- period: "2016"
-  title: "Animal Spin"
-  links: 
-    - url: "https://pjpscriv.co.nz/animal-spin"
-      label: "Website"
-  skills: [ "CSS", "JavaScript" ]
+skills:
+  browser_ext: "Browser Extension"

@@ -1,5 +1,14 @@
 {{- $lang := .Page.Language.Lang -}}
-{{- $projects := index .Site.Data $lang "projects" -}}
+{{- $baseData := .Site.Data.projects -}}
+{{- $langData := index .Site.Data $lang "projects" -}}
+
+{{- $baseProjects := $baseData.projects -}}
+{{- $baseLinks := $baseData.links -}}
+<!-- {{- $baseSkills := $baseData.skills -}} -->
+
+{{- $langProjects := $langData.projects -}}
+{{- $langLinks := $langData.links -}}
+<!-- {{- $langSkills := $langData.skills -}} -->
 
 <div class="projects-table">
   <table>
@@ -11,17 +20,27 @@
       </tr>
     </thead>
     <tbody>
-      {{- range $projects -}}
+      {{- range $baseProjects -}}
+      {{- $projectId := .id -}}
+      {{- $langProject := index $langProjects $projectId -}}
+      
+      {{- $title := (index $langProject "title") | default .title -}}
+      
       <tr>
         <td class="project-period">{{- .period -}}</td>
-        <td class="project-title">{{- .title -}}</td>
+        <td class="project-title">{{- $title -}}</td>
         <td class="project-link">
-          {{- range .links -}}
-          <div class="project-link-pill">
-            <a href="{{- .url -}}" target="_blank">{{- .label -}}</a>
-            {{ readFile "static/img/icons/arrow.svg" | safeHTML }}
+          <div class="project-link-wrapper">
+            {{- range .links -}}
+              {{- $labelKey := .label -}}
+              
+              {{- $label := index $langLinks $labelKey | default (index $baseLinks $labelKey) | default $labelKey -}}
+              <div class="project-link-pill">
+                <a href="{{- .url -}}" target="_blank">{{- $label -}}</a>
+                {{ readFile "static/img/icons/arrow.svg" | safeHTML }}
+              </div>
+            {{- end -}}
           </div>
-          {{- end -}}
         </td>
       </tr>
       {{- end -}}
