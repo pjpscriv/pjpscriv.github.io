@@ -18,7 +18,7 @@ People from around the world who's work I admire. For the most part, a mix of so
 - [Evan Peck](https://evanpeck.github.io)
 - [Tyler Fisher](https://tylerjfisher.com)
 - [Owen Lacy](https://owenlacey.dev)
-
+- [Paul Ford](https://ftrain.com)
 ## New Zealand
 
 A bit closer to home.
