@@ -23,10 +23,11 @@ People from around the world who's work I admire. For the most part, a mix of so
 
 A bit closer to home.
 
+- [Tyrone Biddle](https://www.linkedin.com/in/tyronebiddle)
+- [Nate Watson](https://nw.nz)
 - [Sam Jarman](https://www.samjarman.co.nz)
 - [Amir Mohtasebi](https://mohtasebi.com)
 - [Aaron Schiff](https://schiff.nz)
-- [Nate Watson](https://nw.nz)
 - [Finn Greig](https://www.finngreig.com)
 
 ## Peers
