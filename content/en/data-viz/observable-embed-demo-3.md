@@ -13,13 +13,13 @@ This is what it looks like embeded from `pjpscriv.co.nz`. Other approaches:
 Yes with `height="7000"`, he's a loooong boi.
 
 ```html
-<iframe src="https://pjpscriv.co.nz/en/embed/nz-election-2026/" 
+<iframe src="https://pjpscriv.co.nz/embed/nz-election-2026/" 
         width="800" height="7000" 
         frameborder="0">
 </iframe>
 ```
 
-<iframe src="http://localhost:1313/embed/nz-election-2026/" 
+<iframe src="http://pjpscriv.co.nz/embed/nz-election-2026/" 
         width="800" height="7000" 
         frameborder="0">
 </iframe>
