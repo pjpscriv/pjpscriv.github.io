@@ -19,7 +19,7 @@ Yes with `height="7000"`, he's a loooong boi.
 </iframe>
 ```
 
-<iframe src="http://pjpscriv.co.nz/embed/nz-election-2026/" 
+<iframe src="https://pjpscriv.co.nz/embed/nz-election-2026/" 
         width="800" height="7000" 
         frameborder="0">
 </iframe>
