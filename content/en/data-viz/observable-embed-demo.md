@@ -6,6 +6,10 @@ draft: false
 unlisted: true
 ---
 
+Embedding with a single Observable `<iframe>`. Other approaches:
+- [Multiple Observable iframes](../observable-embed-demo-2)
+- [pjpscriv.co.nz embed](../observable-embed-demo-3)
+
 {{<observable-iframe
     notebook="145c825f4a902622"
     cells=`

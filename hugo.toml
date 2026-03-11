@@ -17,6 +17,9 @@ defaultContentLanguage = "en"
 [markup]
   [markup.highlight]
     noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [mediaTypes]
   [mediaTypes."application/rss+xml"]

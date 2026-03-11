@@ -6,7 +6,9 @@ draft: false
 unlisted: true
 ---
 
-This is what it looks like split up a bit more:
+Embedding with multiple Observable `<iframe>`s. Other approaches:
+- [Single Observable iframe](../observable-embed-demo-)
+- [pjpscriv.co.nz embed](../observable-embed-demo-3)
 
 {{<observable-iframe
     notebook="145c825f4a902622"
