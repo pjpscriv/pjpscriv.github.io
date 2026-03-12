@@ -10,7 +10,7 @@
   <div class="section__item experience">
     <div class="section__item-head "> 
       <h4 class="experience__title">{{ .title }} • <a href="{{ .link }}">{{ .org }}</a></h4>
-      <p class="section__item-period experience__period">{{- .period_long -}}</p>
+      <p class="section__item-period experience__period">{{- .period_long | safeHTML -}}</p>
     </div>
     <div class="experience__content">
       <p class="section__item-description">{{- .content | markdownify -}}</p>
