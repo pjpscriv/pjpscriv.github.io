@@ -19,3 +19,5 @@ A bit of my work/education history:
 This site is built with [Hugo](https://gohugo.io) and hosted on [GitHub Pages](https://pages.github.com). The code is deployed through GitHub Actions using [this build action](https://github.com/marketplace/actions/hugo-setup), and [this deploy action](https://github.com/marketplace/actions/github-pages-action). The source code is hosted on [GitHub](https://github.com/pjpscriv/pjpscriv.github.io).
 
 The domain name was bought and is managed through [Hover](https://www.hover.com).
+
+My pixel portrait was created by [Sam Caldwell](https://www.artdesignfilm.com).
