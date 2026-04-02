@@ -4,7 +4,7 @@ layout: "index"
 ---
 
 {{<intro>}}
-  I'm a Software Engineer from Aoteroa New Zealand currently living and learning French in Montreal, Canada 🍁. I'm interested in data-viz, open data, and the open web.
+  Full-Stack Software Engineer based in Montreal, Canada 🍁. Currently learning French and interested in data-viz, open data, and the open web.
 {{</intro>}}
 {{<homepage-split>}}
 
