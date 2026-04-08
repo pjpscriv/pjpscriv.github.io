@@ -7,12 +7,14 @@ const $$ = q => document.querySelectorAll(q);
 const GRADIENT_CLASSES = ['', 'blue-grad', 'green-yellow-grad', 'lime-grad', 'green-grad'];
 // TODO: Add more gradient classes
 
+
 /***************** First Load *****************/
 const randomGradient = GRADIENT_CLASSES[Math.floor(Math.random() * (GRADIENT_CLASSES.length))]
 if(!!randomGradient) {
   document.body.classList.add(randomGradient)
 }
 setSyntaxHighlightingTheme(darkModeEnabled)
+
 
 /***************** Click functionality *****************/
 function addDarkModeToggle() {
@@ -99,12 +101,25 @@ function setSyntaxHighlightingTheme(isDark) {
   darkSheet = getStyleSheet('syntax-dark.css');
   lightSheet.disabled = isDark;
   darkSheet.disabled = !isDark;
-}    
+}
+
+/***************** Header Links *****************/
+function addHeaderPoundLinks() {
+  const headers = $$('h2[id], h3[id], h4[id], h5[id], h6[id]')
+  headers.forEach(header => {
+    const link = document.createElement('a')
+    link.href = `#${header.id}`
+    link.className = 'header-pound-link'
+    link.textContent = '#'
+    header.prepend(link)
+  })
+}
 
 function main() {
   addDarkModeToggle();
   toggleNavbarLanguages();
   closeNavbarsOnClickOutside();
+  addHeaderPoundLinks();
 }
 
 window.onload = main()

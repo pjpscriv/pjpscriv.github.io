@@ -22,7 +22,7 @@
 {{- $years = sort $years "value" "desc" -}}
 
 {{- range $years -}}
-  <h2>{{- . -}}</h2>
+  <h2 id="{{- . -}}">{{- . -}}</h2>
   <div class="data-viz-list">
     {{- range index $postsByYear . -}}
       {{- if .Params.img -}}

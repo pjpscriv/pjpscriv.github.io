@@ -24,7 +24,7 @@
 {{/*  -----------------------------  */}}
 
 {{- range $years -}}
-  <h2>{{- . -}}</h2>
+  <h2 id="{{- . -}}">{{- . -}}</h2>
   {{- range index $postsByYear . -}}
     <div class="">
       <div class="section__item-head">

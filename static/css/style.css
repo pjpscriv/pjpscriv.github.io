@@ -48,6 +48,10 @@
 
 
 /**************** Root Element ****************/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -60,6 +64,7 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -84,7 +89,7 @@ a {
 }
 
 /* Text Links */
-a:not(.icon-link) {
+a:not(.icon-link, .header-pound-link) {
   padding: 0 2px;
   background-image: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   background-position: 0% 100%;
@@ -109,6 +114,42 @@ h1:not(:first-of-type) {
 
 h2:not(h1 + h2, .subtitle + h2), h3 {
   padding-top: 1em;
+}
+
+/* Header anchor links */
+.header-pound-link {
+  float: left;
+  margin-left: -1em;
+  padding-right: 0.35em;
+  font-weight: bold;
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  background-image: linear-gradient(90deg, var(--text-color-secondary), var(--text-color-secondary));
+  background-position: 0% 100%;
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  transition: opacity 0.15s, background-size 0.15s;
+  opacity: 0;
+}
+
+@media screen and (width <= 768px) {
+  .header-pound-link {
+    margin-left: -0.7em;
+    padding-right: 0;
+  }
+}
+
+.header-pound-link:hover {
+  background-size: 65% 1px;
+}
+
+h1:hover .header-pound-link,
+h2:hover .header-pound-link,
+h3:hover .header-pound-link,
+h4:hover .header-pound-link,
+h5:hover .header-pound-link,
+h6:hover .header-pound-link {
+  opacity: 1;
 }
 
 /* h1 with a subtitle after it */
@@ -328,7 +369,7 @@ p > a > code {
 }
 
 /* Text Link Hover Effect - Putting this at the end to appease stylelint's no-descending-specificity rule */
-a:not(.icon-link):hover {
+a:not(.icon-link, .header-pound-link):hover {
   color: var(--highlighted-text-color);
   background-size: 100% 100%;
 }
