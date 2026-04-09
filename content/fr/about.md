@@ -16,6 +16,8 @@ Mon expérience d'éducation et travail :
 
 ## Colophon
 
+> _Un mot de designer snob pour dire 'comment ce site a été fait' - [Maggie Appleton](https://maggieappleton.com/colophon)_
+
 Ce site est construit avec [Hugo](https://gohugo.io) et hébergé sur [GitHub Pages](https://docs.github.com/fr/pages). Le code est déployé via GitHub Actions, en utilisant [cette action de build](https://github.com/marketplace/actions/hugo-setup) et [cette action de deploy](https://github.com/marketplace/actions/github-pages-action). Le code source est hébergé sur [GitHub](https://github.com/pjpscriv/pjpscriv.github.io).
 
 Le nom de domaine a été acheté et est géré via [Hover](https://www.hover.com).

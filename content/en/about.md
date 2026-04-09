@@ -16,6 +16,8 @@ A bit of my work/education history:
 
 ## Colophon
 
+> _A nobby designer word for 'how this site was made' - [Maggie Appleton](https://maggieappleton.com/colophon)_
+
 This site is built with [Hugo](https://gohugo.io) and hosted on [GitHub Pages](https://pages.github.com). The code is deployed through GitHub Actions using [this build action](https://github.com/marketplace/actions/hugo-setup), and [this deploy action](https://github.com/marketplace/actions/github-pages-action). The source code is hosted on [GitHub](https://github.com/pjpscriv/pjpscriv.github.io).
 
 The domain name was bought and is managed through [Hover](https://www.hover.com).
