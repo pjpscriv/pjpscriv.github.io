@@ -20,5 +20,5 @@ Except it's me, I'm the LLM.
 
 ### Later
 
-- [ ] Add "copy link to this header" icon for all `<h2>`, etc elements 
+- [x] Add "copy link to this header" icon for all `<h2>`, etc elements 
 - [ ] Add table of contents shortcode
