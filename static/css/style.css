@@ -356,7 +356,8 @@ pre code {
   }
 }
 
-p > code {
+p > code,
+em > code {
   padding: 2px 4px;
   border-radius: 4px;
   font-size: 1.1em;

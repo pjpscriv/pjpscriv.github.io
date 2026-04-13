@@ -6,12 +6,12 @@ draft: false
 unlisted: true
 ---
 
-This is what it looks like embedded from `pjpscriv.co.nz`. Other approaches:
+This is what it looks like embedded from `pjpscriv.co.nz`. 
+
+Other approaches:
 - [Observable iframe](../observable-embed-demo-1)
 - [Observable iframes (multiple)](../observable-embed-demo-2)
 - [pjpscriv.co.nz embeds (multiple)](../observable-embed-demo-4)
-
-Yep with `height="4578"` - he's a loooong boi.
 
 ```html
 <iframe 
@@ -20,6 +20,8 @@ Yep with `height="4578"` - he's a loooong boi.
     frameborder="0">
 </iframe>
 ```
+
+_Note the `height="4578"`. This is a long embed._
 
 <!-- <iframe 
     src="https://pjpscriv.co.nz/embed/nz-election-2026/" 
