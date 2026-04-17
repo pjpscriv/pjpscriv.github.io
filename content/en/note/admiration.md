@@ -1,7 +1,7 @@
 ---
 title: People I Admire
 url: admiration
-updated: 2025-12-03
+updated: 2026-04-17
 ---
 
 ## Globally
@@ -29,6 +29,7 @@ A bit closer to home.
 - [Amir Mohtasebi](https://mohtasebi.com)
 - [Aaron Schiff](https://schiff.nz)
 - [Finn Greig](https://www.finngreig.com)
+- [Carl Patton](https://carlpaton.github.io)
 
 ## Peers
 
