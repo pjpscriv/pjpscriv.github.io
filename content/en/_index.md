@@ -4,7 +4,7 @@ layout: "index"
 ---
 
 {{<intro>}}
-  Full-Stack Software Engineer based in Montreal, Canada 🍁. Currently learning French and interested in data-viz, open data, and the open web.
+  Developer based in Montreal, Canada 🍁. Currently finishing up Francisation and on the lookout for a new role. Interested in data-viz, open data, and the open web.
 {{</intro>}}
 {{<homepage-split>}}
 

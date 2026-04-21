@@ -13,45 +13,52 @@ Embedding in multiple frames from `pjpscriv.co.nz`. Other approaches:
 
 ## Candidate votes
 
-```html
-<iframe 
-    src="https://pjpscriv.co.nz/embed/nz-elec-2026-chart-2/"
-    width="100%" height="1072px" frameborder="0">
+{{< html-demo >}}
+<iframe id="nz-elec-chart-1" width="100%" frameborder="0"
+    src="https://pjpscriv.co.nz/embed/nz-elec-2026-chart-2/">
 </iframe>
-```
-
-<iframe 
-    src="/embed/nz-elec-2026-chart-2/"
-    width="100%" height="1072px" frameborder="0">
-</iframe>
+{{< /html-demo >}}
 
 
 ## Party Votes
 
-```html
-<iframe 
-    src="https://pjpscriv.co.nz/embed/nz-elec-2026-chart-3/"
-    width="100%" height="1151px" frameborder="0">
+{{< html-demo >}}
+<iframe id="nz-elec-chart-2" width="100%" frameborder="0"
+    src="https://pjpscriv.co.nz/embed/nz-elec-2026-chart-3/">
 </iframe>
-```
+{{< /html-demo >}}
 
-<iframe 
-    src="/embed/nz-elec-2026-chart-3/"
-    width="100%" height="1151px" frameborder="0">
-</iframe>
 
 ## Seats & Vote Percentage
 
 Embed would look like this, but hasn't been created yet.
 
-```html
-<iframe 
-    src="https://pjpscriv.co.nz/embed/nz-elec-2026-chart-1/"
-    width="100%" height="0px" frameborder="0">
+{{< html-demo >}}
+<iframe id="nz-elec-chart-3" width="100%" frameborder="0"
+    src="https://pjpscriv.co.nz/embed/nz-elec-2026-chart-3/">
 </iframe>
-```
+{{< /html-demo >}}
 
-<iframe 
-    src="/embed/nz-elec-2026-chart-1/"
-    width="100%" height="0px" frameborder="0">
-</iframe>
+
+## Iframe Resizer
+
+Need this to deal with the fact that the iframes have different heights for desktop
+and mobile views.
+
+{{< html-demo >}}
+<script>
+  const charts = [
+    { id: 'nz-elec-chart-1', heightFn: w => w < 600 ? 719 : 1072 },
+    { id: 'nz-elec-chart-2', heightFn: w => w < 600 ? 780 : 1150 },
+    { id: 'nz-elec-chart-3', heightFn: w => w < 600 ? 780 : 1150 },
+  ];
+
+  for (const { id, heightFn } of charts) {
+    const iframe = document.getElementById(id);
+    if (!iframe) continue;
+    new ResizeObserver(([entry]) => {
+      iframe.style.height = heightFn(entry.contentRect.width) + 'px';
+    }).observe(iframe);
+  }
+</script>
+{{< /html-demo >}}

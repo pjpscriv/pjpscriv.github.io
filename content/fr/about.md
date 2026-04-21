@@ -2,9 +2,13 @@
 title: "À propos de moi"
 ---
 
-Je suis un ingénieur logiciel expérimenté d'Aotearoa Nouvelle-Zélande travaillant comme développeur full stack senior chez [Trade Me](https://trademe.co.nz), le [5e site web le plus visité](https://www.similarweb.com/website/trademe.co.nz/) en Nouvelle-Zélande.
+Je suis un développeur full stack d'Aotearoa Nouvelle-Zélande. Je me suis installé à Montréal 🍁 en novembre 2024 pour vivre à l'étranger et apprendre une nouvelle langue, après avoir passé les 5 dernières années à travailler chez [Trade Me](https://trademe.co.nz) (l'eBay de la Nouvelle-Zélande).
 
-Je suis passionné, amical et enthousiaste à l'idée de créer des systèmes intéressants qui résolvent des problèmes importants. Je cherche actuellement un poste au Canada. 🍁
+Après avoir commencé la Francisation en avril 2025, je suis maintenant au niveau 8, mon niveau final. Je suis activement à la recherche d'un nouveau poste sur le marché du travail québécois et canadien.
+
+Je suis sociable, travailleur et passionné par le développement de logiciels ayant un impact social positif.
+
+Je m'intéresse à la façon dont la technologie peut autonomiser les gens, notamment dans les domaines des données ouvertes, de la visualisation de données, et plus récemment des protocoles sociaux ouverts.
 
 Pendant mon temps libre, je joue de la guitare et fais du ski. J'aime les [podcasts](https://lists.pocketcasts.com/2d425db2-b2c1-4999-be5a-63840ff200d5), les [films de Studio Ghibli](https://en.wikipedia.org/wiki/List_of_Studio_Ghibli_works#Feature_films) et créer des [choses amusantes en code](http://pjpscriv.co.nz/animal-spin/) pour le plaisir. J'ai contribué à la réalisation d'un [album](https://ingridandtheministers.bandcamp.com/album/kill-the-sights), d'un [spectacle de théâtre](https://tldrify.com/vev), et d'un [album pendant un spectacle de théâtre](https://www.aucklandfringe.co.nz/programme-2019/how-to-write-an-album).
 
@@ -22,5 +26,5 @@ Ce site est construit avec [Hugo](https://gohugo.io) et hébergé sur [GitHub Pa
 
 Le nom de domaine a été acheté et est géré via [Hover](https://www.hover.com).
 
-Mon portrait de pixel a été crée par [Sam Caldwell](https://www.artdesignfilm.com).
+Mon portrait de pixel a été créé en 2019 par [Sam Caldwell](https://www.artdesignfilm.com).
 

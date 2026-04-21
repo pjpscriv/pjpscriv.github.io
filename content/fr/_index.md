@@ -4,7 +4,7 @@ layout: "index"
 ---
 
 {{<intro>}}
-  Ingénieur logiciel full-stack basé à Montréal, Canada 🍁. J'apprends le français et je m'intéresse à la visualisation de données, aux données ouvertes et à l'internet ouvert.
+  Développeur basé à Montréal, Canada 🍁. Je termine ma Francisation et je suis à la recherche d'un nouvel emploi. Je m'intéresse à la visualisation de données, aux données ouvertes et à l'internet ouvert.
 {{</intro>}}
 {{<homepage-split>}}
 
