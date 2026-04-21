@@ -369,6 +369,19 @@ p > a > code {
   font-size: 1.1em;
 }
 
+/* Blockquote */
+blockquote {
+  margin: 0;
+  padding: 1em;
+  border-radius: 4px;
+  background-color: var(--ornament-color);
+  border-left: 4px solid var(--text-color-secondary);
+}
+
+blockquote p {
+  margin: 0;
+}
+
 /* Text Link Hover Effect - Putting this at the end to appease stylelint's no-descending-specificity rule */
 a:not(.icon-link, .header-pound-link):hover {
   color: var(--highlighted-text-color);
