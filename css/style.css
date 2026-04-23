@@ -372,7 +372,7 @@ p > a > code {
 /* Blockquote */
 blockquote {
   margin: 0;
-  padding: 1em;
+  padding: 8px 1em;
   border-radius: 4px;
   background-color: var(--ornament-color);
   border-left: 4px solid var(--text-color-secondary);
@@ -380,6 +380,20 @@ blockquote {
 
 blockquote p {
   margin: 0;
+}
+
+/* Tables */
+td, th {
+  padding: 0 8px;
+}
+
+thead {
+  border-bottom: 2px solid var(--border-color);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
 }
 
 /* Text Link Hover Effect - Putting this at the end to appease stylelint's no-descending-specificity rule */
