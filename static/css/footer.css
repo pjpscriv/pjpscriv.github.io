@@ -80,12 +80,6 @@ footer p {
   stop-color: var(--secondary-color);
 }
 
-@media screen and (width <= 675px) {
-  .social-links {
-    max-width: 30vw;
-  }
-}
-
 @media screen and (width <= 576px) {
   footer {
     flex-direction: column;
@@ -99,7 +93,6 @@ footer p {
   
   .social-links {
     justify-content: center;
-    width: 60%;
     min-width: min(200px, 90%);
     padding: 0 1em;
   }

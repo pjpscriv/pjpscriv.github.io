@@ -8,8 +8,8 @@ My [/now](https://nownownow.com/about) page.
 
 Currently I'm:
 
-- Studying French full-time through Quebec's Francisation program
-  - Nearly finished level 7 (out of 8)!
+- Studying French part-time through Quebec's Francisation program
+  - In my final level - level 8!
 - Doing side projects with friends
 - Doing some volunteering for groups back in New Zealand
 - Applying for jobs!

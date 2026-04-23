@@ -3,7 +3,7 @@ const $ = q => document.querySelector(q);
 const $$ = q => document.querySelectorAll(q);
 
 // Variables defined in dark-mode.html
-//    DARK_MODE_CLASS, LIGHT_MODE_CLASS, LOCAL_STORAGE_KEY, darkModeEnabled
+//  →  DARK_MODE_CLASS, LIGHT_MODE_CLASS, LOCAL_STORAGE_KEY, darkModeEnabled
 const GRADIENT_CLASSES = ['', 'blue-grad', 'green-yellow-grad', 'lime-grad', 'green-grad'];
 // TODO: Add more gradient classes
 
@@ -55,8 +55,8 @@ function addSectionScrolls() {
 }
 /* */
 
-/* *
-function toggleNavbarLinks() {
+/* */
+function addNavbarLinksToggle() {
   const menuToggle = $('#menu-toggle')
   menuToggle.addEventListener('click', (e) => {
     e.stopPropagation()
@@ -68,7 +68,7 @@ function toggleNavbarLinks() {
 }
 /* */
 
-function toggleNavbarLanguages() {
+function addLanguageSwitcher() {
   const languageToggle = $('#language-toggle')
   languageToggle.addEventListener('click', (e) => {
     e.stopPropagation()
@@ -117,7 +117,8 @@ function addHeaderPoundLinks() {
 
 function main() {
   addDarkModeToggle();
-  toggleNavbarLanguages();
+  addLanguageSwitcher();
+  addNavbarLinksToggle();
   closeNavbarsOnClickOutside();
   addHeaderPoundLinks();
 }
