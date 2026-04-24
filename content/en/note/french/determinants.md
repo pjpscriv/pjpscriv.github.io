@@ -85,32 +85,32 @@ See also: [Interrogative Pronouns](../pronouns#interrogative).
 
 This is a broad catch-all for determinants that express quantity or amount. There are a few different subcategories here - <abbr title="unspecified quantity or identity, e.g. quelques, plusieurs">*indefinite*</abbr>, <abbr title="negates the existence of a noun, e.g. aucun">*negative*</abbr>, <abbr title="refers to an entire group as a whole, e.g. tout">*totality*</abbr>, <abbr title="applies to each member of a group individually, e.g. chaque">*distributive*</abbr> - but it isn't super important to know all the different types. Some examples:
 
-- *chaque* - each / every
-- *autre(s)* - other
-- *quelque(s)* - some / a few
-- *plusieurs* - several
-- *aucun(e)* - no / not any
-- *tout / toute / tous / toutes* - all / every
+- **chaque** - each / every
+- **autre(s)** - other
+- **quelque(s)** - some / a few
+- **plusieurs** - several
+- **aucun(e)** - no / not any
+- **tout / toute / tous / toutes** - all / every
 
 ### Cardinal Numbers
 
 Cardinal numbers used directly before a noun act as determinants.
 
-- *deux* - two
-- *dix* - ten
-- *cent* - one hundred
-- *un million* - one million
+- **deux** - two
+- **dix** - ten
+- **cent** - one hundred
+- **un million** - one million
 
 ### Expressions
 
 A group of quantity expressions formed with a noun or adverb followed by *de*. Unlike partitive or indefinite articles, the *de* here does not change with gender or number.
 
-- *beaucoup de* - a lot of
-- *peu de* - a little / few
-- *assez de* - enough
-- *trop de* - too much / too many
-- *un tas de* - a heap of
-- *un kilo de* - a kilo of
+- **beaucoup de** - a lot of
+- **peu de** - a little / few
+- **assez de** - enough
+- **trop de** - too much / too many
+- **un tas de** - a heap of
+- **un kilo de** - a kilo of
 
 ## References
 

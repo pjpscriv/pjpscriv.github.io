@@ -82,32 +82,32 @@ Voir aussi : [Les pronoms interrogatifs](../pronouns#interrogative).
 
 Les quantificateurs sont un ensemble de déterminants qui expriment une quantité ou une mesure. Il existe quelques sous-catégories - <abbr title="quantité ou identité non précisée, ex. quelques, plusieurs">*indéfinis*</abbr>, <abbr title="nie l'existence d'un nom, ex. aucun">*négatifs*</abbr>, <abbr title="désigne un groupe dans sa totalité, ex. tout">*de totalité*</abbr>, <abbr title="s'applique à chaque membre d'un groupe individuellement, ex. chaque">*distributifs*</abbr> - mais il n'est pas indispensable de les connaître toutes. Quelques exemples :
 
-- *chaque* - each / every
-- *autre(s)* - other
-- *quelque(s)* - some / a few
-- *plusieurs* - several
-- *aucun(e)* - no / not any
-- *tout / toute / tous / toutes* - all / every
+- **chaque** - tous les / chacun(e)
+- **autre(s)** - différent(s)
+- **quelque(s)** - un peu de
+- **plusieurs** - plus d'un
+- **aucun(e)** - pas un(e)
+- **tout / toute / tous / toutes** - la totalité de
 
 ### Les Nombres Cardinaux
 
 Les nombres cardinaux placés directement devant un nom fonctionnent comme des déterminants.
 
-- *deux* - two
-- *dix* - ten
-- *cent* - one hundred
-- *un million* - one million
+- **deux** - 2
+- **dix** - 10
+- **cent** - 100
+- **un million** - 1 000 000
 
 ### Les Expressions de Quantité
 
 Un groupe d'expressions de quantité formées d'un nom ou d'un adverbe suivi de *de*. Contrairement aux articles partitifs ou indéfinis, le *de* ici ne change pas selon le genre ou le nombre.
 
-- *beaucoup de* - a lot of
-- *peu de* - a little / few
-- *assez de* - enough
-- *trop de* - too much / too many
-- *un tas de* - a heap of
-- *un kilo de* - a kilo of
+- **beaucoup de** - une grande quantité de
+- **peu de** - une petite quantité de
+- **assez de** - une quantité suffisante de
+- **trop de** - une quantité excessive de
+- **un tas de** - une grande quantité de (familier)
+- **un kilo de** - une mesure précise de
 
 ## Les Références
 
