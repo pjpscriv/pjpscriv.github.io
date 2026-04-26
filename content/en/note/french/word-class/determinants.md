@@ -5,7 +5,7 @@ date: 2026-04-22
 
 {{<toc excludeh2="6">}}
 
-> My understanding is these are actually called "determin**ers**" in English, but I think that sounds clunky and not as pretty, so dammit I'm going to call them determin**ants** on this page. 😤
+> My understanding is that they're actually called "determin**ers**" in English, but I think that sounds clunky and not as pretty, so dammit I'm going to call them determin**ants**. 😤
 
 ## Articles
 

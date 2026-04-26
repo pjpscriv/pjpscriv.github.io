@@ -1,11 +1,14 @@
 <style>
+  #TableOfContents {
+    margin-bottom: 2em;
+  }
   #TableOfContents ul {
     padding-left: 1rem;
   }
   {{ with .Get "excludeh2" }}
   {{ range (split . ",") }}
-  #TableOfContents > ul > li:nth-child({{ strings.TrimSpace . }}) { display: none; }
-  {{ end }}
+    #TableOfContents > ul > li:nth-child({{ strings.TrimSpace . }}) { display: none; }
+    {{ end }}
   {{ end }}
 </style>
 {{ .Page.TableOfContents }}
