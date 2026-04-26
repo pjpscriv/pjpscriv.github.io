@@ -6,7 +6,7 @@ draft: false
 
 {{<toc excludeh2="3">}}
 
-*Les noms* sont des mots qui désignent des personnes, des lieux, des choses ou des idées. En français, chaque nom a un genre grammatical - masculin ou féminin - qui influe sur les déterminants, les adjectifs et les pronoms qui l'accompagnent.
+*Les noms* sont des mots qui désignent des personnes, des lieux, des choses ou des idées. En français, chaque nom a un genre grammatical - masculin ou féminin - qui influe sur [les déterminants](../determinants), les adjectifs et les pronoms qui l'accompagnent.
 
 ## Noms communs et noms propres
 

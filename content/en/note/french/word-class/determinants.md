@@ -9,7 +9,7 @@ date: 2026-04-22
 
 ## Articles
 
-*Articles* are the most common type of determinant. Unlike other determinants which add different types of detail, articles simply introduce a noun - indicating whether it's specific, unspecific, or partial.
+*Articles* are the most common type of determinant. Unlike other determinants which add different types of detail, articles simply introduce a [noun](../nouns) - indicating whether it's specific, unspecific, or partial.
 
 ### Definite
 

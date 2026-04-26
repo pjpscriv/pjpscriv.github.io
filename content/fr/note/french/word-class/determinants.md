@@ -7,7 +7,7 @@ date: 2026-04-23
 
 ## Les Articles
 
-*Les articles* sont le type de déterminant le plus courant. Contrairement aux autres déterminants qui apportent des précisions supplémentaires, les articles se contentent d'introduire un nom - en indiquant s'il est spécifique, non spécifique, ou partiel.
+*Les articles* sont le type de déterminant le plus courant. Contrairement aux autres déterminants qui apportent des précisions supplémentaires, les articles se contentent d'introduire [un nom](../nouns) - en indiquant s'il est spécifique, non spécifique, ou partiel.
 
 ### Définis
 
