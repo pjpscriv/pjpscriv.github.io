@@ -8,7 +8,7 @@ draft: false
 
 *Les noms* sont des mots qui désignent des personnes, des lieux, des choses ou des idées. En français, chaque nom a un genre grammatical - masculin ou féminin - qui influe sur [les déterminants](../determinants), les adjectifs et les pronoms qui l'accompagnent.
 
-## Noms communs et noms propres
+## Communs vs propres
 
 *Les noms communs* désignent des choses ou des catégories générales : *un chat*, *une ville*.
 
@@ -43,7 +43,7 @@ Cela dit, la terminaison d'un nom est souvent un bon indice.
 ### Terminaisons féminines
 
 - **-tion / -sion** - la nation, la révolution, la passion
-- **-ité** - la liberté, la qualité, la curiosité
+- **-ité** - la réalité, la qualité, la curiosité
 - **-ure** - la voiture, la nature, la culture
   - <span style="opacity: 0.5">*exceptions : le murmure, le mercure*</span>
 - **-ance / -ence** - la chance, la danse, la violence, la patience

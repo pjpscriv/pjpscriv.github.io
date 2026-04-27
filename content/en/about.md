@@ -24,6 +24,8 @@ A bit of my work/education history:
 
 This site is built with [Hugo](https://gohugo.io) and hosted on [GitHub Pages](https://pages.github.com). The code is deployed through GitHub Actions using [this build action](https://github.com/marketplace/actions/hugo-setup), and [this deploy action](https://github.com/marketplace/actions/github-pages-action). The source code is hosted on [GitHub](https://github.com/pjpscriv/pjpscriv.github.io).
 
+I use the typefaces [Open Sans](https://fonts.google.com/specimen/Open+Sans) for text and [Raleway](https://fonts.google.com/specimen/Raleway) for titles.
+
 The domain name was bought and is managed through [Hover](https://www.hover.com).
 
 The pixel portrait was created in 2019 by [Sam Caldwell](https://www.artdesignfilm.com).
