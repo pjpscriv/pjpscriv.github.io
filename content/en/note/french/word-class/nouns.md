@@ -6,7 +6,7 @@ draft: false
 
 {{<toc excludeh2="3">}}
 
-*Nouns* are words that name people, places, things, or ideas. In French, every noun has a grammatical gender, either masculine or feminine, which affects the [determinants](../determinants), adjectives, and pronouns that accompany it.
+*Nouns* are words that name people, places, things, or ideas. In French, every noun has a grammatical gender, either masculine or feminine, which affects the [determinants](../determinants), [adjectives](../adjectives), and pronouns that accompany it.
 
 ## Common vs Proper
 
