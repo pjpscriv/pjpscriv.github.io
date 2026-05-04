@@ -1,7 +1,6 @@
 ---
 title: Les Noms
-updated: 2026-04-25
-draft: false
+date: 2026-04-25
 ---
 
 {{<toc excludeh2="3">}}

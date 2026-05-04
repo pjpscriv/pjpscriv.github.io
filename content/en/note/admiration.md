@@ -1,5 +1,5 @@
 ---
-title: People I Admire
+title: Admiration
 url: admiration
 updated: 2026-04-17
 ---
@@ -19,6 +19,7 @@ People from around the world who's work I admire. For the most part, a mix of so
 - [Tyler Fisher](https://tylerjfisher.com)
 - [Owen Lacy](https://owenlacey.dev)
 - [Paul Ford](https://ftrain.com)
+
 ## New Zealand
 
 A bit closer to home.

@@ -1,7 +1,6 @@
 ---
 title: Adjectives
-updated: 2026-05-04
-draft: false
+date: 2026-05-04
 ---
 
 {{<toc excludeh2="6">}}
@@ -96,6 +95,8 @@ Some adjectives do not agree with the noun at all:
 - Compound colors (two words describing a single shade): *bleu marine*, *vert foncé*, *rouge vif*
 
 ## Comparison
+
+See also [Adverb Comparison](../adverbs#comparison).
 
 ### Comparative
 

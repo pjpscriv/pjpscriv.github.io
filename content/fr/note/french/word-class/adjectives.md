@@ -1,7 +1,6 @@
 ---
 title: Les Adjectifs
-updated: 2026-05-04
-draft: false
+date: 2026-05-04
 ---
 
 {{<toc excludeh2="6">}}
