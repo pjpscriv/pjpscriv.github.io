@@ -1,5 +1,5 @@
 ---
-title: Classes grammaticales
+title: Les classes de mots
 layout: single
 ---
 
