@@ -9,8 +9,6 @@ Comment les verbes français se conjuguent selon les différents temps et modes 
 - <span class="kinda-know">maîtrise à peu près</span>
 - <span class="unknown">ne maîtrise pas</span>
 
-(par moi)
-
 <table>
   <thead>
     <tr>
