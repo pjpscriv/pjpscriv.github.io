@@ -3,7 +3,7 @@ title: Les Déterminants
 date: 2026-04-23
 ---
 
-{{<toc excludeh2="6">}}
+{{<toc excludeIDs="les-références">}}
 
 ## Les Articles
 

@@ -3,7 +3,7 @@ title: Les Noms
 date: 2026-04-25
 ---
 
-{{<toc excludeh2="3">}}
+{{<toc excludeIDs="les-références">}}
 
 *Les noms* sont des mots qui désignent des personnes, des lieux, des choses ou des idées. En français, chaque nom a un genre grammatical - masculin ou féminin - qui influe sur [les déterminants](../determinants), [les adjectifs](../adjectives) et les pronoms qui l'accompagnent.
 

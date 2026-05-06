@@ -3,7 +3,7 @@ title: Adverbs
 date: 2026-05-04
 ---
 
-{{<toc excludeh2="5">}}
+{{<toc excludeIDs="references">}}
 
 *Adverbs* modify [verbs](../verbs), [adjectives](../adjectives), or other adverbs. Adverbs don't have gender, they never change form to agree with they word they are modifying.
 

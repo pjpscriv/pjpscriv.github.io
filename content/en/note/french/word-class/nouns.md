@@ -3,7 +3,7 @@ title: Nouns
 date: 2026-04-25
 ---
 
-{{<toc excludeh2="3">}}
+{{<toc excludeIDs="references">}}
 
 *Nouns* are words that name people, places, things, or ideas. In French, every noun has a grammatical gender, either masculine or feminine, which affects the [determinants](../determinants), [adjectives](../adjectives), and pronouns that accompany it.
 

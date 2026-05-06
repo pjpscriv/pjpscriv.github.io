@@ -3,7 +3,7 @@ title: Les Adverbes
 date: 2026-05-04
 ---
 
-{{<toc excludeh2="5">}}
+{{<toc excludeIDs="les-références">}}
 
 *Les adverbes* modifient [les verbes](../verbs), [les adjectifs](../adjectives) ou d'autres adverbes. Les adverbes n'ont pas de genre et ne s'accordent jamais avec le mot qu'ils modifient.
 

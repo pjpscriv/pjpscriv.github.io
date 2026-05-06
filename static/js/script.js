@@ -73,6 +73,8 @@ function addLanguageSwitcher() {
   languageToggle.addEventListener('click', (e) => {
     e.stopPropagation()
     const languages = $('.header__languages')
+    const navbar = $('.header__links')
+    navbar.classList.remove('header__links--open')
     languages.classList.toggle('header__languages--open')
   })
 }
@@ -80,8 +82,13 @@ function addLanguageSwitcher() {
 function closeNavbarsOnClickOutside() {
   document.addEventListener('click', (event) => {
     const languages = $('.header__languages')
+    const navbar = $('.header__links')
+
     if (!languages.contains(event.target)) {
       languages.classList.remove('header__languages--open')
+    }
+    if (!navbar.contains(event.target)) {
+      navbar.classList.remove('header__links--open')
     }
   })
 }

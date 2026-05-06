@@ -3,7 +3,7 @@ title: Adjectives
 date: 2026-05-04
 ---
 
-{{<toc excludeh2="6">}}
+{{<toc excludeIDs="references">}}
 
 *Adjectives* are words that describe or modify [nouns](../nouns). In French, adjectives must **agree** in gender and number with the noun they describe, and their position relative to the noun follows specific rules.
 

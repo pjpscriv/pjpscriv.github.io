@@ -3,7 +3,7 @@ title: Les Adjectifs
 date: 2026-05-04
 ---
 
-{{<toc excludeh2="6">}}
+{{<toc excludeIDs="les-références">}}
 
 *Les adjectifs* sont des mots qui décrivent ou modifient [les noms](../nouns). En français, les adjectifs doivent **s'accorder** en genre et en nombre avec le nom qu'ils qualifient, et leur position par rapport au nom suit des règles précises.
 

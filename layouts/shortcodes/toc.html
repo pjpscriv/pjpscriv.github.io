@@ -1,14 +1,8 @@
-<style>
-  #TableOfContents {
-    margin-bottom: 2em;
-  }
-  #TableOfContents ul {
-    padding-left: 1rem;
-  }
-  {{ with .Get "excludeh2" }}
-  {{ range (split . ",") }}
-    #TableOfContents > ul > li:nth-child({{ strings.TrimSpace . }}) { display: none; }
-    {{ end }}
-  {{ end }}
-</style>
+{{- $css := "  #TableOfContents {\n    margin-bottom: 2em;\n  }\n\n  #TableOfContents ul {\n    padding-left: 1rem;\n  }" -}}
+{{- with .Get "excludeIDs" -}}
+  {{- range (split . ",") -}}
+    {{- $css = printf "%s\n\n  #TableOfContents > ul > li:has(> a[href=\"#%s\"]) {\n    display: none;\n  }" $css (strings.TrimSpace .) -}}
+  {{- end -}}
+{{- end -}}
+{{ printf "<style>\n%s\n</style>" $css | safeHTML }}
 {{ .Page.TableOfContents }}
