@@ -11,6 +11,8 @@ To run the local development server, run:
 npm start
 ```
 
+Work to do defined in [TASKS.md](./TASKS.md).
+
 ### Linting
 
 This project uses [Stylelint](https://stylelint.io/) for CSS linting. The configuration lives in [`.stylelintrc.json`](/.stylelintrc.json).

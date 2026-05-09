@@ -25,7 +25,7 @@ layout: "index"
 {{<list-writing-preview>}}
 {{<homepage-split>}}
 
-## [Notes →](./notes)
+## [Jardin →](./garden)
 
 {{<list-notes-preview>}}
 

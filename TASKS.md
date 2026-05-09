@@ -17,8 +17,11 @@ Except it's me, I'm the LLM.
   - [x] Remove day name from format
   - [x] Add word count and "time to read"
 - [x] In the header, reduce the left and right padding at the mobile breakpoint
-
-### Later
-
+- [x] Add table of contents shortcode
 - [x] Add "copy link to this header" icon for all `<h2>`, etc elements 
-- [ ] Add table of contents shortcode
+
+###
+
+- [ ] Add lil plant icons to garden pages
+- [ ] Update garden page messaged to "Planted" / "Last tended" etc
+  - [ ] Maybe add age?

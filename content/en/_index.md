@@ -23,7 +23,7 @@ layout: "index"
 {{<list-writing-preview>}}
 {{<homepage-split>}}
 
-## [Notes →](./notes)
+## [Garden →](./garden)
 
 {{<list-notes-preview>}}
 
