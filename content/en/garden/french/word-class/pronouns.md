@@ -19,7 +19,7 @@ Subject pronouns indicate who is performing the action of the verb:
 - **vous** - you *(formal singular, or plural)*
 - **ils / elles** - they *(masculine or mixed / feminine)*
 
-> **Note:** *tu* is used with friends, family, children, and peers. *Vous* is used with strangers, authority figures, or anyone you'd address formally — as well as when addressing more than one person. When in doubt, use *vous*.
+> **Note:** *tu* is used with friends, family, children, and peers. *Vous* is used with strangers, authority figures, or anyone you'd address formally - as well as when addressing more than one person. When in doubt, use *vous*.
 
 *On* is a third-person singular pronoun that can mean *one* (formally) or function as an informal substitute for *nous*: *On y va?* (Shall we go?).
 
@@ -39,7 +39,7 @@ They are used:
 - **After prepositions:** *C'est pour **toi**.* - It's for you. / *Il vient avec **nous**.*
 - **In comparisons:** *Elle est plus grande que **moi**.*
 - **For emphasis:** *Moi, je n'aime pas ça.* - Me, I don't like that.
-- **Standalone (without a verb):** *Qui a dit ça? — **Lui**.* - Who said that? — Him.
+- **Standalone (without a verb):** *Qui a dit ça? - **Lui**.* - Who said that? - Him.
 - **With** *c'est / ce sont*: *C'est **moi**.* / *Ce sont **eux**.*
 
 ## Object
@@ -55,7 +55,9 @@ Direct object pronouns replace a noun that is the direct object of the verb (no 
 - **vous** - you
 - **les** - them
 
-*Je vois Paul → Je **le** vois.* - I see Paul → I see him.
+*Je vois Paul → Je **le** vois.*
+
+I see Paul → I see him.
 
 ### Indirect
 
@@ -68,13 +70,15 @@ Indirect object pronouns replace *à + person*:
 - **vous** - to you
 - **leur** - to them
 
-*Je parle à Marie → Je **lui** parle.* - I talk to Marie → I talk to her.
+*Je parle à Marie → Je **lui** parle.*
 
-> **Note:** indirect object pronouns are only used for people. For things and ideas introduced by *à*, use the adverbial pronoun [**y**](#adverbial).
+I talk to Marie → I talk to her.
+
+> **Note:** indirect object pronouns are only used for <u>people</u>. For <u>things and ideas</u> introduced by *à*, use the adverbial pronoun [**y**](#adverbial).
 
 ## Reflexive
 
-Reflexive pronouns are used with [reflexive verbs](../verbs#reflexive) — verbs where the subject acts on itself:
+Reflexive pronouns are used with [reflexive verbs](../verbs#reflexive) - verbs where the subject acts on itself:
 
 - **me** - myself
 - **te** - yourself
@@ -94,8 +98,8 @@ The adverbial pronouns **y** and **en** replace prepositional phrases. They alwa
 
 **y** primarily replaces:
 
-1. **à + place** — *Je vais à Paris → J'**y** vais.* - I'm going to Paris → I'm going there.
-2. **à + thing or idea** (indirect complement) — *Je pense à ce problème → J'**y** pense.* - I'm thinking about this problem → I'm thinking about it.
+1. **à + place** - *Je vais à Paris → J'**y** vais.* - I'm going to Paris → I'm going there.
+2. **à + thing or idea** (indirect complement) - *Je pense à ce problème → J'**y** pense.* - I'm thinking about this problem → I'm thinking about it.
 
 > **Note:** *y* replaces *à + thing*, but **not** *à + person*. For people, use an indirect object pronoun instead: *Je pense à lui.* (not *J'y pense.*)
 
@@ -105,9 +109,9 @@ It can also replace other locative phrases (*dans, sur, en + place*): *Elle est 
 
 **en** replaces:
 
-1. **de + place** — *Il vient de France → Il **en** vient.* - He comes from France → He comes from there.
-2. **Partitive or indefinite noun** — *Je veux du café → J'**en** veux.* - I want some coffee → I want some.
-3. **de + noun**, especially with quantities — *J'ai trois chats → J'**en** ai trois.* - I have three cats → I have three (of them).
+1. **de + place** - *Il vient de France → Il **en** vient.* - He comes from France → He comes from there.
+2. **Partitive or indefinite noun** - *Je veux du café → J'**en** veux.* - I want some coffee → I want some.
+3. **de + noun**, especially with quantities - *J'ai trois chats → J'**en** ai trois.* - I have three cats → I have three (of them).
 
 ### Placement and stacking
 
@@ -135,22 +139,22 @@ They agree in gender and number with the noun being replaced (i.e. the thing pos
 | yours *(pl.)* | **le vôtre** | **la vôtre** | **les vôtres** | **les vôtres** |
 | theirs | **le leur** | **la leur** | **les leurs** | **les leurs** |
 
-*C'est ton chat? — Oui, c'est **le mien**.* - Is that your cat? — Yes, it's mine.
+*C'est ton chat? - Oui, c'est **le mien**.* - Is that your cat? - Yes, it's mine.
 
 ## Demonstrative
 
 Demonstrative pronouns replace a noun that has been pointed out. They agree in gender and number with the noun they replace:
 
-- **celui** - masculine singular — this one / that one
+- **celui** - masculine singular - this one / that one
 - **celle** - feminine singular
-- **ceux** - masculine plural — these / those
+- **ceux** - masculine plural - these / those
 - **celles** - feminine plural
 
 Unlike [demonstrative determinants](../determinants#demonstrative) (*ce/cet/cette/ces*), which accompany a noun, demonstrative pronouns stand alone and are typically followed by one of:
 
 - **-ci / -là** (proximity suffix): *celui-ci* (this one here) / *celui-là* (that one there)
-- A **relative clause**: *Celui qui parle fort...* — The one who speaks loudly...
-- **de + noun**: *les livres de Marie et ceux de Paul* — Marie's books and Paul's.
+- A **relative clause**: *Celui qui parle fort...* - The one who speaks loudly...
+- **de + noun**: *les livres de Marie et ceux de Paul* - Marie's books and Paul's.
 
 ## Relative
 
@@ -231,7 +235,7 @@ See also: [Interrogative Determinants](../determinants#interrogative).
 
 ### Asking which one
 
-*Lequel / laquelle / lesquels / lesquelles* — which one(s)? Agrees with the noun it replaces:
+*Lequel / laquelle / lesquels / lesquelles* - which one(s)? Agrees with the noun it replaces:
 
 *Il y a deux chemins. **Lequel** prends-tu?* - There are two paths. Which one are you taking?
 
