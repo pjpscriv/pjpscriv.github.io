@@ -1,10 +1,10 @@
 ---
 title: Pronouns
 updated: 2026-04-22
-draft: true
+draft: false
 ---
 
-{{<toc excludeIDs="references">}}
+{{<toc excludeIDs="references,y,en,qui,que,dont,où">}}
 
 *Pronouns* replace or refer to [nouns](../nouns), avoiding repetition. Unlike [determinants](../determinants), which accompany a noun, pronouns stand in for one entirely.
 
@@ -113,7 +113,7 @@ It can also replace other locative phrases (*dans, sur, en + place*): *Elle est 
 
 Object pronouns come **before** the conjugated verb in most tenses. In compound tenses, they go before the auxiliary:
 
-- *Je **le** vois.* / *Je **l'**ai vu.*
+- *Je **le** vois.* / _Je <b>l'</b>ai vu._
 
 When multiple object pronouns are stacked together, they follow a fixed order:
 
