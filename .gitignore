@@ -6,3 +6,6 @@
 
 # Node modules
 /node_modules/
+
+# Breh don't need no Claude files in the repo 😤
+.claude

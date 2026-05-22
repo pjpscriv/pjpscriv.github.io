@@ -1,0 +1,121 @@
+identity:
+  first_name: "Peter"
+  last_name: "Scriven"
+  title: "Software Developer"
+  city: "Montreal, QC, Canada"
+
+contacts:
+  - label: "linkedin.com/li/pjpscriv"
+    url: "https://linkedin.com/in/pjpscriv"
+  - label: "github.com/pjpscriv"
+    url: "https://github.com/pjpscriv"
+  - label: "pjpscriv.co.nz"
+    url: "https://pjpscriv.co.nz"
+  - label: "pjpscriv@gmail.com"
+    url: "mailto:pjpscriv@gmail.com"
+  - label: "(263) 362 0408"
+    url: "tel:+12633620408"
+
+profile:
+  - "Full-stack developer with 5+ years experience building and running web services at scale"
+  - "History of delivering impactful, multi-platform projects with measurable business outcomes"
+  - "Technical competence across web frontend, backend, database, data pipeline and search systems"
+  - "Strong communicator to both general and technical audiences"
+  - "Tireless advocate for improved engineering practices, processes and knowledge sharing"
+  - "Enthusiastic about thoughtful application of AI — watchful for where hype outpaces reality"
+  - "Motivated by creating positive impact in people's lives — particularly drawn to civic and public-sector technology"
+
+experience:
+  - title: "Software Developer"
+    org: "Trade Me"
+    period: "Nov 2019 – Jan 2025"
+    location: "Wellington, New Zealand"
+    bullets:
+      - "Worked across the Marketplace, Search and Frontend platform teams at New Zealand's largest online marketplace (~650K daily visitors)"
+      - "Delivered \"Sponsored Listings\" project in 2.5 months, integrating four separate systems. Feature has now processed $1M in revenue"
+      - "Led delivery of AI-powered Semantic Search experiment, coordinated across Data Science, Search Platform, and Mobile teams"
+      - "Delivered two company-critical pricing projects, one as a sole developer, delivering $3.7M in revenue uplift"
+      - "Authored technical planning and architectural documents, scoped cross-functional engineering work, presented proposals at the company-wide Review Forum"
+      - "Part of company-wide API migration project, leading migration of largest API area and baking in observability from the start"
+      - "Deeply involved in improving engineering practices and knowledge sharing across the company for both developers and testers"
+      - "Interacted directly with users through a support roster, and elevated user voices by creating a feedback triaging system"
+      - "Persistently focused on personal growth: progressed from Intern to Senior Developer in 3 years"
+
+  - title: "Data Analyst"
+    org: "CCS Disability Action"
+    period: "Mar 2018 – Nov 2019"
+    location: "Wellington, New Zealand"
+    bullets:
+      - "Part time data entry work that evolved into data analysis"
+      - "Worked with a 3rd party app that crowdsourced mobility park abuses"
+      - "Created a Node.js app that pulled 1000s of reports from a third party API to create monthly reports for regional managers"
+
+  - title: "Developer Intern"
+    org: "Snapper Services"
+    period: "Nov 2016 – Feb 2017"
+    location: "Wellington, New Zealand"
+    bullets:
+      - "Summer internship working on public transport ticketing"
+      - "First professional engineering experience, working with Android, Java and AWS"
+      - "Work consisted of bug fixing, testing and implementing features"
+
+skills:
+  - category: "Technical"
+    items:
+      - label: "Languages & Frameworks"
+        detail: "Angular, TypeScript, C#, .NET, HTML, CSS/Sass, Python, Node.js, SQL, PowerShell, Bash, Java"
+      - label: "Infrastructure & Databases"
+        detail: "MSSQL, Postgres, Docker, Google Cloud, AWS, Terraform, ElasticSearch, BigQuery"
+      - label: "Developer Tools"
+        detail: "Git, VSCode, JetBrains IDEs, CI/CD, New Relic, Splunk"
+
+  - category: "Organisational"
+    items:
+      - label: "Roadmapping"
+        detail: "Experience defining and prioritising large streams of work, capturing stakeholders and dependencies, and scheduling for optimal delivery"
+      - label: "Task Management"
+        detail: "Breaking down workstreams into component tasks, assigning work across the team"
+      - label: "Incident Management"
+        detail: "Experience dealing with when things break, reacting, mitigating, informing appropriate parties, and reflecting afterwards to capture lessons"
+      - label: "Tools"
+        detail: "Slack/Teams, GSuite/MS Office, Figma, Jira/Confluence"
+
+  - category: "People Skills"
+    items:
+      - label: "Community building"
+        detail: "Creating and maintaining spaces for people to learn, share and grow their skills"
+      - label: "Leadership"
+        detail: "Providing a shared vision for the team, then connecting with each member to align and deliver great results"
+      - label: "Presentation skills"
+        detail: "Comfortable speaking in front of people"
+
+education:
+  - title: "Francisation Level 8"
+    school: "Centre Saint-Louis"
+    period: "Apr 2025 – Jun 2026"
+    location: "Montreal, QC, Canada"
+    content: "Enrolled in Quebec's francisation program for adults. Started at level 3 (A2) and currently finishing level 8 (B2). An invaluable way to integrate into Quebecois society."
+
+  - title: "BSc Computer Science"
+    school: "Victoria University of Wellington"
+    period: "2016 – '17, 2019"
+    location: "Wellington, New Zealand"
+    content: "Finished my degree in New Zealand's capital. Studied Big Data, Intelligent Agents, UI Design, Project Management, Software Engineering and Sociology. Worked on multiple group projects."
+
+  - title: "BSc Computer Science"
+    school: "University of Canterbury"
+    period: "2014 – 2015"
+    location: "Christchurch, New Zealand"
+    content: "Started my degree in Christchurch. Studied foundational Computer Science topics, along with a little Physics. Learnt Python, Java and C, and put them into practice in a few group projects."
+
+interests:
+  - label: "Skiing"
+    detail: "Rediscovering my love for skiing after some time off. Favourite hill: Mount Bromont"
+  - label: "Travel"
+    detail: "Did my first ever overseas trip to Europe for 2 months in 2023. Highlights: Albania, Spain"
+  - label: "Podcasts"
+    detail: "Current favourites: Aujourd'hui l'histoire, The Nations of Canada and If Books Could Kill"
+  - label: "Books"
+    detail: "Recently finished \"Dictatorland\" and \"More Everything Forever\""
+  - label: "Public Interest Tech"
+    detail: "Member of both Montreal CivicTech and Atproto MTL groups"

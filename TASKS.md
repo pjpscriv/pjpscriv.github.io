@@ -19,8 +19,12 @@ Except it's me, I'm the LLM.
 - [x] In the header, reduce the left and right padding at the mobile breakpoint
 - [x] Add table of contents shortcode
 - [x] Add "copy link to this header" icon for all `<h2>`, etc elements 
+- [x] Add CV HTML Page
+- [ ] Add script to convert CV page to PDF
+- [ ] Add PDF CV
 
-###
+
+### Later
 
 - [ ] Add lil plant icons to garden pages
 - [ ] Update garden page messaged to "Planted" / "Last tended" etc

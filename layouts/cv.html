@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peter Scriven • CV</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Raleway:wght@300;700;800&display=swap">
+
+  <meta property="og:title" content="Peter Scriven • CV" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #222;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem;
+    }
+
+    a {
+      color: #222;
+    }
+    
+    a:hover {
+      color: #555;
+    }
+
+    /* ── Header ── */
+    .cv-header {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: start;
+    }
+    
+    @media (max-width: 600px) {
+      .cv-header {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    h1 {
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 2.5rem;
+      {{/*  letter-spacing: 0.05em;  */}}
+      margin: 0 0 0.15rem;
+      line-height: 3rem;
+    }
+
+    h1 b { 
+      font-weight: 700;
+    }
+
+    .subtitle { 
+      display: block; 
+      font-weight: 600;
+    }
+
+    .city { 
+      display: block; 
+      font-style: italic; 
+      color: #666;
+    }
+
+    .contacts {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contacts li {
+      margin-bottom: 0;
+    }
+
+    .contacts a {
+      text-decoration: none;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Section headings ── */
+    h2 {
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-bottom: 1px solid black;
+      padding-bottom: 0.2rem;
+      line-height: 1em;
+      margin: 1.75rem 0 6px;
+    }
+
+    /* ── Lists ── */
+    ul {
+      margin: 0.25rem 0 1.5rem; 
+      padding-left: 1.2rem;
+    }
+    
+    li { 
+      margin-bottom: 0.15rem;
+    }
+
+    /* ── Experience & Education articles ── */
+    article {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    article h3 {
+      grid-column: 1; 
+      grid-row: 1;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .org, .school {
+      grid-column: 1; 
+      grid-row: 2;
+      font-style: italic;
+      {{/*  color: #555;  */}}
+    }
+    
+    .period {
+      grid-column: 2; 
+      grid-row: 1;
+      font-style: italic;
+      align-self: center;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .location {
+      grid-column: 2; 
+      grid-row: 2;
+      text-align: right;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .entry-text {
+      margin: 0.35rem 0 1.5rem;
+      color: #555;
+    }
+
+    /* ── Skills ── */
+    .skills-group h3 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #888;
+      margin: 0.75rem 0 0.15rem;
+    }
+
+    .skill-label {
+      font-weight: 600;
+    }
+
+    /* ── Interests ── */
+    .interest-label { font-weight: 600; }
+
+    /* ── Print ── */
+    @media print {
+      body { 
+        padding: 0;
+        font-size: 12px;
+      }
+      
+      a { 
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  {{- $lang := .Language.Lang -}}
+  {{- $cv := index .Site.Data $lang "cv" -}}
+
+  <header class="cv-header">
+    <div class="identity">
+      <h1>{{ $cv.identity.first_name }} <b>{{ $cv.identity.last_name }}</b></h1>
+      <span class="subtitle">{{ $cv.identity.title }}</span>
+      <span class="city">{{ $cv.identity.city }}</span>
+    </div>
+    <ul class="contacts">
+      {{- range $cv.contacts }}
+      <li><a href="{{ .url }}">{{ .label }}</a></li>
+      {{- end }}
+    </ul>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <ul>
+      {{- range $cv.profile }}
+      <li>{{ . }}</li>
+      {{- end }}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+    {{- range $cv.experience }}
+    <article>
+      <h3>{{ .title }}</h3>
+      <span class="org">{{ .org }}</span>
+      <span class="period">{{ .period }}</span>
+      <span class="location">{{ .location }}</span>
+    </article>
+    <ul>
+      {{- range .bullets }}
+      <li>{{ . }}</li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    {{- range $cv.skills }}
+    <div class="skills-group">
+      <h3>{{ .category }}</h3>
+      <ul>
+        {{- range .items }}
+        <li><span class="skill-label">{{ .label }}</span> — {{ .detail }}</li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    {{- range $cv.education }}
+    <article>
+      <h3>{{ .title }}</h3>
+      <span class="school">{{ .school }}</span>
+      <span class="period">{{ .period }}</span>
+      <span class="location">{{ .location }}</span>
+    </article>
+    <p class="entry-text">{{ .content }}</p>
+    {{- end }}
+  </section>
+
+  <section>
+    <h2>Interests</h2>
+    <ul>
+      {{- range $cv.interests }}
+      <li><span class="interest-label">{{ .label }}</span> — {{ .detail }}</li>
+      {{- end }}
+    </ul>
+  </section>
+
+</body>
+</html>
