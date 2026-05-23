@@ -5,16 +5,21 @@ identity:
   city: "Montreal, QC, Canada"
 
 contacts:
-  - label: "linkedin.com/li/pjpscriv"
+  - label: "linkedin.com/in/pjpscriv"
     url: "https://linkedin.com/in/pjpscriv"
+    icon: "linkedin.svg"
   - label: "github.com/pjpscriv"
     url: "https://github.com/pjpscriv"
+    icon: "github.svg"
   - label: "pjpscriv.co.nz"
     url: "https://pjpscriv.co.nz"
+    icon: "globe_fill_400.svg"
   - label: "pjpscriv@gmail.com"
     url: "mailto:pjpscriv@gmail.com"
-  - label: "(263) 362 0408"
+    icon: "mail_fill_400.svg"
+  - label: "+1 (263) 362 0408"
     url: "tel:+12633620408"
+    icon: "phone_fill_400.svg"
 
 profile:
   - "Full-stack developer with 5+ years experience building and running web services at scale"
@@ -67,7 +72,7 @@ skills:
       - label: "Infrastructure & Databases"
         detail: "MSSQL, Postgres, Docker, Google Cloud, AWS, Terraform, ElasticSearch, BigQuery"
       - label: "Developer Tools"
-        detail: "Git, VSCode, JetBrains IDEs, CI/CD, New Relic, Splunk"
+        detail: "Git, VSCode, JetBrains IDEs, GitLab, GitHub, CI/CD, New Relic, Splunk"
 
   - category: "Organisational"
     items:

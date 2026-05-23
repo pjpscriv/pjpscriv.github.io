@@ -16,34 +16,52 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; }
 
+    /* ── Colour tokens ── */
+    :root {
+      --bg-color:       #fff;
+      --text-color:     #222;
+      --text-muted:     #555;
+      --text-subtle:    #666;
+      --text-faint:     #888;
+      --border-color:   #222;
+    }
+
+    body.dark-mode {
+      --bg-color:       #1c1c1c;
+      --text-color:     #ddd;
+      --text-muted:     #aaa;
+      --text-subtle:    #999;
+      --text-faint:     #777;
+      --border-color:   #888;
+    }
+
     body {
       font-family: 'Josefin Sans', sans-serif;
       font-size: 14px;
       line-height: 1.5;
-      color: #222;
+      color: var(--text-color);
+      background-color: var(--bg-color);
       max-width: 820px;
       margin: 0 auto;
       padding: 2.5rem 2rem;
     }
 
     a {
-      color: #222;
+      color: var(--text-color);
     }
-    
+
     a:hover {
-      color: #555;
+      color: var(--text-muted);
     }
 
     /* ── Header ── */
     .cv-header {
       display: grid;
-      grid-template-columns: 3fr 2fr;
-      grid-template-columns: 1fr 1fr;
       grid-template-columns: 1fr auto;
       gap: 1rem;
       align-items: start;
     }
-    
+
     @media (max-width: 600px) {
       .cv-header {
         grid-template-columns: 1fr;
@@ -55,42 +73,85 @@
       text-transform: uppercase;
       font-weight: 400;
       font-size: 2.5rem;
-      {{/*  letter-spacing: 0.05em;  */}}
       margin: 0 0 0.15rem;
       line-height: 3rem;
+
+      display: flex;
+      column-gap: 10px;
+      flex-wrap: wrap;
     }
 
-    h1 b { 
+    h1 b {
       font-weight: 700;
     }
 
-    .subtitle { 
-      display: block; 
+    /* ── Dark Mode Toggle ── */
+    #dark-mode-toggle {
+      display: flex;
+      padding: 8px 0;
+      cursor: pointer;
+
+      align-items: center;
+      opacity: 0.3;
+      transition: opacity .2s ease;
+    }
+
+    #dark-mode-toggle:hover {
+      opacity: 0.8;
+    }
+
+    #dark-mode-toggle #moon {
+      display: none;
+    }
+
+    .dark-mode #dark-mode-toggle #sun {
+      display: none;
+    }
+
+    .dark-mode #dark-mode-toggle #moon {
+      display: inline;
+    }
+
+    .subtitle {
+      display: block;
       font-weight: 600;
     }
 
-    .city { 
-      display: block; 
-      font-style: italic; 
-      color: #666;
+    .city {
+      display: block;
+      font-style: italic;
+      color: var(--text-subtle);
     }
 
     .contacts {
       list-style: none;
       margin: 0;
       padding: 0;
+      text-align: left;
     }
 
     .contacts li {
       margin-bottom: 0;
+      line-height: 1.2;
     }
 
     .contacts a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
       text-decoration: none;
     }
 
-    .contacts a:hover {
+    .contacts li:hover a {
+      color: var(--text-muted);
       text-decoration: underline;
+    }
+
+    .contacts svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+      flex-shrink: 0;
     }
 
     /* ── Section headings ── */
@@ -98,7 +159,7 @@
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
       font-weight: 700;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid var(--border-color);
       padding-bottom: 0.2rem;
       line-height: 1em;
       margin: 1.75rem 0 6px;
@@ -106,11 +167,11 @@
 
     /* ── Lists ── */
     ul {
-      margin: 0.25rem 0 1.5rem; 
+      margin: 0.25rem 0 1.5rem;
       padding-left: 1.2rem;
     }
-    
-    li { 
+
+    li {
       margin-bottom: 0.15rem;
     }
 
@@ -123,7 +184,7 @@
     }
 
     article h3 {
-      grid-column: 1; 
+      grid-column: 1;
       grid-row: 1;
       font-size: 1rem;
       font-weight: 600;
@@ -131,32 +192,30 @@
     }
 
     .org, .school {
-      grid-column: 1; 
+      grid-column: 1;
       grid-row: 2;
       font-style: italic;
-      {{/*  color: #555;  */}}
     }
-    
+
     .period {
-      grid-column: 2; 
+      grid-column: 2;
       grid-row: 1;
       font-style: italic;
       align-self: center;
       text-align: right;
-      white-space: nowrap;
     }
 
     .location {
-      grid-column: 2; 
+      grid-column: 2;
       grid-row: 2;
       text-align: right;
-      color: #888;
+      color: var(--text-faint);
       font-size: 0.85rem;
     }
 
     .entry-text {
       margin: 0.35rem 0 1.5rem;
-      color: #555;
+      color: var(--text-muted);
     }
 
     /* ── Skills ── */
@@ -165,7 +224,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      color: #888;
+      color: var(--text-faint);
       margin: 0.75rem 0 0.15rem;
     }
 
@@ -174,35 +233,74 @@
     }
 
     /* ── Interests ── */
-    .interest-label { font-weight: 600; }
+    .interest-label {
+      font-weight: 600;
+    }
 
     /* ── Print ── */
     @media print {
-      body { 
+      body {
         padding: 0;
         font-size: 12px;
       }
-      
-      a { 
+
+      a {
         color: inherit;
         text-decoration: none;
+      }
+
+      #dark-mode-toggle {
+        display: none !important;
       }
     }
   </style>
 </head>
 <body>
+  {{ partial "dark-mode.html" . }}
+
   {{- $lang := .Language.Lang -}}
   {{- $cv := index .Site.Data $lang "cv" -}}
 
   <header class="cv-header">
     <div class="identity">
-      <h1>{{ $cv.identity.first_name }} <b>{{ $cv.identity.last_name }}</b></h1>
+      <h1>
+        {{ $cv.identity.first_name }} 
+        <b>{{ $cv.identity.last_name }}</b>
+        
+        <!-- Dark mode toggle after name -->
+        <a class="icon-link" id="dark-mode-toggle">
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="url(#gradient-sun)">
+            <path d="M11 23V21C11 20.4477 11.4477 20 12 20C12.5523 20 13 20.4477 13 21V23C13 23.5523 12.5523 24 12 24C11.4477 24 11 23.5523 11 23ZM4.93229 17.6523C5.32282 17.2618 5.95713 17.2618 6.34766 17.6523C6.73818 18.0429 6.73818 18.6772 6.34766 19.0677L4.92708 20.487C4.53656 20.8775 3.90355 20.8775 3.51302 20.487C3.1225 20.0965 3.1225 19.4634 3.51302 19.0729L4.93229 17.6523ZM17.6523 17.6523C18.0429 17.2618 18.6772 17.2618 19.0677 17.6523L20.487 19.0729C20.8775 19.4634 20.8775 20.0965 20.487 20.487C20.0965 20.8775 19.4634 20.8775 19.0729 20.487L17.6523 19.0677C17.2618 18.6772 17.2618 18.0429 17.6523 17.6523ZM16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12ZM3 11C3.55228 11 4 11.4477 4 12C4 12.5523 3.55228 13 3 13H1C0.447715 13 0 12.5523 0 12C0 11.4477 0.447715 11 1 11H3ZM23 11C23.5523 11 24 11.4477 24 12C24 12.5523 23.5523 13 23 13H21C20.4477 13 20 12.5523 20 12C20 11.4477 20.4477 11 21 11H23ZM3.51302 3.51302C3.90355 3.1225 4.53656 3.1225 4.92708 3.51302L6.34766 4.93229C6.73818 5.32282 6.73818 5.95713 6.34766 6.34766C5.95713 6.73818 5.32282 6.73818 4.93229 6.34766L3.51302 4.92708C3.1225 4.53656 3.1225 3.90355 3.51302 3.51302ZM19.0729 3.51302C19.4634 3.1225 20.0965 3.1225 20.487 3.51302C20.8775 3.90355 20.8775 4.53656 20.487 4.92708L19.0677 6.34766C18.6772 6.73818 18.0429 6.73818 17.6523 6.34766C17.2618 5.95713 17.2618 5.32282 17.6523 4.93229L19.0729 3.51302ZM11 3V1C11 0.447715 11.4477 0 12 0C12.5523 0 13 0.447715 13 1V3C13 3.55228 12.5523 4 12 4C11.4477 4 11 3.55228 11 3ZM18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z"/>
+            <defs>
+              <linearGradient id="gradient-sun">
+                <stop offset="0%" class="gradient-start" stop-color="var(--text-color)"/>
+                <stop offset="100%" class="gradient-end" stop-color="var(--text-color)"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="url(#gradient-moon)">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            <defs>
+              <linearGradient id="gradient-moon">
+                <stop offset="0%" class="gradient-start" stop-color="var(--text-color)"/>
+                <stop offset="100%" class="gradient-end" stop-color="var(--text-color)"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
+      
+      </h1>
       <span class="subtitle">{{ $cv.identity.title }}</span>
       <span class="city">{{ $cv.identity.city }}</span>
     </div>
     <ul class="contacts">
       {{- range $cv.contacts }}
-      <li><a href="{{ .url }}">{{ .label }}</a></li>
+      <li>
+        <a href="{{ .url }}">
+          {{- readFile (printf "static/img/icons/%s" .icon) | safeHTML -}}
+          {{ .label }}
+        </a>
+      </li>
       {{- end }}
     </ul>
   </header>
@@ -269,5 +367,6 @@
     </ul>
   </section>
 
+  <script src="/js/cv-script.js"></script>
 </body>
 </html>
