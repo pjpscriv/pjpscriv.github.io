@@ -20,6 +20,7 @@ Except it's me, I'm the LLM.
 - [x] Add table of contents shortcode
 - [x] Add "copy link to this header" icon for all `<h2>`, etc elements 
 - [x] Add CV HTML Page
+  - [x] French version too 
 - [ ] Add script to convert CV page to PDF
 - [ ] Add PDF CV
 

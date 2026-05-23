@@ -1,0 +1,126 @@
+identity:
+  first_name: "Peter"
+  last_name: "Scriven"
+  title: "Développeur de logiciels"
+  city: "Montréal, QC, Canada"
+
+contacts:
+  - label: "linkedin.com/in/pjpscriv"
+    url: "https://linkedin.com/in/pjpscriv"
+    icon: "linkedin.svg"
+  - label: "github.com/pjpscriv"
+    url: "https://github.com/pjpscriv"
+    icon: "github.svg"
+  - label: "pjpscriv.co.nz"
+    url: "https://pjpscriv.co.nz"
+    icon: "globe_fill_400.svg"
+  - label: "pjpscriv@gmail.com"
+    url: "mailto:pjpscriv@gmail.com"
+    icon: "mail_fill_400.svg"
+  - label: "+1 (263) 362 0408"
+    url: "tel:+12633620408"
+    icon: "phone_fill_400.svg"
+
+profile:
+  - "Développeur full stack avec plus de 5 ans d'expérience dans la création et l'exploitation de services web à grande échelle"
+  - "Historique de livraison de projets percutants et multiplateformes avec des résultats commerciaux mesurables"
+  - "Compétences techniques couvrant le frontend, le backend, les bases de données, les pipelines de données et les systèmes de recherche"
+  - "Excellent communicateur, tant pour les publics généraux que techniques"
+  - "Défenseur des bonnes pratiques d'ingénierie, des processus améliorés et du partage des connaissances"
+  - "Enthousiaste pour l'application réfléchie de l'IA — vigilant quant aux domaines où le battage médiatique dépasse la réalité"
+  - "Motivé par la création d'un impact positif dans la vie des gens — particulièrement attiré par la technologie civique et du secteur public"
+
+experience:
+  - title: "Développeur de logiciels"
+    org: "Trade Me"
+    period: "nov. 2019 – janv. 2025"
+    location: "Wellington, Nouvelle-Zélande"
+    bullets:
+      - "Travaillé au sein des équipes Marketplace, Search et Frontend Platform du plus grand marché en ligne de Nouvelle-Zélande (~650 000 visiteurs quotidiens)"
+      - "Livraison du projet « Sponsored Listings » en 2,5 mois, intégrant quatre systèmes distincts — la fonctionnalité a généré plus d'1 M$ de revenus"
+      - "Direction de la livraison de l'expérience de recherche sémantique propulsée par l'IA, coordonnée avec les équipes Data Science, Search Platform et Mobile"
+      - "Livraison de deux projets de tarification critiques pour l'entreprise, dont l'un en tant que développeur unique, générant 3,7 M$ de revenus supplémentaires"
+      - "Rédaction de documents de planification technique et d'architecture, cadrage des travaux d'ingénierie transversaux, présentation de propositions au Forum de révision à l'échelle de l'entreprise"
+      - "Participation au projet de migration d'API à l'échelle de l'entreprise, direction de la migration de la plus grande zone d'API avec intégration de l'observabilité dès le départ"
+      - "Fortement impliqué dans l'amélioration des pratiques d'ingénierie et le partage des connaissances pour les développeurs et les testeurs"
+      - "Interaction directe avec les utilisateurs via un système de support, et amplification des retours utilisateurs grâce à la création d'un système de triage des commentaires"
+      - "Progression constante : de stagiaire à développeur senior en 3 ans"
+
+  - title: "Analyste de données"
+    org: "CCS Disability Action"
+    period: "mars 2018 – nov. 2019"
+    location: "Wellington, Nouvelle-Zélande"
+    bullets:
+      - "Travail de saisie de données à temps partiel ayant évolué vers l'analyse de données"
+      - "Travail avec une application tierce de signalement collaboratif des abus de stationnement pour personnes à mobilité réduite"
+      - "Création d'une application Node.js récupérant des milliers de signalements depuis une API tierce pour générer des rapports mensuels destinés aux gestionnaires régionaux"
+
+  - title: "Stagiaire développeur"
+    org: "Snapper Services"
+    period: "nov. 2016 – févr. 2017"
+    location: "Wellington, Nouvelle-Zélande"
+    bullets:
+      - "Stage d'été dans le domaine de la billetterie des transports en commun"
+      - "Première expérience professionnelle en ingénierie, travaillant avec Android, Java et AWS"
+      - "Travaux de correction de bogues, de tests et d'implémentation de fonctionnalités"
+
+skills:
+  - category: "Technique"
+    items:
+      - label: "Langages & Frameworks"
+        detail: "Angular, TypeScript, C#, .NET, HTML, CSS/Sass, Python, Node.js, SQL, PowerShell, Bash, Java"
+      - label: "Infrastructure & Bases de données"
+        detail: "MSSQL, Postgres, Docker, Google Cloud, AWS, Terraform, ElasticSearch, BigQuery"
+      - label: "Outils développeur"
+        detail: "Git, VSCode, JetBrains IDEs, GitLab, GitHub, CI/CD, New Relic, Splunk"
+
+  - category: "Organisationnel"
+    items:
+      - label: "Feuille de route"
+        detail: "Expérience dans la définition et la priorisation de grands flux de travail, l'identification des parties prenantes et des dépendances, et la planification pour une livraison optimale"
+      - label: "Gestion des tâches"
+        detail: "Décomposition des flux de travail en tâches élémentaires, répartition du travail au sein de l'équipe"
+      - label: "Gestion des incidents"
+        detail: "Expérience dans la gestion des pannes : réaction, mitigation, communication aux parties concernées et rétrospective pour capitaliser les leçons apprises"
+      - label: "Outils"
+        detail: "Slack/Teams, GSuite/MS Office, Figma, Jira/Confluence"
+
+  - category: "Compétences relationnelles"
+    items:
+      - label: "Animation de communauté"
+        detail: "Création et animation d'espaces permettant aux personnes d'apprendre, partager et développer leurs compétences"
+      - label: "Leadership"
+        detail: "Partage d'une vision commune pour l'équipe, puis connexion avec chaque membre pour aligner et obtenir d'excellents résultats"
+      - label: "Prise de parole en public"
+        detail: "À l'aise pour s'exprimer devant un public"
+
+education:
+  - title: "Francisation — Niveau 8"
+    school: "Centre Saint-Louis"
+    period: "avr. 2025 – juin 2026"
+    location: "Montréal, QC, Canada"
+    content: "Inscrit au programme de francisation du Québec pour adultes. Débuté au niveau 3 (A2), actuellement en fin de niveau 8 (B2). Une façon inestimable de s'intégrer à la société québécoise."
+
+  - title: "B.Sc. Informatique"
+    school: "Université Victoria de Wellington"
+    period: "2016 – '17, 2019"
+    location: "Wellington, Nouvelle-Zélande"
+    content: "Diplôme obtenu dans la capitale de la Nouvelle-Zélande. Cours suivis : Big Data, Agents intelligents, conception d'interfaces, gestion de projet, génie logiciel et sociologie. Participation à plusieurs projets de groupe."
+
+  - title: "B.Sc. Informatique"
+    school: "Université de Canterbury"
+    period: "2014 – 2015"
+    location: "Christchurch, Nouvelle-Zélande"
+    content: "Début du diplôme à Christchurch. Étude des fondamentaux de l'informatique ainsi qu'un peu de physique. Apprentissage de Python, Java et C, mis en pratique dans plusieurs projets de groupe."
+
+interests:
+  - label: "Ski"
+    detail: "Je redécouvre ma passion pour le ski après une pause. Ma montagne préférée : le Mont Bromont"
+  - label: "Voyages"
+    detail: "Premier voyage à l'étranger en Europe pendant 2 mois en 2023. Coups de cœur : l'Albanie, l'Espagne"
+  - label: "Balados"
+    detail: "Favoris actuels : Aujourd'hui l'histoire, The Nations of Canada et If Books Could Kill"
+  - label: "Livres"
+    detail: "Récemment terminé « Dictatorland » et « More Everything Forever »"
+  - label: "Techno d'intérêt public"
+    detail: "Membre de Montréal CivicTech et du groupe Atproto MTL"
