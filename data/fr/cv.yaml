@@ -3,6 +3,7 @@ identity:
   last_name: "Scriven"
   title: "Développeur de logiciels"
   city: "Montréal, QC, Canada"
+  download_pdf: "Télécharger le PDF"
 
 contacts:
   - label: "linkedin.com/in/pjpscriv"
@@ -27,8 +28,8 @@ profile:
   - "Compétences techniques couvrant le frontend, le backend, les bases de données, les pipelines de données et les systèmes de recherche"
   - "Excellent communicateur, tant pour les publics généraux que techniques"
   - "Défenseur des bonnes pratiques d'ingénierie, des processus améliorés et du partage des connaissances"
-  - "Enthousiaste pour l'application réfléchie de l'IA — vigilant quant aux domaines où le battage médiatique dépasse la réalité"
-  - "Motivé par la création d'un impact positif dans la vie des gens — particulièrement attiré par la technologie civique et du secteur public"
+  - "Enthousiaste pour l'application réfléchie de l'IA - vigilant quant aux domaines où le battage médiatique dépasse la réalité"
+  - "Motivé par la création d'un impact positif dans la vie des gens - particulièrement attiré par la technologie civique et du secteur public"
 
 experience:
   - title: "Développeur de logiciels"
@@ -37,7 +38,7 @@ experience:
     location: "Wellington, Nouvelle-Zélande"
     bullets:
       - "Travaillé au sein des équipes Marketplace, Search et Frontend Platform du plus grand marché en ligne de Nouvelle-Zélande (~650 000 visiteurs quotidiens)"
-      - "Livraison du projet « Sponsored Listings » en 2,5 mois, intégrant quatre systèmes distincts — la fonctionnalité a généré plus d'1 M$ de revenus"
+      - "Livraison du projet « Sponsored Listings » en 2,5 mois, intégrant quatre systèmes distincts - la fonctionnalité a généré plus d'1 M$ de revenus"
       - "Direction de la livraison de l'expérience de recherche sémantique propulsée par l'IA, coordonnée avec les équipes Data Science, Search Platform et Mobile"
       - "Livraison de deux projets de tarification critiques pour l'entreprise, dont l'un en tant que développeur unique, générant 3,7 M$ de revenus supplémentaires"
       - "Rédaction de documents de planification technique et d'architecture, cadrage des travaux d'ingénierie transversaux, présentation de propositions au Forum de révision à l'échelle de l'entreprise"
@@ -95,7 +96,7 @@ skills:
         detail: "À l'aise pour s'exprimer devant un public"
 
 education:
-  - title: "Francisation — Niveau 8"
+  - title: "Francisation - Niveau 8"
     school: "Centre Saint-Louis"
     period: "avr. 2025 – juin 2026"
     location: "Montréal, QC, Canada"

@@ -3,6 +3,7 @@ identity:
   last_name: "Scriven"
   title: "Software Developer"
   city: "Montreal, QC, Canada"
+  download_pdf: "Download PDF"
 
 contacts:
   - label: "linkedin.com/in/pjpscriv"

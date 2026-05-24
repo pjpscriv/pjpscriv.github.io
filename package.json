@@ -5,6 +5,7 @@
     "start": "hugo server --noHTTPCache",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:css:fix": "stylelint \"**/*.css\" --fix",
+    "print:cv": "node scripts/print-cv.js",
     "screenshot": "node screenshot.js --mode light",
     "screenshot:dark": "node screenshot.js --mode dark"
   },

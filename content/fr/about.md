@@ -15,7 +15,7 @@ Pendant mon temps libre, je joue de la guitare et fais du ski. J'aime les [podca
 
 ## Expérience
 
-Mon expérience d'éducation et travail :
+Mon expérience d'éducation et travail. Pour plus de détails, [voyez mon CV](/fr/cv).
 
 {{<list-experience>}}
 

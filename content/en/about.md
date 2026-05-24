@@ -14,7 +14,7 @@ In my spare time I play guitar and ski. I like [podcasts](https://lists.pocketca
 
 ## Experience
 
-A bit of my work/education history:
+A bit of my work/education history. For more detail [see my CV](/cv).
 
 {{<list-experience>}}
 

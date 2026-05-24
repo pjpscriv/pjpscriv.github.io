@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peter Scriven • CV</title>
+  <title>CV • Peter Scriven</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Raleway:wght@300;700;800&display=swap">
 
-  <meta property="og:title" content="Peter Scriven • CV" />
+  <meta property="og:title" content="CV • Peter Scriven" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
@@ -252,6 +252,10 @@
       #dark-mode-toggle {
         display: none !important;
       }
+
+      .download-link {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -296,12 +300,18 @@
     <ul class="contacts">
       {{- range $cv.contacts }}
       <li>
-        <a href="{{ .url }}">
+        <a href="{{ .url | safeURL }}">
           {{- readFile (printf "static/img/icons/%s" .icon) | safeHTML -}}
           {{ .label }}
         </a>
       </li>
       {{- end }}
+      <li class="download-link">
+        <a href="/{{ if ne $lang "en" }}{{ $lang }}/{{ end }}cv.pdf" download>
+          {{- readFile (printf "static/img/icons/download.svg") | safeHTML -}}
+          {{ $cv.identity.download_pdf }}
+        </a>
+      </li>
     </ul>
   </header>
 
