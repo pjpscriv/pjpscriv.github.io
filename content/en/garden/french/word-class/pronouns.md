@@ -4,7 +4,7 @@ updated: 2026-04-22
 draft: false
 ---
 
-{{<toc excludeIDs="references,y,en,qui,que,dont,où">}}
+{{<toc excludeIDs="references,y,en,qui,que,dont,où,lelaquelles">}}
 
 *Pronouns* replace or refer to [nouns](../nouns), avoiding repetition. Unlike [determinants](../determinants), which accompany a noun, pronouns stand in for one entirely.
 
@@ -188,15 +188,15 @@ Replaces **de + noun**. Covers a range of meanings:
 
 Replaces a noun of **place or time**:
 
-*La ville **où** j'habite.* - The city where I live.
-*Le jour **où** il est arrivé.* - The day (when) he arrived.
+- *La ville **où** j'habite.* - The city where I live.
+- *Le jour **où** il est arrivé.* - The day (when) he arrived.
 
-### lequel / laquelle / lesquels / lesquelles
+### le·la·quel·le·s
 
 Used after a **preposition** when the antecedent is a thing (not a person):
 
-*La table **sur laquelle** j'ai posé le livre...* - The table on which I put the book...
-*Les raisons **pour lesquelles** il est parti...* - The reasons for which he left...
+- *La table **sur laquelle** j'ai posé le livre...* - The table on which I put the book...
+- *Les raisons **pour lesquelles** il est parti...* - The reasons for which he left...
 
 When the antecedent is a **person**, *qui* is preferred after a preposition:
 
