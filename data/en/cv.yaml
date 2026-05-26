@@ -22,6 +22,13 @@ contacts:
     url: "tel:+12633620408"
     icon: "phone_fill_400.svg"
 
+sections:
+  profile: "Profile"
+  experience: "Work Experience"
+  skills: "Skills"
+  education: "Education"
+  interests: "Interests"
+
 profile:
   - "Full-stack developer with 5+ years experience building and running web services at scale"
   - "History of delivering impactful, multi-platform projects with measurable business outcomes"

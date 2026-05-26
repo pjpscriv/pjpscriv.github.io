@@ -316,7 +316,7 @@
   </header>
 
   <section>
-    <h2>Profile</h2>
+    <h2>{{ $cv.sections.profile }}</h2>
     <ul>
       {{- range $cv.profile }}
       <li>{{ . }}</li>
@@ -325,7 +325,7 @@
   </section>
 
   <section>
-    <h2>Work Experience</h2>
+    <h2>{{ $cv.sections.experience }}</h2>
     {{- range $cv.experience }}
     <article>
       <h3>{{ .title }}</h3>
@@ -342,7 +342,7 @@
   </section>
 
   <section>
-    <h2>Skills</h2>
+    <h2>{{ $cv.sections.skills }}</h2>
     {{- range $cv.skills }}
     <div class="skills-group">
       <h3>{{ .category }}</h3>
@@ -356,7 +356,7 @@
   </section>
 
   <section>
-    <h2>Education</h2>
+    <h2>{{ $cv.sections.education }}</h2>
     {{- range $cv.education }}
     <article>
       <h3>{{ .title }}</h3>
@@ -369,7 +369,7 @@
   </section>
 
   <section>
-    <h2>Interests</h2>
+    <h2>{{ $cv.sections.interests }}</h2>
     <ul>
       {{- range $cv.interests }}
       <li><span class="interest-label">{{ .label }}</span> — {{ .detail }}</li>
