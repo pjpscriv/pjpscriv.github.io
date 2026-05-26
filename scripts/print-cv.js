@@ -20,7 +20,7 @@ const CVS = [{
   url: `${BASE_URL}/fr/cv`,
   outputDir: path.join(ROOT, 'content', 'fr'),
   filename: 'cv.pdf',
-  margin: { ...DEFAULT_MARGIN, top: '1cm', bottom: '1cm' }
+  margin: { ...DEFAULT_MARGIN, top: '1cm', bottom: '0.5cm' }
 }];
 
 async function printCVs() {
