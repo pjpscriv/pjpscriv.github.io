@@ -56,7 +56,7 @@ projects:
     title: "Dot Match"
     period: "2024"
     links:
-      - url: "https://dotmatch.lol"
+      - url: "https://dotmatch.pjpscriv.co.nz"
         label: "website"
     skills: [ "typescript", "python", "flask", "cloud_run", "firestore" ]
     featured: true
